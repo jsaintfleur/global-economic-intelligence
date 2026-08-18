@@ -1,14 +1,15 @@
 # Top-50 Universe Evidence
 
-Technical summary: release `release_e9182edbdb3e275e19ca` uses one common GDP observation year, `2025`, for every selected economy. Mixed observation years do not affect this universe snapshot.
+Technical summary: release `release_c95979a1f2a0d628fbf3` uses one common GDP observation year, `2025`, for every selected World Bank-covered economy in the approved cohort. This does not establish candidate-universe completeness.
 
 ## Implemented selection rule
 
 - Indicator: World Bank WDI `NY.GDP.MKTP.CD` (nominal GDP, current US$).
-- Reference year: latest year with at least 150 valid non-aggregate economy observations; current result `2025`.
-- Candidate count in that year: 186.
-- Ranking: GDP descending, then ISO3 ascending; first 50 selected.
-- Aggregate exclusion: country-dimension region ID is neither null nor `NA`, and the ID has three characters.
+- Eligibility policy: explicit `phase_1_1_v1` registry records.
+- Provider: normalized World Bank GDP observations; `gei.universe.select_universe` is source-neutral.
+- Reference year: latest year containing all 50 approved entities; current result `2025`.
+- Ranking: GDP descending, then ISO3 ascending; exactly 50 eligible entities selected.
+- Candidate-universe completeness: false; the current provider omits analytical candidates including Taiwan.
 
 ## Selected economies
 
@@ -85,8 +86,8 @@ Technical summary: release `release_e9182edbdb3e275e19ca` uses one common GDP ob
 
 31 canonical non-aggregate country-dimension entries have no usable GDP value in `2025`. See the machine-readable exclusion file for the exact list.
 
-## Territory/entity evidence boundary
+## Analytical-entity evidence boundary
 
-The country registry states `World Bank country dimension; no sovereignty classification added`. All 50 selected entries have `territory_classification: null`; therefore this package does not infer which included entries are territories or sovereign states. Claude should review that classification question directly.
+Atlas does not infer sovereignty. The explicit eligibility registry records Taiwan as `pending_review`, identifies it with IMF WEO code `TWN`, and leaves its World Bank code null. Common-year consistency among World Bank-covered entities does not resolve this source-universe omission.
 
-Files: [`top50_universe_candidates.csv`](../../data/audit/release_e9182edbdb3e275e19ca/top50_universe_candidates.csv), [`top50_universe_missing_reference_year.csv`](../../data/audit/release_e9182edbdb3e275e19ca/top50_universe_missing_reference_year.csv), and adjacent JSON.
+Files: [`top50_universe_candidates.csv`](../../data/audit/release_c95979a1f2a0d628fbf3/top50_universe_candidates.csv), [`top50_universe_missing_reference_year.csv`](../../data/audit/release_c95979a1f2a0d628fbf3/top50_universe_missing_reference_year.csv), and adjacent JSON.

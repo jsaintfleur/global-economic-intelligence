@@ -1,0 +1,4367 @@
+{
+  "authority": "Economist-approved Phase 1 cohort; no sovereignty inference",
+  "eligibility_policy_version": "phase_1_1_v1",
+  "entities": [
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ABW",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ABW",
+        "un_m49": null,
+        "world_bank_code": "ABW"
+      },
+      "display_name": "Aruba",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:AFG",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "AFG",
+        "un_m49": null,
+        "world_bank_code": "AFG"
+      },
+      "display_name": "Afghanistan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:AGO",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "AGO",
+        "un_m49": null,
+        "world_bank_code": "AGO"
+      },
+      "display_name": "Angola",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ALB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ALB",
+        "un_m49": null,
+        "world_bank_code": "ALB"
+      },
+      "display_name": "Albania",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:AND",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "AND",
+        "un_m49": null,
+        "world_bank_code": "AND"
+      },
+      "display_name": "Andorra",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ARE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ARE",
+        "un_m49": null,
+        "world_bank_code": "ARE"
+      },
+      "display_name": "United Arab Emirates",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:ARG",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ARG",
+        "un_m49": null,
+        "world_bank_code": "ARG"
+      },
+      "display_name": "Argentina",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ARM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ARM",
+        "un_m49": null,
+        "world_bank_code": "ARM"
+      },
+      "display_name": "Armenia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ASM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ASM",
+        "un_m49": null,
+        "world_bank_code": "ASM"
+      },
+      "display_name": "American Samoa",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ATG",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ATG",
+        "un_m49": null,
+        "world_bank_code": "ATG"
+      },
+      "display_name": "Antigua and Barbuda",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:AUS",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "AUS",
+        "un_m49": null,
+        "world_bank_code": "AUS"
+      },
+      "display_name": "Australia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:AUT",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "AUT",
+        "un_m49": null,
+        "world_bank_code": "AUT"
+      },
+      "display_name": "Austria",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:AZE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "AZE",
+        "un_m49": null,
+        "world_bank_code": "AZE"
+      },
+      "display_name": "Azerbaijan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BDI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BDI",
+        "un_m49": null,
+        "world_bank_code": "BDI"
+      },
+      "display_name": "Burundi",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:BEL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BEL",
+        "un_m49": null,
+        "world_bank_code": "BEL"
+      },
+      "display_name": "Belgium",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BEN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BEN",
+        "un_m49": null,
+        "world_bank_code": "BEN"
+      },
+      "display_name": "Benin",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BFA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BFA",
+        "un_m49": null,
+        "world_bank_code": "BFA"
+      },
+      "display_name": "Burkina Faso",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:BGD",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BGD",
+        "un_m49": null,
+        "world_bank_code": "BGD"
+      },
+      "display_name": "Bangladesh",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BGR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BGR",
+        "un_m49": null,
+        "world_bank_code": "BGR"
+      },
+      "display_name": "Bulgaria",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BHR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BHR",
+        "un_m49": null,
+        "world_bank_code": "BHR"
+      },
+      "display_name": "Bahrain",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BHS",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BHS",
+        "un_m49": null,
+        "world_bank_code": "BHS"
+      },
+      "display_name": "Bahamas, The",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BIH",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BIH",
+        "un_m49": null,
+        "world_bank_code": "BIH"
+      },
+      "display_name": "Bosnia and Herzegovina",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BLR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BLR",
+        "un_m49": null,
+        "world_bank_code": "BLR"
+      },
+      "display_name": "Belarus",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BLZ",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BLZ",
+        "un_m49": null,
+        "world_bank_code": "BLZ"
+      },
+      "display_name": "Belize",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BMU",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BMU",
+        "un_m49": null,
+        "world_bank_code": "BMU"
+      },
+      "display_name": "Bermuda",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BOL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BOL",
+        "un_m49": null,
+        "world_bank_code": "BOL"
+      },
+      "display_name": "Bolivia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:BRA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BRA",
+        "un_m49": null,
+        "world_bank_code": "BRA"
+      },
+      "display_name": "Brazil",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BRB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BRB",
+        "un_m49": null,
+        "world_bank_code": "BRB"
+      },
+      "display_name": "Barbados",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BRN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BRN",
+        "un_m49": null,
+        "world_bank_code": "BRN"
+      },
+      "display_name": "Brunei Darussalam",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BTN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BTN",
+        "un_m49": null,
+        "world_bank_code": "BTN"
+      },
+      "display_name": "Bhutan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:BWA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "BWA",
+        "un_m49": null,
+        "world_bank_code": "BWA"
+      },
+      "display_name": "Botswana",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CAF",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CAF",
+        "un_m49": null,
+        "world_bank_code": "CAF"
+      },
+      "display_name": "Central African Republic",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:CAN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CAN",
+        "un_m49": null,
+        "world_bank_code": "CAN"
+      },
+      "display_name": "Canada",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:CHE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CHE",
+        "un_m49": null,
+        "world_bank_code": "CHE"
+      },
+      "display_name": "Switzerland",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CHI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CHI",
+        "un_m49": null,
+        "world_bank_code": "CHI"
+      },
+      "display_name": "Channel Islands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:CHL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CHL",
+        "un_m49": null,
+        "world_bank_code": "CHL"
+      },
+      "display_name": "Chile",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:CHN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CHN",
+        "un_m49": null,
+        "world_bank_code": "CHN"
+      },
+      "display_name": "China",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CIV",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CIV",
+        "un_m49": null,
+        "world_bank_code": "CIV"
+      },
+      "display_name": "Cote d'Ivoire",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CMR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CMR",
+        "un_m49": null,
+        "world_bank_code": "CMR"
+      },
+      "display_name": "Cameroon",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:COD",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "COD",
+        "un_m49": null,
+        "world_bank_code": "COD"
+      },
+      "display_name": "Congo, Dem. Rep.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:COG",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "COG",
+        "un_m49": null,
+        "world_bank_code": "COG"
+      },
+      "display_name": "Congo, Rep.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:COL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "COL",
+        "un_m49": null,
+        "world_bank_code": "COL"
+      },
+      "display_name": "Colombia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:COM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "COM",
+        "un_m49": null,
+        "world_bank_code": "COM"
+      },
+      "display_name": "Comoros",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CPV",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CPV",
+        "un_m49": null,
+        "world_bank_code": "CPV"
+      },
+      "display_name": "Cabo Verde",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CRI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CRI",
+        "un_m49": null,
+        "world_bank_code": "CRI"
+      },
+      "display_name": "Costa Rica",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CUB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CUB",
+        "un_m49": null,
+        "world_bank_code": "CUB"
+      },
+      "display_name": "Cuba",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CUW",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CUW",
+        "un_m49": null,
+        "world_bank_code": "CUW"
+      },
+      "display_name": "Curacao",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CYM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CYM",
+        "un_m49": null,
+        "world_bank_code": "CYM"
+      },
+      "display_name": "Cayman Islands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:CYP",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CYP",
+        "un_m49": null,
+        "world_bank_code": "CYP"
+      },
+      "display_name": "Cyprus",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:CZE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "CZE",
+        "un_m49": null,
+        "world_bank_code": "CZE"
+      },
+      "display_name": "Czechia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:DEU",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "DEU",
+        "un_m49": null,
+        "world_bank_code": "DEU"
+      },
+      "display_name": "Germany",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:DJI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "DJI",
+        "un_m49": null,
+        "world_bank_code": "DJI"
+      },
+      "display_name": "Djibouti",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:DMA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "DMA",
+        "un_m49": null,
+        "world_bank_code": "DMA"
+      },
+      "display_name": "Dominica",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:DNK",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "DNK",
+        "un_m49": null,
+        "world_bank_code": "DNK"
+      },
+      "display_name": "Denmark",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:DOM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "DOM",
+        "un_m49": null,
+        "world_bank_code": "DOM"
+      },
+      "display_name": "Dominican Republic",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:DZA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "DZA",
+        "un_m49": null,
+        "world_bank_code": "DZA"
+      },
+      "display_name": "Algeria",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ECU",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ECU",
+        "un_m49": null,
+        "world_bank_code": "ECU"
+      },
+      "display_name": "Ecuador",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:EGY",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "EGY",
+        "un_m49": null,
+        "world_bank_code": "EGY"
+      },
+      "display_name": "Egypt, Arab Rep.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ERI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ERI",
+        "un_m49": null,
+        "world_bank_code": "ERI"
+      },
+      "display_name": "Eritrea",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:ESP",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ESP",
+        "un_m49": null,
+        "world_bank_code": "ESP"
+      },
+      "display_name": "Spain",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:EST",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "EST",
+        "un_m49": null,
+        "world_bank_code": "EST"
+      },
+      "display_name": "Estonia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ETH",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ETH",
+        "un_m49": null,
+        "world_bank_code": "ETH"
+      },
+      "display_name": "Ethiopia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:FIN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "FIN",
+        "un_m49": null,
+        "world_bank_code": "FIN"
+      },
+      "display_name": "Finland",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:FJI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "FJI",
+        "un_m49": null,
+        "world_bank_code": "FJI"
+      },
+      "display_name": "Fiji",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:FRA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "FRA",
+        "un_m49": null,
+        "world_bank_code": "FRA"
+      },
+      "display_name": "France",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:FRO",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "FRO",
+        "un_m49": null,
+        "world_bank_code": "FRO"
+      },
+      "display_name": "Faroe Islands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:FSM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "FSM",
+        "un_m49": null,
+        "world_bank_code": "FSM"
+      },
+      "display_name": "Micronesia, Fed. Sts.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GAB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GAB",
+        "un_m49": null,
+        "world_bank_code": "GAB"
+      },
+      "display_name": "Gabon",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:GBR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GBR",
+        "un_m49": null,
+        "world_bank_code": "GBR"
+      },
+      "display_name": "United Kingdom",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GEO",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GEO",
+        "un_m49": null,
+        "world_bank_code": "GEO"
+      },
+      "display_name": "Georgia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GHA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GHA",
+        "un_m49": null,
+        "world_bank_code": "GHA"
+      },
+      "display_name": "Ghana",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GIB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GIB",
+        "un_m49": null,
+        "world_bank_code": "GIB"
+      },
+      "display_name": "Gibraltar",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GIN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GIN",
+        "un_m49": null,
+        "world_bank_code": "GIN"
+      },
+      "display_name": "Guinea",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GMB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GMB",
+        "un_m49": null,
+        "world_bank_code": "GMB"
+      },
+      "display_name": "Gambia, The",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GNB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GNB",
+        "un_m49": null,
+        "world_bank_code": "GNB"
+      },
+      "display_name": "Guinea-Bissau",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GNQ",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GNQ",
+        "un_m49": null,
+        "world_bank_code": "GNQ"
+      },
+      "display_name": "Equatorial Guinea",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GRC",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GRC",
+        "un_m49": null,
+        "world_bank_code": "GRC"
+      },
+      "display_name": "Greece",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GRD",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GRD",
+        "un_m49": null,
+        "world_bank_code": "GRD"
+      },
+      "display_name": "Grenada",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GRL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GRL",
+        "un_m49": null,
+        "world_bank_code": "GRL"
+      },
+      "display_name": "Greenland",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GTM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GTM",
+        "un_m49": null,
+        "world_bank_code": "GTM"
+      },
+      "display_name": "Guatemala",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GUM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GUM",
+        "un_m49": null,
+        "world_bank_code": "GUM"
+      },
+      "display_name": "Guam",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:GUY",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "GUY",
+        "un_m49": null,
+        "world_bank_code": "GUY"
+      },
+      "display_name": "Guyana",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:HKG",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "HKG",
+        "un_m49": null,
+        "world_bank_code": "HKG"
+      },
+      "display_name": "Hong Kong SAR, China",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:HND",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "HND",
+        "un_m49": null,
+        "world_bank_code": "HND"
+      },
+      "display_name": "Honduras",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:HRV",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "HRV",
+        "un_m49": null,
+        "world_bank_code": "HRV"
+      },
+      "display_name": "Croatia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:HTI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "HTI",
+        "un_m49": null,
+        "world_bank_code": "HTI"
+      },
+      "display_name": "Haiti",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:HUN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "HUN",
+        "un_m49": null,
+        "world_bank_code": "HUN"
+      },
+      "display_name": "Hungary",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:IDN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "IDN",
+        "un_m49": null,
+        "world_bank_code": "IDN"
+      },
+      "display_name": "Indonesia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:IMN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "IMN",
+        "un_m49": null,
+        "world_bank_code": "IMN"
+      },
+      "display_name": "Isle of Man",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:IND",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "IND",
+        "un_m49": null,
+        "world_bank_code": "IND"
+      },
+      "display_name": "India",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:IRL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "IRL",
+        "un_m49": null,
+        "world_bank_code": "IRL"
+      },
+      "display_name": "Ireland",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:IRN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "IRN",
+        "un_m49": null,
+        "world_bank_code": "IRN"
+      },
+      "display_name": "Iran, Islamic Rep.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:IRQ",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "IRQ",
+        "un_m49": null,
+        "world_bank_code": "IRQ"
+      },
+      "display_name": "Iraq",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ISL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ISL",
+        "un_m49": null,
+        "world_bank_code": "ISL"
+      },
+      "display_name": "Iceland",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:ISR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ISR",
+        "un_m49": null,
+        "world_bank_code": "ISR"
+      },
+      "display_name": "Israel",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:ITA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ITA",
+        "un_m49": null,
+        "world_bank_code": "ITA"
+      },
+      "display_name": "Italy",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:JAM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "JAM",
+        "un_m49": null,
+        "world_bank_code": "JAM"
+      },
+      "display_name": "Jamaica",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:JOR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "JOR",
+        "un_m49": null,
+        "world_bank_code": "JOR"
+      },
+      "display_name": "Jordan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:JPN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "JPN",
+        "un_m49": null,
+        "world_bank_code": "JPN"
+      },
+      "display_name": "Japan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:KAZ",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "KAZ",
+        "un_m49": null,
+        "world_bank_code": "KAZ"
+      },
+      "display_name": "Kazakhstan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:KEN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "KEN",
+        "un_m49": null,
+        "world_bank_code": "KEN"
+      },
+      "display_name": "Kenya",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:KGZ",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "KGZ",
+        "un_m49": null,
+        "world_bank_code": "KGZ"
+      },
+      "display_name": "Kyrgyz Republic",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:KHM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "KHM",
+        "un_m49": null,
+        "world_bank_code": "KHM"
+      },
+      "display_name": "Cambodia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:KIR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "KIR",
+        "un_m49": null,
+        "world_bank_code": "KIR"
+      },
+      "display_name": "Kiribati",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:KNA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "KNA",
+        "un_m49": null,
+        "world_bank_code": "KNA"
+      },
+      "display_name": "St. Kitts and Nevis",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:KOR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "KOR",
+        "un_m49": null,
+        "world_bank_code": "KOR"
+      },
+      "display_name": "Korea, Rep.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:KWT",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "KWT",
+        "un_m49": null,
+        "world_bank_code": "KWT"
+      },
+      "display_name": "Kuwait",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LAO",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LAO",
+        "un_m49": null,
+        "world_bank_code": "LAO"
+      },
+      "display_name": "Lao PDR",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LBN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LBN",
+        "un_m49": null,
+        "world_bank_code": "LBN"
+      },
+      "display_name": "Lebanon",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LBR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LBR",
+        "un_m49": null,
+        "world_bank_code": "LBR"
+      },
+      "display_name": "Liberia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LBY",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LBY",
+        "un_m49": null,
+        "world_bank_code": "LBY"
+      },
+      "display_name": "Libya",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LCA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LCA",
+        "un_m49": null,
+        "world_bank_code": "LCA"
+      },
+      "display_name": "St. Lucia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LIE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LIE",
+        "un_m49": null,
+        "world_bank_code": "LIE"
+      },
+      "display_name": "Liechtenstein",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LKA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LKA",
+        "un_m49": null,
+        "world_bank_code": "LKA"
+      },
+      "display_name": "Sri Lanka",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LSO",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LSO",
+        "un_m49": null,
+        "world_bank_code": "LSO"
+      },
+      "display_name": "Lesotho",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LTU",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LTU",
+        "un_m49": null,
+        "world_bank_code": "LTU"
+      },
+      "display_name": "Lithuania",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LUX",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LUX",
+        "un_m49": null,
+        "world_bank_code": "LUX"
+      },
+      "display_name": "Luxembourg",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:LVA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "LVA",
+        "un_m49": null,
+        "world_bank_code": "LVA"
+      },
+      "display_name": "Latvia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MAC",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MAC",
+        "un_m49": null,
+        "world_bank_code": "MAC"
+      },
+      "display_name": "Macao SAR, China",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MAF",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MAF",
+        "un_m49": null,
+        "world_bank_code": "MAF"
+      },
+      "display_name": "St. Martin (French part)",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MAR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MAR",
+        "un_m49": null,
+        "world_bank_code": "MAR"
+      },
+      "display_name": "Morocco",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MCO",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MCO",
+        "un_m49": null,
+        "world_bank_code": "MCO"
+      },
+      "display_name": "Monaco",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MDA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MDA",
+        "un_m49": null,
+        "world_bank_code": "MDA"
+      },
+      "display_name": "Moldova",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MDG",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MDG",
+        "un_m49": null,
+        "world_bank_code": "MDG"
+      },
+      "display_name": "Madagascar",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MDV",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MDV",
+        "un_m49": null,
+        "world_bank_code": "MDV"
+      },
+      "display_name": "Maldives",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:MEX",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MEX",
+        "un_m49": null,
+        "world_bank_code": "MEX"
+      },
+      "display_name": "Mexico",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MHL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MHL",
+        "un_m49": null,
+        "world_bank_code": "MHL"
+      },
+      "display_name": "Marshall Islands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MKD",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MKD",
+        "un_m49": null,
+        "world_bank_code": "MKD"
+      },
+      "display_name": "North Macedonia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MLI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MLI",
+        "un_m49": null,
+        "world_bank_code": "MLI"
+      },
+      "display_name": "Mali",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MLT",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MLT",
+        "un_m49": null,
+        "world_bank_code": "MLT"
+      },
+      "display_name": "Malta",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MMR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MMR",
+        "un_m49": null,
+        "world_bank_code": "MMR"
+      },
+      "display_name": "Myanmar",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MNE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MNE",
+        "un_m49": null,
+        "world_bank_code": "MNE"
+      },
+      "display_name": "Montenegro",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MNG",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MNG",
+        "un_m49": null,
+        "world_bank_code": "MNG"
+      },
+      "display_name": "Mongolia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MNP",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MNP",
+        "un_m49": null,
+        "world_bank_code": "MNP"
+      },
+      "display_name": "Northern Mariana Islands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MOZ",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MOZ",
+        "un_m49": null,
+        "world_bank_code": "MOZ"
+      },
+      "display_name": "Mozambique",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MRT",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MRT",
+        "un_m49": null,
+        "world_bank_code": "MRT"
+      },
+      "display_name": "Mauritania",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MUS",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MUS",
+        "un_m49": null,
+        "world_bank_code": "MUS"
+      },
+      "display_name": "Mauritius",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:MWI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MWI",
+        "un_m49": null,
+        "world_bank_code": "MWI"
+      },
+      "display_name": "Malawi",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:MYS",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "MYS",
+        "un_m49": null,
+        "world_bank_code": "MYS"
+      },
+      "display_name": "Malaysia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:NAM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NAM",
+        "un_m49": null,
+        "world_bank_code": "NAM"
+      },
+      "display_name": "Namibia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:NCL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NCL",
+        "un_m49": null,
+        "world_bank_code": "NCL"
+      },
+      "display_name": "New Caledonia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:NER",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NER",
+        "un_m49": null,
+        "world_bank_code": "NER"
+      },
+      "display_name": "Niger",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:NGA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NGA",
+        "un_m49": null,
+        "world_bank_code": "NGA"
+      },
+      "display_name": "Nigeria",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:NIC",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NIC",
+        "un_m49": null,
+        "world_bank_code": "NIC"
+      },
+      "display_name": "Nicaragua",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:NLD",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NLD",
+        "un_m49": null,
+        "world_bank_code": "NLD"
+      },
+      "display_name": "Netherlands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:NOR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NOR",
+        "un_m49": null,
+        "world_bank_code": "NOR"
+      },
+      "display_name": "Norway",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:NPL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NPL",
+        "un_m49": null,
+        "world_bank_code": "NPL"
+      },
+      "display_name": "Nepal",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:NRU",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NRU",
+        "un_m49": null,
+        "world_bank_code": "NRU"
+      },
+      "display_name": "Naoero",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:NZL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "NZL",
+        "un_m49": null,
+        "world_bank_code": "NZL"
+      },
+      "display_name": "New Zealand",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:OMN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "OMN",
+        "un_m49": null,
+        "world_bank_code": "OMN"
+      },
+      "display_name": "Oman",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:PAK",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PAK",
+        "un_m49": null,
+        "world_bank_code": "PAK"
+      },
+      "display_name": "Pakistan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:PAN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PAN",
+        "un_m49": null,
+        "world_bank_code": "PAN"
+      },
+      "display_name": "Panama",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:PER",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PER",
+        "un_m49": null,
+        "world_bank_code": "PER"
+      },
+      "display_name": "Peru",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:PHL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PHL",
+        "un_m49": null,
+        "world_bank_code": "PHL"
+      },
+      "display_name": "Philippines",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:PLW",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PLW",
+        "un_m49": null,
+        "world_bank_code": "PLW"
+      },
+      "display_name": "Palau",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:PNG",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PNG",
+        "un_m49": null,
+        "world_bank_code": "PNG"
+      },
+      "display_name": "Papua New Guinea",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:POL",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "POL",
+        "un_m49": null,
+        "world_bank_code": "POL"
+      },
+      "display_name": "Poland",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:PRI",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PRI",
+        "un_m49": null,
+        "world_bank_code": "PRI"
+      },
+      "display_name": "Puerto Rico (US)",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:PRK",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PRK",
+        "un_m49": null,
+        "world_bank_code": "PRK"
+      },
+      "display_name": "Korea, Dem. People's Rep.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:PRT",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PRT",
+        "un_m49": null,
+        "world_bank_code": "PRT"
+      },
+      "display_name": "Portugal",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:PRY",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PRY",
+        "un_m49": null,
+        "world_bank_code": "PRY"
+      },
+      "display_name": "Paraguay",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:PSE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PSE",
+        "un_m49": null,
+        "world_bank_code": "PSE"
+      },
+      "display_name": "West Bank and Gaza",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:PYF",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "PYF",
+        "un_m49": null,
+        "world_bank_code": "PYF"
+      },
+      "display_name": "French Polynesia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:QAT",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "QAT",
+        "un_m49": null,
+        "world_bank_code": "QAT"
+      },
+      "display_name": "Qatar",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:ROU",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ROU",
+        "un_m49": null,
+        "world_bank_code": "ROU"
+      },
+      "display_name": "Romania",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:RUS",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "RUS",
+        "un_m49": null,
+        "world_bank_code": "RUS"
+      },
+      "display_name": "Russian Federation",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:RWA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "RWA",
+        "un_m49": null,
+        "world_bank_code": "RWA"
+      },
+      "display_name": "Rwanda",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:SAU",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SAU",
+        "un_m49": null,
+        "world_bank_code": "SAU"
+      },
+      "display_name": "Saudi Arabia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SDN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SDN",
+        "un_m49": null,
+        "world_bank_code": "SDN"
+      },
+      "display_name": "Sudan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SEN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SEN",
+        "un_m49": null,
+        "world_bank_code": "SEN"
+      },
+      "display_name": "Senegal",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:SGP",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SGP",
+        "un_m49": null,
+        "world_bank_code": "SGP"
+      },
+      "display_name": "Singapore",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SLB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SLB",
+        "un_m49": null,
+        "world_bank_code": "SLB"
+      },
+      "display_name": "Solomon Islands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SLE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SLE",
+        "un_m49": null,
+        "world_bank_code": "SLE"
+      },
+      "display_name": "Sierra Leone",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SLV",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SLV",
+        "un_m49": null,
+        "world_bank_code": "SLV"
+      },
+      "display_name": "El Salvador",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SMR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SMR",
+        "un_m49": null,
+        "world_bank_code": "SMR"
+      },
+      "display_name": "San Marino",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SOM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SOM",
+        "un_m49": null,
+        "world_bank_code": "SOM"
+      },
+      "display_name": "Somalia, Fed. Rep.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SRB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SRB",
+        "un_m49": null,
+        "world_bank_code": "SRB"
+      },
+      "display_name": "Serbia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SSD",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SSD",
+        "un_m49": null,
+        "world_bank_code": "SSD"
+      },
+      "display_name": "South Sudan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:STP",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "STP",
+        "un_m49": null,
+        "world_bank_code": "STP"
+      },
+      "display_name": "Sao Tome and Principe",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SUR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SUR",
+        "un_m49": null,
+        "world_bank_code": "SUR"
+      },
+      "display_name": "Suriname",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SVK",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SVK",
+        "un_m49": null,
+        "world_bank_code": "SVK"
+      },
+      "display_name": "Slovak Republic",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SVN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SVN",
+        "un_m49": null,
+        "world_bank_code": "SVN"
+      },
+      "display_name": "Slovenia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:SWE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SWE",
+        "un_m49": null,
+        "world_bank_code": "SWE"
+      },
+      "display_name": "Sweden",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SWZ",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SWZ",
+        "un_m49": null,
+        "world_bank_code": "SWZ"
+      },
+      "display_name": "Eswatini",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SXM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SXM",
+        "un_m49": null,
+        "world_bank_code": "SXM"
+      },
+      "display_name": "Sint Maarten (Dutch part)",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SYC",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SYC",
+        "un_m49": null,
+        "world_bank_code": "SYC"
+      },
+      "display_name": "Seychelles",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:SYR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "SYR",
+        "un_m49": null,
+        "world_bank_code": "SYR"
+      },
+      "display_name": "Syrian Arab Republic",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TCA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TCA",
+        "un_m49": null,
+        "world_bank_code": "TCA"
+      },
+      "display_name": "Turks and Caicos Islands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TCD",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TCD",
+        "un_m49": null,
+        "world_bank_code": "TCD"
+      },
+      "display_name": "Chad",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TGO",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TGO",
+        "un_m49": null,
+        "world_bank_code": "TGO"
+      },
+      "display_name": "Togo",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:THA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "THA",
+        "un_m49": null,
+        "world_bank_code": "THA"
+      },
+      "display_name": "Thailand",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TJK",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TJK",
+        "un_m49": null,
+        "world_bank_code": "TJK"
+      },
+      "display_name": "Tajikistan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TKM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TKM",
+        "un_m49": null,
+        "world_bank_code": "TKM"
+      },
+      "display_name": "Turkmenistan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TLS",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TLS",
+        "un_m49": null,
+        "world_bank_code": "TLS"
+      },
+      "display_name": "Timor-Leste",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TON",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TON",
+        "un_m49": null,
+        "world_bank_code": "TON"
+      },
+      "display_name": "Tonga",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TTO",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TTO",
+        "un_m49": null,
+        "world_bank_code": "TTO"
+      },
+      "display_name": "Trinidad and Tobago",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TUN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TUN",
+        "un_m49": null,
+        "world_bank_code": "TUN"
+      },
+      "display_name": "Tunisia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:TUR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TUR",
+        "un_m49": null,
+        "world_bank_code": "TUR"
+      },
+      "display_name": "Turkiye",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TUV",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TUV",
+        "un_m49": null,
+        "world_bank_code": "TUV"
+      },
+      "display_name": "Tuvalu",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TWN",
+      "authoritative_ids": {
+        "imf_weo_code": "TWN",
+        "iso3": null,
+        "un_m49": null,
+        "world_bank_code": null
+      },
+      "display_name": "Taiwan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Source-unavailable in the current World Bank GDP provider; explicit review and approved GDP source mapping required",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "IMF WEO country code TWN",
+        "agent_handoff/CLAUDE_TO_CODEX.md"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:TZA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "TZA",
+        "un_m49": null,
+        "world_bank_code": "TZA"
+      },
+      "display_name": "Tanzania",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:UGA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "UGA",
+        "un_m49": null,
+        "world_bank_code": "UGA"
+      },
+      "display_name": "Uganda",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:UKR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "UKR",
+        "un_m49": null,
+        "world_bank_code": "UKR"
+      },
+      "display_name": "Ukraine",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:URY",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "URY",
+        "un_m49": null,
+        "world_bank_code": "URY"
+      },
+      "display_name": "Uruguay",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:USA",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "USA",
+        "un_m49": null,
+        "world_bank_code": "USA"
+      },
+      "display_name": "United States",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:UZB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "UZB",
+        "un_m49": null,
+        "world_bank_code": "UZB"
+      },
+      "display_name": "Uzbekistan",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:VCT",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "VCT",
+        "un_m49": null,
+        "world_bank_code": "VCT"
+      },
+      "display_name": "St. Vincent and the Grenadines",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:VEN",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "VEN",
+        "un_m49": null,
+        "world_bank_code": "VEN"
+      },
+      "display_name": "Venezuela, RB",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:VGB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "VGB",
+        "un_m49": null,
+        "world_bank_code": "VGB"
+      },
+      "display_name": "British Virgin Islands",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:VIR",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "VIR",
+        "un_m49": null,
+        "world_bank_code": "VIR"
+      },
+      "display_name": "Virgin Islands (U.S.)",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:VNM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "VNM",
+        "un_m49": null,
+        "world_bank_code": "VNM"
+      },
+      "display_name": "Viet Nam",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:VUT",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "VUT",
+        "un_m49": null,
+        "world_bank_code": "VUT"
+      },
+      "display_name": "Vanuatu",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:WSM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "WSM",
+        "un_m49": null,
+        "world_bank_code": "WSM"
+      },
+      "display_name": "Samoa",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:XKX",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "XKX",
+        "un_m49": null,
+        "world_bank_code": "XKX"
+      },
+      "display_name": "Kosovo",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:YEM",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "YEM",
+        "un_m49": null,
+        "world_bank_code": "YEM"
+      },
+      "display_name": "Yemen, Rep.",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "included",
+      "analytical_entity_id": "entity:ZAF",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ZAF",
+        "un_m49": null,
+        "world_bank_code": "ZAF"
+      },
+      "display_name": "South Africa",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Approved Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ZMB",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ZMB",
+        "un_m49": null,
+        "world_bank_code": "ZMB"
+      },
+      "display_name": "Zambia",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    },
+    {
+      "analytical_eligibility": "pending_review",
+      "analytical_entity_id": "entity:ZWE",
+      "authoritative_ids": {
+        "imf_weo_code": null,
+        "iso3": "ZWE",
+        "un_m49": null,
+        "world_bank_code": "ZWE"
+      },
+      "display_name": "Zimbabwe",
+      "effective_from": "2026-08-17",
+      "effective_to": null,
+      "eligibility_basis": "Not reviewed for inclusion in the Phase 1 analytical cohort",
+      "eligibility_policy_version": "phase_1_1_v1",
+      "review_owner": "economic_audit_phase_1_1",
+      "source_references": [
+        "World Bank country dimension",
+        "release_e9182edbdb3e275e19ca"
+      ]
+    }
+  ],
+  "schema_version": "1.0"
+}

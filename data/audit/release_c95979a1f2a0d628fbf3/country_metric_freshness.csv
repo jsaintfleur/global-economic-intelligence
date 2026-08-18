@@ -1,0 +1,351 @@
+country,iso3,metric_id,latest_observation_year,latest_value,source_id,source_indicator_id,years_behind_metric_max
+United States,USA,gdp_current_usd,2025,30769700000000.0,world_bank_wdi,NY.GDP.MKTP.CD,0
+China,CHN,gdp_current_usd,2025,19498039388042.6,world_bank_wdi,NY.GDP.MKTP.CD,0
+Germany,DEU,gdp_current_usd,2025,5050922925047.05,world_bank_wdi,NY.GDP.MKTP.CD,0
+Japan,JPN,gdp_current_usd,2025,4435162999976.94,world_bank_wdi,NY.GDP.MKTP.CD,0
+United Kingdom,GBR,gdp_current_usd,2025,4002587541846.01,world_bank_wdi,NY.GDP.MKTP.CD,0
+India,IND,gdp_current_usd,2025,3956067115771.63,world_bank_wdi,NY.GDP.MKTP.CD,0
+France,FRA,gdp_current_usd,2025,3366315927447.33,world_bank_wdi,NY.GDP.MKTP.CD,0
+Russian Federation,RUS,gdp_current_usd,2025,2561310169358.74,world_bank_wdi,NY.GDP.MKTP.CD,0
+Italy,ITA,gdp_current_usd,2025,2551556954100.35,world_bank_wdi,NY.GDP.MKTP.CD,0
+Canada,CAN,gdp_current_usd,2025,2319899772425.92,world_bank_wdi,NY.GDP.MKTP.CD,0
+Brazil,BRA,gdp_current_usd,2025,2279920092492.13,world_bank_wdi,NY.GDP.MKTP.CD,0
+Spain,ESP,gdp_current_usd,2025,1906453309985.88,world_bank_wdi,NY.GDP.MKTP.CD,0
+"Korea, Rep.",KOR,gdp_current_usd,2025,1872374961553.15,world_bank_wdi,NY.GDP.MKTP.CD,0
+Mexico,MEX,gdp_current_usd,2025,1832641364775.52,world_bank_wdi,NY.GDP.MKTP.CD,0
+Australia,AUS,gdp_current_usd,2025,1798518933689.21,world_bank_wdi,NY.GDP.MKTP.CD,0
+Turkiye,TUR,gdp_current_usd,2025,1597293229287.0,world_bank_wdi,NY.GDP.MKTP.CD,0
+Indonesia,IDN,gdp_current_usd,2025,1445642584163.81,world_bank_wdi,NY.GDP.MKTP.CD,0
+Netherlands,NLD,gdp_current_usd,2025,1332767651100.39,world_bank_wdi,NY.GDP.MKTP.CD,0
+Saudi Arabia,SAU,gdp_current_usd,2025,1276942933333.33,world_bank_wdi,NY.GDP.MKTP.CD,0
+Switzerland,CHE,gdp_current_usd,2025,1043529899250.92,world_bank_wdi,NY.GDP.MKTP.CD,0
+Poland,POL,gdp_current_usd,2025,1035491784197.44,world_bank_wdi,NY.GDP.MKTP.CD,0
+Belgium,BEL,gdp_current_usd,2025,725466462859.646,world_bank_wdi,NY.GDP.MKTP.CD,0
+Ireland,IRL,gdp_current_usd,2025,721701359046.313,world_bank_wdi,NY.GDP.MKTP.CD,0
+Argentina,ARG,gdp_current_usd,2025,683097891618.597,world_bank_wdi,NY.GDP.MKTP.CD,0
+Sweden,SWE,gdp_current_usd,2025,668998664082.081,world_bank_wdi,NY.GDP.MKTP.CD,0
+Israel,ISR,gdp_current_usd,2025,610777842873.595,world_bank_wdi,NY.GDP.MKTP.CD,0
+Singapore,SGP,gdp_current_usd,2025,603869516998.738,world_bank_wdi,NY.GDP.MKTP.CD,0
+Austria,AUT,gdp_current_usd,2025,579470021095.418,world_bank_wdi,NY.GDP.MKTP.CD,0
+Thailand,THA,gdp_current_usd,2025,577009981112.015,world_bank_wdi,NY.GDP.MKTP.CD,0
+Norway,NOR,gdp_current_usd,2025,530755719438.879,world_bank_wdi,NY.GDP.MKTP.CD,0
+Viet Nam,VNM,gdp_current_usd,2025,514697215165.065,world_bank_wdi,NY.GDP.MKTP.CD,0
+Philippines,PHL,gdp_current_usd,2025,487086123720.417,world_bank_wdi,NY.GDP.MKTP.CD,0
+Malaysia,MYS,gdp_current_usd,2025,472193128644.597,world_bank_wdi,NY.GDP.MKTP.CD,0
+Denmark,DNK,gdp_current_usd,2025,462526660468.393,world_bank_wdi,NY.GDP.MKTP.CD,0
+Colombia,COL,gdp_current_usd,2025,457410034202.523,world_bank_wdi,NY.GDP.MKTP.CD,0
+Bangladesh,BGD,gdp_current_usd,2025,456319229255.578,world_bank_wdi,NY.GDP.MKTP.CD,0
+Romania,ROU,gdp_current_usd,2025,428677977854.826,world_bank_wdi,NY.GDP.MKTP.CD,0
+"Hong Kong SAR, China",HKG,gdp_current_usd,2025,427310315921.993,world_bank_wdi,NY.GDP.MKTP.CD,0
+South Africa,ZAF,gdp_current_usd,2025,427184325997.307,world_bank_wdi,NY.GDP.MKTP.CD,0
+Pakistan,PAK,gdp_current_usd,2025,407307214476.222,world_bank_wdi,NY.GDP.MKTP.CD,0
+Czechia,CZE,gdp_current_usd,2025,391026962800.475,world_bank_wdi,NY.GDP.MKTP.CD,0
+"Egypt, Arab Rep.",EGY,gdp_current_usd,2025,365254630179.737,world_bank_wdi,NY.GDP.MKTP.CD,0
+"Iran, Islamic Rep.",IRN,gdp_current_usd,2025,362682115433.364,world_bank_wdi,NY.GDP.MKTP.CD,0
+Chile,CHL,gdp_current_usd,2025,357371159574.862,world_bank_wdi,NY.GDP.MKTP.CD,0
+Portugal,PRT,gdp_current_usd,2025,346639825141.821,world_bank_wdi,NY.GDP.MKTP.CD,0
+Peru,PER,gdp_current_usd,2025,334854659181.893,world_bank_wdi,NY.GDP.MKTP.CD,0
+Finland,FIN,gdp_current_usd,2025,317039368819.607,world_bank_wdi,NY.GDP.MKTP.CD,0
+Kazakhstan,KAZ,gdp_current_usd,2025,306239209650.024,world_bank_wdi,NY.GDP.MKTP.CD,0
+Nigeria,NGA,gdp_current_usd,2025,290794361542.112,world_bank_wdi,NY.GDP.MKTP.CD,0
+Algeria,DZA,gdp_current_usd,2025,287031225987.736,world_bank_wdi,NY.GDP.MKTP.CD,0
+United States,USA,gdp_per_capita_current_usd,2025,90026.5163005744,world_bank_wdi,NY.GDP.PCAP.CD,0
+China,CHN,gdp_per_capita_current_usd,2025,13861.970224368,world_bank_wdi,NY.GDP.PCAP.CD,0
+Germany,DEU,gdp_per_capita_current_usd,2025,60496.4350820414,world_bank_wdi,NY.GDP.PCAP.CD,0
+Japan,JPN,gdp_per_capita_current_usd,2025,35951.0449549304,world_bank_wdi,NY.GDP.PCAP.CD,0
+United Kingdom,GBR,gdp_per_capita_current_usd,2025,57601.9621201954,world_bank_wdi,NY.GDP.PCAP.CD,0
+India,IND,gdp_per_capita_current_usd,2025,2702.47987141553,world_bank_wdi,NY.GDP.PCAP.CD,0
+France,FRA,gdp_per_capita_current_usd,2025,48985.7307807924,world_bank_wdi,NY.GDP.PCAP.CD,0
+Russian Federation,RUS,gdp_per_capita_current_usd,2025,17546.609375,world_bank_wdi,NY.GDP.PCAP.CD,0
+Italy,ITA,gdp_per_capita_current_usd,2025,43308.6403060733,world_bank_wdi,NY.GDP.PCAP.CD,0
+Canada,CAN,gdp_per_capita_current_usd,2025,55697.6639660837,world_bank_wdi,NY.GDP.PCAP.CD,0
+Brazil,BRA,gdp_per_capita_current_usd,2025,10713.2856869511,world_bank_wdi,NY.GDP.PCAP.CD,0
+Spain,ESP,gdp_per_capita_current_usd,2025,38627.2472148623,world_bank_wdi,NY.GDP.PCAP.CD,0
+"Korea, Rep.",KOR,gdp_per_capita_current_usd,2025,36226.9663637512,world_bank_wdi,NY.GDP.PCAP.CD,0
+Mexico,MEX,gdp_per_capita_current_usd,2025,13889.2339628708,world_bank_wdi,NY.GDP.PCAP.CD,0
+Australia,AUS,gdp_per_capita_current_usd,2025,65129.7227990563,world_bank_wdi,NY.GDP.PCAP.CD,0
+Turkiye,TUR,gdp_per_capita_current_usd,2025,18599.4420922378,world_bank_wdi,NY.GDP.PCAP.CD,0
+Indonesia,IDN,gdp_per_capita_current_usd,2025,5059.62596411213,world_bank_wdi,NY.GDP.PCAP.CD,0
+Netherlands,NLD,gdp_per_capita_current_usd,2025,73683.917132794,world_bank_wdi,NY.GDP.PCAP.CD,0
+Saudi Arabia,SAU,gdp_per_capita_current_usd,2025,34536.6555456551,world_bank_wdi,NY.GDP.PCAP.CD,0
+Switzerland,CHE,gdp_per_capita_current_usd,2025,114769.012314293,world_bank_wdi,NY.GDP.PCAP.CD,0
+Poland,POL,gdp_per_capita_current_usd,2025,28419.5777395638,world_bank_wdi,NY.GDP.PCAP.CD,0
+Belgium,BEL,gdp_per_capita_current_usd,2025,60750.2735864647,world_bank_wdi,NY.GDP.PCAP.CD,0
+Ireland,IRL,gdp_per_capita_current_usd,2025,131592.462547877,world_bank_wdi,NY.GDP.PCAP.CD,0
+Argentina,ARG,gdp_per_capita_current_usd,2025,14898.0885943842,world_bank_wdi,NY.GDP.PCAP.CD,0
+Sweden,SWE,gdp_per_capita_current_usd,2025,63133.2126736715,world_bank_wdi,NY.GDP.PCAP.CD,0
+Israel,ISR,gdp_per_capita_current_usd,2025,60336.8477964194,world_bank_wdi,NY.GDP.PCAP.CD,0
+Singapore,SGP,gdp_per_capita_current_usd,2025,98813.9788172877,world_bank_wdi,NY.GDP.PCAP.CD,0
+Austria,AUT,gdp_per_capita_current_usd,2025,62930.0351324599,world_bank_wdi,NY.GDP.PCAP.CD,0
+Thailand,THA,gdp_per_capita_current_usd,2025,8056.56359761558,world_bank_wdi,NY.GDP.PCAP.CD,0
+Norway,NOR,gdp_per_capita_current_usd,2025,94594.1929573987,world_bank_wdi,NY.GDP.PCAP.CD,0
+Viet Nam,VNM,gdp_per_capita_current_usd,2025,5065.99091899299,world_bank_wdi,NY.GDP.PCAP.CD,0
+Philippines,PHL,gdp_per_capita_current_usd,2025,4170.72347271451,world_bank_wdi,NY.GDP.PCAP.CD,0
+Malaysia,MYS,gdp_per_capita_current_usd,2025,13124.5554178269,world_bank_wdi,NY.GDP.PCAP.CD,0
+Denmark,DNK,gdp_per_capita_current_usd,2025,76970.1535217919,world_bank_wdi,NY.GDP.PCAP.CD,0
+Colombia,COL,gdp_per_capita_current_usd,2025,8561.62091854449,world_bank_wdi,NY.GDP.PCAP.CD,0
+Bangladesh,BGD,gdp_per_capita_current_usd,2025,2597.34352335275,world_bank_wdi,NY.GDP.PCAP.CD,0
+Romania,ROU,gdp_per_capita_current_usd,2025,22537.9532108047,world_bank_wdi,NY.GDP.PCAP.CD,0
+"Hong Kong SAR, China",HKG,gdp_per_capita_current_usd,2025,56983.0663059906,world_bank_wdi,NY.GDP.PCAP.CD,0
+South Africa,ZAF,gdp_per_capita_current_usd,2025,6597.71450918774,world_bank_wdi,NY.GDP.PCAP.CD,0
+Pakistan,PAK,gdp_per_capita_current_usd,2025,1595.90912252837,world_bank_wdi,NY.GDP.PCAP.CD,0
+Czechia,CZE,gdp_per_capita_current_usd,2025,35917.2724081665,world_bank_wdi,NY.GDP.PCAP.CD,0
+"Egypt, Arab Rep.",EGY,gdp_per_capita_current_usd,2025,3085.80712036204,world_bank_wdi,NY.GDP.PCAP.CD,0
+"Iran, Islamic Rep.",IRN,gdp_per_capita_current_usd,2025,3924.38017821898,world_bank_wdi,NY.GDP.PCAP.CD,0
+Chile,CHL,gdp_per_capita_current_usd,2025,17994.5911957485,world_bank_wdi,NY.GDP.PCAP.CD,0
+Portugal,PRT,gdp_per_capita_current_usd,2025,32081.8106150292,world_bank_wdi,NY.GDP.PCAP.CD,0
+Peru,PER,gdp_per_capita_current_usd,2025,9684.41170314988,world_bank_wdi,NY.GDP.PCAP.CD,0
+Finland,FIN,gdp_per_capita_current_usd,2025,56148.580949046,world_bank_wdi,NY.GDP.PCAP.CD,0
+Kazakhstan,KAZ,gdp_per_capita_current_usd,2025,14692.1331757237,world_bank_wdi,NY.GDP.PCAP.CD,0
+Nigeria,NGA,gdp_per_capita_current_usd,2025,1224.25410237743,world_bank_wdi,NY.GDP.PCAP.CD,0
+Algeria,DZA,gdp_per_capita_current_usd,2025,6051.00322704182,world_bank_wdi,NY.GDP.PCAP.CD,0
+United States,USA,gdp_growth_pct,2025,2.16138195623856,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+China,CHN,gdp_growth_pct,2025,4.95994886240992,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Germany,DEU,gdp_growth_pct,2025,0.239578342117881,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Japan,JPN,gdp_growth_pct,2025,1.19311288444599,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+United Kingdom,GBR,gdp_growth_pct,2025,1.38844207858726,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+India,IND,gdp_growth_pct,2025,7.56666179284244,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+France,FRA,gdp_growth_pct,2025,0.840949955479587,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Russian Federation,RUS,gdp_growth_pct,2025,1.00117656925738,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Italy,ITA,gdp_growth_pct,2025,0.539583636778445,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Canada,CAN,gdp_growth_pct,2025,1.74268536175708,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Brazil,BRA,gdp_growth_pct,2025,2.2857464902475,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Spain,ESP,gdp_growth_pct,2025,2.82495400578509,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+"Korea, Rep.",KOR,gdp_growth_pct,2025,1.00701840291242,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Mexico,MEX,gdp_growth_pct,2025,0.561683456144578,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Australia,AUS,gdp_growth_pct,2025,1.35039785076631,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Turkiye,TUR,gdp_growth_pct,2025,3.60462514082589,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Indonesia,IDN,gdp_growth_pct,2025,5.10808904438025,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Netherlands,NLD,gdp_growth_pct,2025,1.78463214703797,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Saudi Arabia,SAU,gdp_growth_pct,2025,4.50246560191663,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Switzerland,CHE,gdp_growth_pct,2025,1.30007790958307,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Poland,POL,gdp_growth_pct,2025,3.5727250346774,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Belgium,BEL,gdp_growth_pct,2025,0.983117967125935,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Ireland,IRL,gdp_growth_pct,2025,12.3375990291434,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Argentina,ARG,gdp_growth_pct,2025,4.36733330217022,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Sweden,SWE,gdp_growth_pct,2025,1.54316373266217,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Israel,ISR,gdp_growth_pct,2025,2.93114966387968,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Singapore,SGP,gdp_growth_pct,2025,5.02588199508003,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Austria,AUT,gdp_growth_pct,2025,0.615747280959056,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Thailand,THA,gdp_growth_pct,2025,2.44247444990198,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Norway,NOR,gdp_growth_pct,2025,1.08528185031417,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Viet Nam,VNM,gdp_growth_pct,2025,8.01882998978245,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Philippines,PHL,gdp_growth_pct,2025,4.40240158710621,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Malaysia,MYS,gdp_growth_pct,2025,5.17127082911057,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Denmark,DNK,gdp_growth_pct,2025,2.92843280014236,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Colombia,COL,gdp_growth_pct,2025,2.64201548985928,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Bangladesh,BGD,gdp_growth_pct,2025,3.48990671836833,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Romania,ROU,gdp_growth_pct,2025,0.677829835052762,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+"Hong Kong SAR, China",HKG,gdp_growth_pct,2025,3.48764886355949,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+South Africa,ZAF,gdp_growth_pct,2025,1.11462608103956,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Pakistan,PAK,gdp_growth_pct,2025,3.69842668749033,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Czechia,CZE,gdp_growth_pct,2025,2.58046673293437,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+"Egypt, Arab Rep.",EGY,gdp_growth_pct,2025,4.39201068570188,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+"Iran, Islamic Rep.",IRN,gdp_growth_pct,2025,-2.82597163290347,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Chile,CHL,gdp_growth_pct,2025,2.45925474781374,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Portugal,PRT,gdp_growth_pct,2025,1.86448007464475,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Peru,PER,gdp_growth_pct,2025,3.43056395124466,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Finland,FIN,gdp_growth_pct,2025,0.173444509584499,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Kazakhstan,KAZ,gdp_growth_pct,2025,6.5,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Nigeria,NGA,gdp_growth_pct,2025,4.01336180700973,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+Algeria,DZA,gdp_growth_pct,2025,3.815543719231,world_bank_wdi,NY.GDP.MKTP.KD.ZG,0
+United States,USA,population,2025,341784857.0,world_bank_wdi,SP.POP.TOTL,0
+China,CHN,population,2025,1406585000.0,world_bank_wdi,SP.POP.TOTL,0
+Germany,DEU,population,2025,83491249.0,world_bank_wdi,SP.POP.TOTL,0
+Japan,JPN,population,2025,123366734.0,world_bank_wdi,SP.POP.TOTL,0
+United Kingdom,GBR,population,2025,69487000.0,world_bank_wdi,SP.POP.TOTL,0
+India,IND,population,2025,1463865525.0,world_bank_wdi,SP.POP.TOTL,0
+France,FRA,population,2025,68720337.0,world_bank_wdi,SP.POP.TOTL,0
+Russian Federation,RUS,population,2025,143513328.0,world_bank_wdi,SP.POP.TOTL,0
+Italy,ITA,population,2025,58915656.0,world_bank_wdi,SP.POP.TOTL,0
+Canada,CAN,population,2025,41651653.0,world_bank_wdi,SP.POP.TOTL,0
+Brazil,BRA,population,2025,212812405.0,world_bank_wdi,SP.POP.TOTL,0
+Spain,ESP,population,2025,49355143.0,world_bank_wdi,SP.POP.TOTL,0
+"Korea, Rep.",KOR,population,2025,51684564.0,world_bank_wdi,SP.POP.TOTL,0
+Mexico,MEX,population,2025,131946900.0,world_bank_wdi,SP.POP.TOTL,0
+Australia,AUS,population,2025,27614411.0,world_bank_wdi,SP.POP.TOTL,0
+Turkiye,TUR,population,2025,85878556.0,world_bank_wdi,SP.POP.TOTL,0
+Indonesia,IDN,population,2025,285721236.0,world_bank_wdi,SP.POP.TOTL,0
+Netherlands,NLD,population,2025,18087633.0,world_bank_wdi,SP.POP.TOTL,0
+Saudi Arabia,SAU,population,2025,36973555.0,world_bank_wdi,SP.POP.TOTL,0
+Switzerland,CHE,population,2025,9092436.0,world_bank_wdi,SP.POP.TOTL,0
+Poland,POL,population,2025,36435861.0,world_bank_wdi,SP.POP.TOTL,0
+Belgium,BEL,population,2025,11941781.0,world_bank_wdi,SP.POP.TOTL,0
+Ireland,IRL,population,2025,5484367.0,world_bank_wdi,SP.POP.TOTL,0
+Argentina,ARG,population,2025,45851378.0,world_bank_wdi,SP.POP.TOTL,0
+Sweden,SWE,population,2025,10596620.0,world_bank_wdi,SP.POP.TOTL,0
+Israel,ISR,population,2025,10122800.0,world_bank_wdi,SP.POP.TOTL,0
+Singapore,SGP,population,2025,6111175.0,world_bank_wdi,SP.POP.TOTL,0
+Austria,AUT,population,2025,9208163.0,world_bank_wdi,SP.POP.TOTL,0
+Thailand,THA,population,2025,71619863.0,world_bank_wdi,SP.POP.TOTL,0
+Norway,NOR,population,2025,5610870.0,world_bank_wdi,SP.POP.TOTL,0
+Viet Nam,VNM,population,2025,101598527.0,world_bank_wdi,SP.POP.TOTL,0
+Philippines,PHL,population,2025,116786962.0,world_bank_wdi,SP.POP.TOTL,0
+Malaysia,MYS,population,2025,35977838.0,world_bank_wdi,SP.POP.TOTL,0
+Denmark,DNK,population,2025,6009169.0,world_bank_wdi,SP.POP.TOTL,0
+Colombia,COL,population,2025,53425635.0,world_bank_wdi,SP.POP.TOTL,0
+Bangladesh,BGD,population,2025,175686899.0,world_bank_wdi,SP.POP.TOTL,0
+Romania,ROU,population,2025,19020271.0,world_bank_wdi,SP.POP.TOTL,0
+"Hong Kong SAR, China",HKG,population,2025,7498900.0,world_bank_wdi,SP.POP.TOTL,0
+South Africa,ZAF,population,2025,64747319.0,world_bank_wdi,SP.POP.TOTL,0
+Pakistan,PAK,population,2025,255219554.0,world_bank_wdi,SP.POP.TOTL,0
+Czechia,CZE,population,2025,10886878.0,world_bank_wdi,SP.POP.TOTL,0
+"Egypt, Arab Rep.",EGY,population,2025,118365995.0,world_bank_wdi,SP.POP.TOTL,0
+"Iran, Islamic Rep.",IRN,population,2025,92417681.0,world_bank_wdi,SP.POP.TOTL,0
+Chile,CHL,population,2025,19859921.0,world_bank_wdi,SP.POP.TOTL,0
+Portugal,PRT,population,2025,10804871.0,world_bank_wdi,SP.POP.TOTL,0
+Peru,PER,population,2025,34576665.0,world_bank_wdi,SP.POP.TOTL,0
+Finland,FIN,population,2025,5646436.0,world_bank_wdi,SP.POP.TOTL,0
+Kazakhstan,KAZ,population,2025,20843754.0,world_bank_wdi,SP.POP.TOTL,0
+Nigeria,NGA,population,2025,237527782.0,world_bank_wdi,SP.POP.TOTL,0
+Algeria,DZA,population,2025,47435312.0,world_bank_wdi,SP.POP.TOTL,0
+United States,USA,inflation_cpi_pct,2024,2.94952520485207,world_bank_wdi,FP.CPI.TOTL.ZG,1
+China,CHN,inflation_cpi_pct,2025,0.0595646916565403,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Germany,DEU,inflation_cpi_pct,2025,2.17178770949721,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Japan,JPN,inflation_cpi_pct,2025,3.17253034260248,world_bank_wdi,FP.CPI.TOTL.ZG,0
+United Kingdom,GBR,inflation_cpi_pct,2025,3.88306881626,world_bank_wdi,FP.CPI.TOTL.ZG,0
+India,IND,inflation_cpi_pct,2025,2.39884954182294,world_bank_wdi,FP.CPI.TOTL.ZG,0
+France,FRA,inflation_cpi_pct,2025,0.943770212469976,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Russian Federation,RUS,inflation_cpi_pct,2025,8.71986939402666,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Italy,ITA,inflation_cpi_pct,2025,1.5316682765282,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Canada,CAN,inflation_cpi_pct,2025,2.07232411149103,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Brazil,BRA,inflation_cpi_pct,2025,5.01675279604836,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Spain,ESP,inflation_cpi_pct,2025,2.699932857627,world_bank_wdi,FP.CPI.TOTL.ZG,0
+"Korea, Rep.",KOR,inflation_cpi_pct,2025,2.12309421458659,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Mexico,MEX,inflation_cpi_pct,2025,3.80668650726485,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Australia,AUS,inflation_cpi_pct,2025,2.87403791660173,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Turkiye,TUR,inflation_cpi_pct,2025,34.8811629820306,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Indonesia,IDN,inflation_cpi_pct,2025,1.9133344329508,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Netherlands,NLD,inflation_cpi_pct,2025,3.2595766451366,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Saudi Arabia,SAU,inflation_cpi_pct,2025,2.08420853585036,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Switzerland,CHE,inflation_cpi_pct,2025,0.154376978290185,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Poland,POL,inflation_cpi_pct,2025,3.81419531520146,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Belgium,BEL,inflation_cpi_pct,2025,2.46705543774613,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Ireland,IRL,inflation_cpi_pct,2025,2.21044788475857,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Argentina,ARG,inflation_cpi_pct,2024,219.883929014578,world_bank_wdi,FP.CPI.TOTL.ZG,1
+Sweden,SWE,inflation_cpi_pct,2025,0.679869285243995,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Israel,ISR,inflation_cpi_pct,2025,3.0414132155654,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Singapore,SGP,inflation_cpi_pct,2025,0.902998495002676,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Austria,AUT,inflation_cpi_pct,2025,3.52719439956928,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Thailand,THA,inflation_cpi_pct,2025,-0.133634356480207,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Norway,NOR,inflation_cpi_pct,2025,3.05562484410077,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Viet Nam,VNM,inflation_cpi_pct,2025,3.3099931421974,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Philippines,PHL,inflation_cpi_pct,2025,1.6587364525509,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Malaysia,MYS,inflation_cpi_pct,2025,1.38060872293692,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Denmark,DNK,inflation_cpi_pct,2025,1.89367372703044,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Colombia,COL,inflation_cpi_pct,2025,5.14222911946201,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Bangladesh,BGD,inflation_cpi_pct,2025,8.7687628116114,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Romania,ROU,inflation_cpi_pct,2025,7.18903362292063,world_bank_wdi,FP.CPI.TOTL.ZG,0
+"Hong Kong SAR, China",HKG,inflation_cpi_pct,2025,1.43633540372673,world_bank_wdi,FP.CPI.TOTL.ZG,0
+South Africa,ZAF,inflation_cpi_pct,2025,3.20550474112603,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Pakistan,PAK,inflation_cpi_pct,2025,3.54555214890893,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Czechia,CZE,inflation_cpi_pct,2025,2.45996367838865,world_bank_wdi,FP.CPI.TOTL.ZG,0
+"Egypt, Arab Rep.",EGY,inflation_cpi_pct,2025,14.0735136645934,world_bank_wdi,FP.CPI.TOTL.ZG,0
+"Iran, Islamic Rep.",IRN,inflation_cpi_pct,2025,42.1712244965444,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Chile,CHL,inflation_cpi_pct,2025,4.21293601694293,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Portugal,PRT,inflation_cpi_pct,2025,2.33601620316701,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Peru,PER,inflation_cpi_pct,2025,1.53125450314273,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Finland,FIN,inflation_cpi_pct,2025,0.337874659400574,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Kazakhstan,KAZ,inflation_cpi_pct,2025,11.3879454675914,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Nigeria,NGA,inflation_cpi_pct,2025,23.0101235833333,world_bank_wdi,FP.CPI.TOTL.ZG,0
+Algeria,DZA,inflation_cpi_pct,2025,1.41835151429016,world_bank_wdi,FP.CPI.TOTL.ZG,0
+United States,USA,unemployment_pct,2025,4.198,world_bank_wdi,SL.UEM.TOTL.ZS,0
+China,CHN,unemployment_pct,2025,4.615,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Germany,DEU,unemployment_pct,2025,3.711,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Japan,JPN,unemployment_pct,2025,2.451,world_bank_wdi,SL.UEM.TOTL.ZS,0
+United Kingdom,GBR,unemployment_pct,2025,4.746,world_bank_wdi,SL.UEM.TOTL.ZS,0
+India,IND,unemployment_pct,2025,4.219,world_bank_wdi,SL.UEM.TOTL.ZS,0
+France,FRA,unemployment_pct,2025,7.542,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Russian Federation,RUS,unemployment_pct,2025,2.133,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Italy,ITA,unemployment_pct,2025,6.391,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Canada,CAN,unemployment_pct,2025,6.907,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Brazil,BRA,unemployment_pct,2025,5.97,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Spain,ESP,unemployment_pct,2025,10.376,world_bank_wdi,SL.UEM.TOTL.ZS,0
+"Korea, Rep.",KOR,unemployment_pct,2025,2.683,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Mexico,MEX,unemployment_pct,2025,2.673,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Australia,AUS,unemployment_pct,2025,4.09,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Turkiye,TUR,unemployment_pct,2025,8.52,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Indonesia,IDN,unemployment_pct,2025,3.237,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Netherlands,NLD,unemployment_pct,2025,3.874,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Saudi Arabia,SAU,unemployment_pct,2025,3.038,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Switzerland,CHE,unemployment_pct,2025,4.873,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Poland,POL,unemployment_pct,2025,2.976,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Belgium,BEL,unemployment_pct,2025,5.906,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Ireland,IRL,unemployment_pct,2025,4.632,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Argentina,ARG,unemployment_pct,2025,7.145,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Sweden,SWE,unemployment_pct,2025,8.694,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Israel,ISR,unemployment_pct,2025,3.489,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Singapore,SGP,unemployment_pct,2025,2.818,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Austria,AUT,unemployment_pct,2025,5.582,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Thailand,THA,unemployment_pct,2025,0.781,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Norway,NOR,unemployment_pct,2025,4.637,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Viet Nam,VNM,unemployment_pct,2025,1.523,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Philippines,PHL,unemployment_pct,2025,2.235,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Malaysia,MYS,unemployment_pct,2025,3.764,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Denmark,DNK,unemployment_pct,2025,5.529,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Colombia,COL,unemployment_pct,2025,8.29,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Bangladesh,BGD,unemployment_pct,2025,3.778,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Romania,ROU,unemployment_pct,2025,5.992,world_bank_wdi,SL.UEM.TOTL.ZS,0
+"Hong Kong SAR, China",HKG,unemployment_pct,2025,2.799,world_bank_wdi,SL.UEM.TOTL.ZS,0
+South Africa,ZAF,unemployment_pct,2025,32.391,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Pakistan,PAK,unemployment_pct,2025,5.42,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Czechia,CZE,unemployment_pct,2025,2.825,world_bank_wdi,SL.UEM.TOTL.ZS,0
+"Egypt, Arab Rep.",EGY,unemployment_pct,2025,6.781,world_bank_wdi,SL.UEM.TOTL.ZS,0
+"Iran, Islamic Rep.",IRN,unemployment_pct,2025,8.301,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Chile,CHL,unemployment_pct,2025,8.974,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Portugal,PRT,unemployment_pct,2025,6.164,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Peru,PER,unemployment_pct,2025,5.117,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Finland,FIN,unemployment_pct,2025,9.461,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Kazakhstan,KAZ,unemployment_pct,2025,4.771,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Nigeria,NGA,unemployment_pct,2025,3.064,world_bank_wdi,SL.UEM.TOTL.ZS,0
+Algeria,DZA,unemployment_pct,2025,11.633,world_bank_wdi,SL.UEM.TOTL.ZS,0
+United States,USA,central_government_debt_pct_gdp,2024,115.768352618316,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+China,CHN,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Germany,DEU,central_government_debt_pct_gdp,1990,20.8541847518408,world_bank_wdi,GC.DOD.TOTL.GD.ZS,34
+Japan,JPN,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+United Kingdom,GBR,central_government_debt_pct_gdp,2024,130.735888365813,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+India,IND,central_government_debt_pct_gdp,2018,46.5224986659322,world_bank_wdi,GC.DOD.TOTL.GD.ZS,6
+France,FRA,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Russian Federation,RUS,central_government_debt_pct_gdp,2024,17.8500676833114,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Italy,ITA,central_government_debt_pct_gdp,1992,77.2855315218802,world_bank_wdi,GC.DOD.TOTL.GD.ZS,32
+Canada,CAN,central_government_debt_pct_gdp,2024,64.1314232901439,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Brazil,BRA,central_government_debt_pct_gdp,2024,81.8554431191023,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Spain,ESP,central_government_debt_pct_gdp,2024,105.639074777338,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+"Korea, Rep.",KOR,central_government_debt_pct_gdp,2024,47.8141426119509,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Mexico,MEX,central_government_debt_pct_gdp,2024,50.270950655733,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Australia,AUS,central_government_debt_pct_gdp,2022,57.8834285733848,world_bank_wdi,GC.DOD.TOTL.GD.ZS,2
+Turkiye,TUR,central_government_debt_pct_gdp,2024,26.6192344930079,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Indonesia,IDN,central_government_debt_pct_gdp,2009,29.997306381567,world_bank_wdi,GC.DOD.TOTL.GD.ZS,15
+Netherlands,NLD,central_government_debt_pct_gdp,1994,54.214654102661,world_bank_wdi,GC.DOD.TOTL.GD.ZS,30
+Saudi Arabia,SAU,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Switzerland,CHE,central_government_debt_pct_gdp,2024,22.2786942016816,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Poland,POL,central_government_debt_pct_gdp,1994,60.4543984704576,world_bank_wdi,GC.DOD.TOTL.GD.ZS,30
+Belgium,BEL,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Ireland,IRL,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Argentina,ARG,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Sweden,SWE,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Israel,ISR,central_government_debt_pct_gdp,1999,88.3064793540794,world_bank_wdi,GC.DOD.TOTL.GD.ZS,25
+Singapore,SGP,central_government_debt_pct_gdp,2024,167.799832036767,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Austria,AUT,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Thailand,THA,central_government_debt_pct_gdp,2024,61.861415782411,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Norway,NOR,central_government_debt_pct_gdp,1994,30.9484525212916,world_bank_wdi,GC.DOD.TOTL.GD.ZS,30
+Viet Nam,VNM,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Philippines,PHL,central_government_debt_pct_gdp,2014,43.426338941462,world_bank_wdi,GC.DOD.TOTL.GD.ZS,10
+Malaysia,MYS,central_government_debt_pct_gdp,2024,64.566529006102,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Denmark,DNK,central_government_debt_pct_gdp,1994,75.3312600417617,world_bank_wdi,GC.DOD.TOTL.GD.ZS,30
+Colombia,COL,central_government_debt_pct_gdp,2024,71.1965371181288,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Bangladesh,BGD,central_government_debt_pct_gdp,2003,31.2044521104432,world_bank_wdi,GC.DOD.TOTL.GD.ZS,21
+Romania,ROU,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+"Hong Kong SAR, China",HKG,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+South Africa,ZAF,central_government_debt_pct_gdp,2024,82.7627080034486,world_bank_wdi,GC.DOD.TOTL.GD.ZS,0
+Pakistan,PAK,central_government_debt_pct_gdp,2000,55.0324216144747,world_bank_wdi,GC.DOD.TOTL.GD.ZS,24
+Czechia,CZE,central_government_debt_pct_gdp,1994,13.9974227725367,world_bank_wdi,GC.DOD.TOTL.GD.ZS,30
+"Egypt, Arab Rep.",EGY,central_government_debt_pct_gdp,2007,85.7885338345865,world_bank_wdi,GC.DOD.TOTL.GD.ZS,17
+"Iran, Islamic Rep.",IRN,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Chile,CHL,central_government_debt_pct_gdp,2000,13.1456400046218,world_bank_wdi,GC.DOD.TOTL.GD.ZS,24
+Portugal,PRT,central_government_debt_pct_gdp,1994,5.6574045702943,world_bank_wdi,GC.DOD.TOTL.GD.ZS,30
+Peru,PER,central_government_debt_pct_gdp,2021,35.237190374692,world_bank_wdi,GC.DOD.TOTL.GD.ZS,3
+Finland,FIN,central_government_debt_pct_gdp,1994,58.3135962623348,world_bank_wdi,GC.DOD.TOTL.GD.ZS,30
+Kazakhstan,KAZ,central_government_debt_pct_gdp,2023,20.8858497183933,world_bank_wdi,GC.DOD.TOTL.GD.ZS,1
+Nigeria,NGA,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,
+Algeria,DZA,central_government_debt_pct_gdp,,,world_bank_wdi,GC.DOD.TOTL.GD.ZS,

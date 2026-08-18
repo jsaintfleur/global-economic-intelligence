@@ -1,7 +1,7 @@
 {
   "accepted_observations": 44266,
   "code_version": "0.2.0",
-  "completed_at": "2026-08-17T21:18:02.349454+00:00",
+  "completed_at": "2026-08-17T21:18:02.048364+00:00",
   "countries_requested": "all source countries",
   "duplicate_observations": 0,
   "errors": [],
@@ -23,10 +23,12 @@
     "app/data/dashboard.json",
     "app/data/catalog.json",
     "app/data/metrics/*.json",
-    "data/releases/release_e9182edbdb3e275e19ca.json",
-    "data/releases/snapshots/release_e9182edbdb3e275e19ca.json",
+    "app/data/rankings/*.json",
+    "app/data/profiles/*.json",
+    "data/releases/release_c95979a1f2a0d628fbf3.json",
+    "data/releases/snapshots/release_c95979a1f2a0d628fbf3.json",
     "data/processed/coverage.json",
-    "data/releases/release_e9182edbdb3e275e19ca.regression.json"
+    "data/releases/release_c95979a1f2a0d628fbf3.regression.json"
   ],
   "pipeline_run_id": "run_9c142b7be97fd869979dd671",
   "raw_observations_received": 66780,
@@ -121,6 +123,7 @@
     }
   ],
   "rejected_observations": 22514,
+  "schema_version": "1.0",
   "source_ids": [
     "world_bank_wdi"
   ],

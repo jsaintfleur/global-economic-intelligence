@@ -21,6 +21,7 @@
         <button data-view="rankings">Rankings</button>
         <button data-view="compare">Compare</button>
         <button data-view="country">Country explorer</button>
+        <button data-view="coverage">Coverage</button>
         <button data-view="data">Data explorer</button>
         <button data-view="methodology">Methodology</button>
       </nav>
@@ -29,12 +30,12 @@
     <main id="main-content" tabindex="-1">
       <header class="topbar">
         <div><span class="eyebrow">GLOBAL ECONOMY MONITOR</span><h1 id="page-title">World overview</h1></div>
-        <div class="top-actions"><span id="coverage-pill" class="pill">Loading data</span><button id="download-button" class="download">Export CSV</button></div>
+        <div class="top-actions"><label class="global-search"><span class="sr-only">Find an economy</span><input id="global-search" list="country-search-list" placeholder="Find an economy…"><datalist id="country-search-list"></datalist></label><span id="coverage-pill" class="pill">Loading data</span><button id="share-button" class="download">Copy view</button><button id="download-button" class="download">Export CSV</button></div>
       </header>
       <div id="loading" class="loading" role="status" aria-live="polite"><div class="loader"></div><p>Assembling the evidence layer…</p></div>
       <div id="app" hidden></div>
     </main>
   </div>
-  <script type="module" src="app.js?v=2"></script>
+  <script type="module" src="app.js?v=3"></script>
 </body>
 </html>

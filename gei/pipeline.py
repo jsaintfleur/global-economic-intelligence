@@ -10,15 +10,16 @@ from pathlib import Path
 
 from .adapters import SourceAdapter, WorldBankAdapter
 from .config import APP_DATA, DIFFS, END_YEAR, MANIFESTS, PROCESSED, RAW, REGRESSION_RULES_PATH, RELEASES, ROOT, START_YEAR, TOP_N, load_metric_registry
+from .analytics import country_profile, ranking_asset
 from .coverage import coverage_matrix
 from .diff import snapshot_diff, write_diff
 from .ids import stable_id
 from .manifest import PipelineManifest
 from .logging import log_event
-from .registries import COUNTRY_REGISTRY_PATH, SOURCE_REGISTRY_PATH, TRANSFORMATION_REGISTRY_PATH, load_versioned_registry, registry_version, validate_country_registry, validate_registries, write_country_registry
+from .registries import ANALYTICAL_ENTITY_REGISTRY_PATH, COUNTRY_REGISTRY_PATH, SOURCE_REGISTRY_PATH, TRANSFORMATION_REGISTRY_PATH, load_versioned_registry, registry_version, validate_analytical_entity_registry, validate_country_registry, validate_registries, write_country_registry
 from .regression import evaluate_regressions
 from .release import build_release, write_release
-from .transformations import rank_desc
+from .universe import NormalizedGDPProvider, select_universe
 from .validation import validate_metric_registry, validate_observations
 
 
@@ -29,6 +30,9 @@ def build(start: int = START_YEAR, end: int = END_YEAR, adapter: SourceAdapter |
     validate_metric_registry(metrics).require_valid()
     sources = load_versioned_registry(SOURCE_REGISTRY_PATH, "sources")["sources"]
     transformations = load_versioned_registry(TRANSFORMATION_REGISTRY_PATH, "transformations")["transformations"]
+    entity_registry = load_versioned_registry(ANALYTICAL_ENTITY_REGISTRY_PATH, "entities")
+    entity_errors = validate_analytical_entity_registry(entity_registry)
+    if entity_errors: raise ValueError("Analytical entity registry validation failed: " + "; ".join(entity_errors))
     registry_errors = validate_registries(metrics, sources, transformations)
     if registry_errors: raise ValueError("Registry validation failed: " + "; ".join(registry_errors))
     manifest = PipelineManifest(run_id, started_at, None, "running", sorted({m["source_id"] for m in metrics}), [m["source_indicator_id"] for m in metrics], "all source countries")
@@ -53,15 +57,10 @@ def build(start: int = START_YEAR, end: int = END_YEAR, adapter: SourceAdapter |
             observations.extend(normalized); rejected.extend(discarded)
 
         gdp_rows = [r for r in observations if r["metric_id"] == "gdp_current_usd" and r["value"] is not None]
-        counts = Counter(r["year"] for r in gdp_rows)
-        eligible_years = [year for year, count in counts.items() if count >= 150]
-        if not eligible_years:
-            raise ValueError("No GDP year meets the configured structural completeness threshold")
-        reference_year = max(eligible_years)
-        reference_values = {r["iso3"]: r["value"] for r in gdp_rows if r["year"] == reference_year}
-        ranks = rank_desc(reference_values)
-        universe_iso3 = [iso3 for iso3, _ in sorted(reference_values.items(), key=lambda item: (-item[1], item[0]))[:TOP_N]]
-        universe = [{**countries[iso3], "gdp_rank": ranks[iso3], "reference_year": reference_year, "nominal_gdp": reference_values[iso3]} for iso3 in universe_iso3]
+        entity_by_wb = {row["authoritative_ids"].get("world_bank_code"): row for row in entity_registry["entities"] if row["authoritative_ids"].get("world_bank_code")}
+        selection_entities = {iso: {**country, **entity_by_wb[iso]} for iso, country in countries.items() if iso in entity_by_wb}
+        reference_year, universe, universe_exclusions = select_universe(NormalizedGDPProvider(gdp_rows), selection_entities, TOP_N, TOP_N)
+        universe_iso3 = [row["iso3"] for row in universe]
         panel = sorted((row for row in observations if row["iso3"] in universe_iso3), key=lambda row: (row["metric_id"], row["iso3"], row["year"]))
         validation = validate_observations(panel, universe, metrics)
         validation.require_valid()
@@ -69,9 +68,9 @@ def build(start: int = START_YEAR, end: int = END_YEAR, adapter: SourceAdapter |
         completed_at = now or datetime.now(timezone.utc).isoformat()
         source_registry = [{**source,"name":f"{source['organization']} — {source['dataset']}","url":source["documentation_reference"],"retrieved_at":started_at,"license":source["license_name"],"credibility":"Primary multilateral"} for source in sources if source["source_id"]==adapter.source_id]
         metric_payload = [{**metric, "name": metric["display_name"], "code": metric["source_indicator_id"], "family": metric["category"], "format": metric["formatting"], "caveats": metric["caveat"]} for metric in metrics]
-        payload = {"meta": {"schema_version": "2.0", "pipeline_run_id": run_id, "generated_at": completed_at, "reference_year": reference_year, "universe_size": len(universe), "start_year": start, "end_year": end, "freshness_rules": None}, "countries": universe, "metrics": metric_payload, "sources": source_registry, "observations": panel}
+        payload = {"meta": {"schema_version": "2.1", "pipeline_run_id": run_id, "generated_at": completed_at, "reference_year": reference_year, "universe_size": len(universe), "start_year": start, "end_year": end, "freshness_rules": {"annual":{"current_year":0,"prior_year":1,"historical_min_lag":2,"unavailable":"no_observation"}}, "eligibility_policy_version": entity_registry["eligibility_policy_version"], "universe_provider_id": "world_bank_wdi", "candidate_universe_complete": False, "universe_exclusions": universe_exclusions}, "countries": universe, "metrics": metric_payload, "sources": source_registry, "observations": panel}
         previous = json.loads((PROCESSED / "dashboard.json").read_text()) if (PROCESSED / "dashboard.json").exists() else None
-        registry_versions={"metric_registry":registry_version(ROOT/"config/metrics.json"),"country_registry":registry_version(COUNTRY_REGISTRY_PATH),"source_registry":registry_version(SOURCE_REGISTRY_PATH),"transformation_registry":registry_version(TRANSFORMATION_REGISTRY_PATH)}
+        registry_versions={"metric_registry":registry_version(ROOT/"config/metrics.json"),"country_registry":registry_version(COUNTRY_REGISTRY_PATH),"analytical_entity_registry":registry_version(ANALYTICAL_ENTITY_REGISTRY_PATH),"source_registry":registry_version(SOURCE_REGISTRY_PATH),"transformation_registry":registry_version(TRANSFORMATION_REGISTRY_PATH)}
         code_commit=_code_commit()
         release=build_release(payload,[row["raw_snapshot_id"] for row in manifest.raw_snapshots],code_commit,registry_versions,{adapter.source_id:"1.0"},manifest.warnings)
         payload["meta"].update({"release_id":release["release_id"],"asset_version":release["asset_version"],"data_release_schema_version":"1.0"})
@@ -127,15 +126,24 @@ def _write_outputs(payload: dict, panel: list[dict], universe: list[dict], rejec
     PROCESSED.mkdir(parents=True, exist_ok=True); APP_DATA.mkdir(parents=True, exist_ok=True)
     _write_csv(PROCESSED / "observations.csv", panel); _write_csv(PROCESSED / "countries.csv", universe); _write_csv(PROCESSED / "rejected_observations.csv", rejected)
     metric_dir = APP_DATA / "metrics"; metric_dir.mkdir(parents=True, exist_ok=True)
+    ranking_dir = APP_DATA / "rankings"; ranking_dir.mkdir(parents=True, exist_ok=True)
+    profile_dir = APP_DATA / "profiles"; profile_dir.mkdir(parents=True, exist_ok=True)
     by_metric: dict[str, list[dict]] = defaultdict(list)
     for row in panel: by_metric[row["metric_id"]].append(row)
     for metric_id, rows in by_metric.items():
         (metric_dir / f"{metric_id}.json").write_text(json.dumps(rows, separators=(",", ":"), sort_keys=True), encoding="utf-8")
+    ranking_assets = {}
+    for metric in payload["metrics"]:
+        asset = ranking_asset(panel, universe, metric); ranking_assets[metric["metric_id"]] = asset
+        (ranking_dir / f"{metric['metric_id']}.json").write_text(json.dumps(asset,separators=(",", ":"),sort_keys=True),encoding="utf-8")
+    for country in universe:
+        profile = country_profile(panel, universe, payload["metrics"], country["iso3"])
+        (profile_dir / f"{country['iso3']}.json").write_text(json.dumps(profile,separators=(",", ":"),sort_keys=True),encoding="utf-8")
     version=payload["meta"].get("asset_version","dev")
-    catalog = {"meta": payload["meta"], "countries": payload["countries"], "metrics": payload["metrics"], "sources": payload["sources"], "overview_metric_ids":["gdp_current_usd","gdp_growth_pct","inflation_cpi_pct"], "observation_shards": {metric_id: f"data/metrics/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}}
+    catalog = {"meta": payload["meta"], "countries": payload["countries"], "metrics": payload["metrics"], "sources": payload["sources"], "overview_metric_ids":["gdp_current_usd","gdp_growth_pct","inflation_cpi_pct","unemployment_pct","central_government_debt_pct_gdp"], "observation_shards": {metric_id: f"data/metrics/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}, "ranking_shards": {metric_id:f"data/rankings/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}, "profile_shards": {country["iso3"]:f"data/profiles/{country['iso3']}.json?v={version}" for country in universe}}
     (APP_DATA / "catalog.json").write_text(json.dumps(catalog, separators=(",", ":"), sort_keys=True), encoding="utf-8")
     _write_dashboard_json(payload)
-    return ["data/processed/dashboard.json", "data/processed/observations.csv", "data/processed/countries.csv", "data/processed/rejected_observations.csv", "app/data/dashboard.json", "app/data/catalog.json", "app/data/metrics/*.json"]
+    return ["data/processed/dashboard.json", "data/processed/observations.csv", "data/processed/countries.csv", "data/processed/rejected_observations.csv", "app/data/dashboard.json", "app/data/catalog.json", "app/data/metrics/*.json", "app/data/rankings/*.json", "app/data/profiles/*.json"]
 
 
 def _write_dashboard_json(payload: dict) -> None:

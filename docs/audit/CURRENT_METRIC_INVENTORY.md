@@ -12,4 +12,4 @@ Technical summary: this is a direct inventory of the current application payload
 | unemployment_pct | Unemployment | world_bank_wdi / SL.UEM.TOTL.ZS | % of total labor force (modeled ILO estimate) | identity | 1750 | 50 | 1991-2025 | 2025.0 / 2025 / 2025 | 0 |
 | central_government_debt_pct_gdp | Central government debt | world_bank_wdi / GC.DOD.TOTL.GD.ZS | % of GDP | identity | 608 | 35 | 1990-2024 | 2021 / 1990 / 2024 | 15 |
 
-Metric registry fingerprint: `7de47f69e8f16b66`. Source dataset for every row: `world_development_indicators`. Exact fields are in [`current_metric_inventory.csv`](../../data/audit/release_e9182edbdb3e275e19ca/current_metric_inventory.csv) and the adjacent JSON.
+Metric registry fingerprint: `6c6b4ece05c6ea55`. Source dataset for every row: `world_development_indicators`. Exact fields are in [`current_metric_inventory.csv`](../../data/audit/release_c95979a1f2a0d628fbf3/current_metric_inventory.csv) and the adjacent JSON.

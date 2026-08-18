@@ -1,0 +1,98 @@
+{
+  "generated_from": [
+    "app/data/dashboard.json",
+    "config/metrics.json",
+    "config/sources.json",
+    "config/countries.json",
+    "config/transformations.json",
+    "data/processed/rejected_observations.csv",
+    "data/raw/2026-08-17/country_dimension_all.json",
+    "data/raw/2026-08-17/NY.GDP.MKTP.CD_1990_2025.json",
+    "data/raw/2026-08-17/NY.GDP.PCAP.CD_1990_2025.json",
+    "data/raw/2026-08-17/NY.GDP.MKTP.KD.ZG_1990_2025.json",
+    "data/raw/2026-08-17/SP.POP.TOTL_1990_2025.json",
+    "data/raw/2026-08-17/FP.CPI.TOTL.ZG_1990_2025.json",
+    "data/raw/2026-08-17/SL.UEM.TOTL.ZS_1990_2025.json",
+    "data/raw/2026-08-17/GC.DOD.TOTL.GD.ZS_1990_2025.json"
+  ],
+  "machine_artifacts": [
+    "audit_manifest.json",
+    "country_metric_freshness.csv",
+    "current_debt_implementation.json",
+    "current_gdp_implementation.json",
+    "current_inflation_implementation.json",
+    "current_metric_inventory.csv",
+    "current_metric_inventory.json",
+    "current_unemployment_implementation.json",
+    "lineage_examples.json",
+    "missing_country_year_ranges.csv",
+    "missing_data_summary.json",
+    "ranking_implementation.json",
+    "test_coverage_map.csv",
+    "top50_universe_candidates.csv",
+    "top50_universe_evidence.json",
+    "top50_universe_missing_reference_year.csv",
+    "ui_economic_metadata.csv"
+  ],
+  "markdown_artifacts": [
+    "COUNTRY_YEAR_FRESHNESS.md",
+    "CURRENT_DEBT_IMPLEMENTATION.md",
+    "CURRENT_GDP_IMPLEMENTATION.md",
+    "CURRENT_INFLATION_IMPLEMENTATION.md",
+    "CURRENT_METRIC_INVENTORY.md",
+    "CURRENT_RANKING_IMPLEMENTATION.md",
+    "CURRENT_UNEMPLOYMENT_IMPLEMENTATION.md",
+    "LINEAGE_EXAMPLES.md",
+    "MISSING_DATA_SUMMARY.md",
+    "PHASE_1_1_FINDINGS.md",
+    "README.md",
+    "TEST_COVERAGE_MAP.md",
+    "TOP50_UNIVERSE_EVIDENCE.md",
+    "UI_ECONOMIC_METADATA.md"
+  ],
+  "pipeline_manifest": "data/manifests/run_9c142b7be97fd869979dd671.json",
+  "release": {
+    "analytical_entity_registry_version": "6a4f3172c95042f0",
+    "asset_version": "c95979a1f2a0d628",
+    "code_commit": "81814043208fdaaa1c685d1013041bb452a1638e",
+    "country_count": 50,
+    "country_registry_version": "a441d2a5ab24e696",
+    "generated_at": "2026-08-17T21:18:02.048364+00:00",
+    "metric_count": 7,
+    "metric_registry_version": "6c6b4ece05c6ea55",
+    "observation_count": 11308,
+    "pipeline_run_id": "run_9c142b7be97fd869979dd671",
+    "raw_snapshot_ids": [
+      "raw_world_bank_wdi_country_dimension_174ea73141db73c7",
+      "raw_world_bank_wdi_NY.GDP.MKTP.CD_c9f99350959504d5",
+      "raw_world_bank_wdi_NY.GDP.PCAP.CD_a24dbdaa9d50094f",
+      "raw_world_bank_wdi_NY.GDP.MKTP.KD.ZG_b0a17aad0bd898a8",
+      "raw_world_bank_wdi_SP.POP.TOTL_81c93afdc93c0284",
+      "raw_world_bank_wdi_FP.CPI.TOTL.ZG_0b9dfe855e4855c3",
+      "raw_world_bank_wdi_SL.UEM.TOTL.ZS_f27ee73dffd17845",
+      "raw_world_bank_wdi_GC.DOD.TOTL.GD.ZS_a212fe1ef1b5574b"
+    ],
+    "release_id": "release_c95979a1f2a0d628fbf3",
+    "schema_version": "1.1",
+    "source_adapter_versions": {
+      "world_bank_wdi": "1.0"
+    },
+    "source_registry_version": "bc6f377a4b5ac648",
+    "transformation_registry_version": "847e98dd3caa62a1",
+    "validation_status": "passed",
+    "warnings": [
+      "cache_hit:dated_snapshot",
+      "cache_hit:dated_snapshot",
+      "cache_hit:dated_snapshot",
+      "cache_hit:dated_snapshot",
+      "cache_hit:dated_snapshot",
+      "cache_hit:dated_snapshot",
+      "cache_hit:dated_snapshot",
+      "cache_hit:dated_snapshot"
+    ],
+    "year_range": {
+      "end": 2025,
+      "start": 1990
+    }
+  }
+}

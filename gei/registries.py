@@ -9,6 +9,7 @@ from .config import ROOT
 SOURCE_REGISTRY_PATH = ROOT / "config" / "sources.json"
 TRANSFORMATION_REGISTRY_PATH = ROOT / "config" / "transformations.json"
 COUNTRY_REGISTRY_PATH = ROOT / "config" / "countries.json"
+ANALYTICAL_ENTITY_REGISTRY_PATH = ROOT / "config" / "analytical_entities.json"
 
 
 def load_versioned_registry(path: Path, collection: str) -> dict:
@@ -39,6 +40,9 @@ def validate_registries(metrics: list[dict], sources: list[dict], transformation
         if metric.get("frequency") not in supported_frequencies: errors.append(f"unsupported frequency for {metric.get('metric_id')}")
         if not isinstance(metric.get("unit"), str) or not metric["unit"].strip(): errors.append(f"malformed unit for {metric.get('metric_id')}")
         if metric.get("category") not in categories: errors.append(f"invalid category for {metric.get('metric_id')}")
+        if not isinstance(metric.get("indexing_allowed"), bool): errors.append(f"missing indexing policy for {metric.get('metric_id')}")
+        if metric.get("change_transformation") not in {"cagr", "percent_change", "percentage_point_change"}: errors.append(f"invalid change transformation for {metric.get('metric_id')}")
+        if not isinstance(metric.get("change_windows"), list) or not all(isinstance(value, int) and value > 0 for value in metric.get("change_windows", [])): errors.append(f"invalid change windows for {metric.get('metric_id')}")
     return errors
 
 
@@ -59,4 +63,20 @@ def validate_country_registry(payload: dict) -> list[str]:
         if not isinstance(row.get("iso3"),str) or len(row["iso3"])!=3 or not row["iso3"].isupper(): errors.append(f"invalid ISO3: {row.get('iso3')}")
         if not isinstance(row.get("iso2"),str) or len(row["iso2"])!=2 or not row["iso2"].isupper(): errors.append(f"invalid ISO2: {row.get('iso2')}")
         if not row.get("world_bank_code"): errors.append(f"missing World Bank mapping: {row.get('country_id')}")
+    return errors
+
+
+def validate_analytical_entity_registry(payload: dict) -> list[str]:
+    errors: list[str] = []; rows = payload.get("entities", [])
+    required = {"analytical_entity_id", "display_name", "analytical_eligibility", "eligibility_policy_version", "eligibility_basis", "effective_from", "review_owner", "authoritative_ids", "source_references"}
+    if not isinstance(payload.get("eligibility_policy_version"), str): errors.append("missing eligibility policy version")
+    ids = [row.get("analytical_entity_id") for row in rows]
+    if len(ids) != len(set(ids)): errors.append("duplicate analytical entity IDs")
+    for row in rows:
+        missing = sorted(required - row.keys())
+        if missing: errors.append(f"missing entity fields for {row.get('analytical_entity_id')}: {missing}")
+        if row.get("analytical_eligibility") not in {"included", "excluded", "pending_review"}: errors.append(f"invalid eligibility for {row.get('analytical_entity_id')}")
+        if row.get("eligibility_policy_version") != payload.get("eligibility_policy_version"): errors.append(f"entity policy mismatch for {row.get('analytical_entity_id')}")
+        if not isinstance(row.get("authoritative_ids"), dict) or not any(row.get("authoritative_ids", {}).values()): errors.append(f"missing authoritative identifier for {row.get('analytical_entity_id')}")
+        if not isinstance(row.get("source_references"), list) or not row.get("source_references"): errors.append(f"missing source references for {row.get('analytical_entity_id')}")
     return errors
