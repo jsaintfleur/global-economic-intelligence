@@ -13,8 +13,13 @@ The project combines a dependency-free static web application with a determinist
 ## What Atlas provides
 
 - A reproducible Top-50 economy universe based on nominal GDP in a common reference year
-- Overview, rankings, country profiles, multi-country comparisons, and a data explorer
-- Interactive historical charts and downloadable CSV exports
+- A GDP treemap, common-year macroeconomic overview, rankings, and distribution context
+- Hierarchical economy profiles with deterministic Data Highlights and rank history
+- Multi-country comparison in absolute, indexed, rank, and change modes
+- A common-year scatter explorer with optional GDP or population bubble encoding
+- Interactive historical charts and lineage-rich downloadable CSV exports
+- A keyboard-accessible global command search (`⌘ K` / `Ctrl K`)
+- Purpose-designed light and dark themes with responsive analytical layouts
 - Shareable URL state for metrics, countries, and year ranges
 - Lazy-loaded, release-versioned metric shards for efficient static delivery
 - Explicit observation years, missing-data states, source codes, coverage, and caveats
@@ -138,6 +143,8 @@ Static catalog + metric shards ──► Atlas web application
 | `agent_handoff/` | Structured methodology and implementation decisions |
 
 For more detail, see [Architecture](docs/ARCHITECTURE.md), [Data contracts](docs/DATA_CONTRACTS.md), and [Schema versioning](docs/SCHEMA_VERSIONING.md).
+
+Frontend performance budgets are documented in [Performance budgets](docs/PERFORMANCE_BUDGETS.md). Deterministic desktop, tablet, mobile, and dark-mode review captures are indexed in [Visual QA](docs/VISUAL_QA.md).
 
 ## Provenance and release philosophy
 

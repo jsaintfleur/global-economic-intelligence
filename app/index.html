@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Source-traceable intelligence on the world's 50 largest economies." />
-  <title>Atlas / Global Economic Intelligence</title>
+  <meta name="description" content="Explore, compare, and understand the world's largest economies with reproducible, source-backed data." />
+  <meta property="og:title" content="ATLAS — Global Economic Intelligence" />
+  <meta property="og:description" content="A source-backed view of the structure and trajectory of the global economy." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://global-economic-intelligence.vercel.app/" />
+  <title>ATLAS — Global Economic Intelligence</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2" />
-  <link rel="stylesheet" href="mobile.css?v=1" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="shell">
     <aside class="sidebar">
-      <a class="brand" href="#overview"><span class="brand-mark">A</span><span>ATLAS<small>Economic intelligence</small></span></a>
+      <a class="brand" href="?view=overview" aria-label="Atlas home"><span class="brand-mark">A</span><span>ATLAS<small>Global Economic Intelligence</small></span></a>
       <nav id="nav">
         <button data-view="overview" class="active">Overview</button>
         <button data-view="rankings">Rankings</button>
         <button data-view="compare">Compare</button>
-        <button data-view="country">Country explorer</button>
+        <button data-view="country">Economies</button>
         <button data-view="coverage">Coverage</button>
-        <button data-view="data">Data explorer</button>
+        <button data-view="data">Explore</button>
         <button data-view="methodology">Methodology</button>
       </nav>
       <div class="sidebar-foot"><i></i><span>World Bank WDI<br><b id="freshness">Loading source…</b></span></div>
@@ -30,12 +34,14 @@
     <main id="main-content" tabindex="-1">
       <header class="topbar">
         <div><span class="eyebrow">GLOBAL ECONOMY MONITOR</span><h1 id="page-title">World overview</h1></div>
-        <div class="top-actions"><label class="global-search"><span class="sr-only">Find an economy</span><input id="global-search" list="country-search-list" placeholder="Find an economy…"><datalist id="country-search-list"></datalist></label><span id="coverage-pill" class="pill">Loading data</span><button id="share-button" class="download">Copy view</button><button id="download-button" class="download">Export CSV</button></div>
+        <div class="top-actions"><button id="command-button" class="command-trigger" aria-keyshortcuts="Meta+K Control+K"><span>Search Atlas</span><kbd>⌘ K</kbd></button><span id="coverage-pill" class="pill">Loading data</span><button id="theme-button" class="icon-button" aria-label="Switch color theme">◐</button><button id="share-button" class="icon-button" aria-label="Copy shareable view">↗</button><button id="download-button" class="download">Export</button></div>
       </header>
-      <div id="loading" class="loading" role="status" aria-live="polite"><div class="loader"></div><p>Assembling the evidence layer…</p></div>
+      <div id="loading" class="loading" role="status" aria-live="polite"><div class="skeleton-layout"><i></i><i></i><i></i><i></i></div><p>Loading the latest Atlas data release…</p></div>
       <div id="app" hidden></div>
     </main>
   </div>
-  <script type="module" src="app.js?v=3"></script>
+  <dialog id="command-dialog" class="command-dialog" aria-label="Search Atlas"><form method="dialog"><div class="command-head"><label for="command-input">Search economies, metrics, and analysis</label><button aria-label="Close search">Esc</button></div><input id="command-input" autocomplete="off" placeholder="Try “Japan”, “debt ranking”, or “compare US China”"><div id="command-results" role="listbox"></div><p class="command-hint">↑↓ Navigate · Enter Open · Esc Close</p></form></dialog>
+  <div id="chart-tooltip" class="chart-tooltip" hidden></div>
+  <script type="module" src="app.js?v=5"></script>
 </body>
 </html>
