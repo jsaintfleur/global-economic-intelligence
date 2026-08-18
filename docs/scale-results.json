@@ -1,0 +1,22 @@
+[
+  {
+    "countries": 50,
+    "metrics": 100,
+    "years": 30,
+    "observations": 150000,
+    "json_bytes": 30675003,
+    "generation_seconds": 1.524,
+    "serialization_seconds": 1.879,
+    "peak_memory_mb": 120.0
+  },
+  {
+    "countries": 200,
+    "metrics": 100,
+    "years": 30,
+    "observations": 600000,
+    "json_bytes": 122987091,
+    "generation_seconds": 6.059,
+    "serialization_seconds": 7.719,
+    "peak_memory_mb": 480.6
+  }
+]

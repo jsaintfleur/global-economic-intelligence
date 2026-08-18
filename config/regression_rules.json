@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {"rule_id":"observation_count_drop","severity":"warning","blocking":false,"threshold":{"percent":5.0}},
+    {"rule_id":"country_removed","severity":"warning","blocking":false,"threshold":{"count":0}},
+    {"rule_id":"metric_removed","severity":"error","blocking":true,"threshold":{"count":0}},
+    {"rule_id":"source_mapping_changed","severity":"warning","blocking":false,"threshold":{"count":0}},
+    {"rule_id":"latest_year_regressed","severity":"warning","blocking":false,"threshold":{"years":0}},
+    {"rule_id":"provenance_missing","severity":"error","blocking":true,"threshold":{"count":0}},
+    {"rule_id":"duplicate_keys","severity":"error","blocking":true,"threshold":{"count":0}},
+    {"rule_id":"metric_shard_missing","severity":"error","blocking":true,"threshold":{"count":0}},
+    {"rule_id":"file_size_change","severity":"info","blocking":false,"threshold":{"percent":50.0}}
+  ]
+}

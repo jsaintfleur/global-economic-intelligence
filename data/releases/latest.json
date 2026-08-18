@@ -1,0 +1,43 @@
+{
+  "asset_version": "e9182edbdb3e275e",
+  "code_commit": "284bae0a22a636e072be057c3bab35efd19969e4",
+  "country_count": 50,
+  "country_registry_version": "a441d2a5ab24e696",
+  "generated_at": "2026-08-17T21:18:02.349454+00:00",
+  "metric_count": 7,
+  "metric_registry_version": "7de47f69e8f16b66",
+  "observation_count": 11308,
+  "pipeline_run_id": "run_9c142b7be97fd869979dd671",
+  "raw_snapshot_ids": [
+    "raw_world_bank_wdi_country_dimension_174ea73141db73c7",
+    "raw_world_bank_wdi_NY.GDP.MKTP.CD_c9f99350959504d5",
+    "raw_world_bank_wdi_NY.GDP.PCAP.CD_a24dbdaa9d50094f",
+    "raw_world_bank_wdi_NY.GDP.MKTP.KD.ZG_b0a17aad0bd898a8",
+    "raw_world_bank_wdi_SP.POP.TOTL_81c93afdc93c0284",
+    "raw_world_bank_wdi_FP.CPI.TOTL.ZG_0b9dfe855e4855c3",
+    "raw_world_bank_wdi_SL.UEM.TOTL.ZS_f27ee73dffd17845",
+    "raw_world_bank_wdi_GC.DOD.TOTL.GD.ZS_a212fe1ef1b5574b"
+  ],
+  "release_id": "release_e9182edbdb3e275e19ca",
+  "schema_version": "1.0",
+  "source_adapter_versions": {
+    "world_bank_wdi": "1.0"
+  },
+  "source_registry_version": "bc6f377a4b5ac648",
+  "transformation_registry_version": "847e98dd3caa62a1",
+  "validation_status": "passed",
+  "warnings": [
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot"
+  ],
+  "year_range": {
+    "end": 2025,
+    "start": 1990
+  }
+}

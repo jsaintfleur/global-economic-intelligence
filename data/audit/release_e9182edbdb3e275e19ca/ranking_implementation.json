@@ -1,0 +1,18 @@
+{
+  "metric_tables": {
+    "function": "app/app.js buildIndex/latest/rankingTable",
+    "historical_rank": "not implemented",
+    "missing": "sorted last, displays Not available, no rank",
+    "observation_year": "each current Top-50 country's latest non-null observation",
+    "scope": "current Top-50 universe",
+    "ties": "JavaScript stable numeric sort; no explicit secondary tie key or shared-rank policy"
+  },
+  "universe": {
+    "candidate_pool": "all normalized non-aggregate World Bank country-dimension economies with GDP in the common reference year",
+    "function": "gei.pipeline.build + gei.transformations.rank_desc",
+    "missing": "excluded from reference_values and therefore not ranked",
+    "observation_year": 2025,
+    "scope": "global source candidate pool, first 50 retained",
+    "ties": "sequential deterministic ranks after GDP descending then ISO3 ascending"
+  }
+}

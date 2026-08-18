@@ -1,0 +1,141 @@
+{
+  "accepted_observations": 44266,
+  "code_version": "0.2.0",
+  "completed_at": "2026-08-17T21:18:01.415981+00:00",
+  "countries_requested": "all source countries",
+  "duplicate_observations": 0,
+  "errors": [],
+  "indicators_requested": [
+    "NY.GDP.MKTP.CD",
+    "NY.GDP.PCAP.CD",
+    "NY.GDP.MKTP.KD.ZG",
+    "SP.POP.TOTL",
+    "FP.CPI.TOTL.ZG",
+    "SL.UEM.TOTL.ZS",
+    "GC.DOD.TOTL.GD.ZS"
+  ],
+  "missing_observations": 10418,
+  "output_files": [
+    "data/processed/dashboard.json",
+    "data/processed/observations.csv",
+    "data/processed/countries.csv",
+    "data/processed/rejected_observations.csv",
+    "app/data/dashboard.json",
+    "app/data/catalog.json",
+    "app/data/metrics/*.json",
+    "data/releases/release_e9182edbdb3e275e19ca.json",
+    "data/releases/snapshots/release_e9182edbdb3e275e19ca.json",
+    "data/processed/coverage.json",
+    "data/diffs/release_c13ae57eb5f4157e3d0b__release_e9182edbdb3e275e19ca.json",
+    "data/diffs/release_c13ae57eb5f4157e3d0b__release_e9182edbdb3e275e19ca.md",
+    "data/releases/release_e9182edbdb3e275e19ca.regression.json"
+  ],
+  "pipeline_run_id": "run_7584f9f814a19311f390c282",
+  "raw_observations_received": 66780,
+  "raw_snapshots": [
+    {
+      "checksum_sha256": "174ea73141db73c7692b5b40b3420a49c0d79d11e53708c161004f960b52def6",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-17/country_dimension_all.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_country_dimension_174ea73141db73c7",
+      "record_count": 295,
+      "retrieved_at": "2026-08-17T21:18:01.081281+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "country_dimension"
+    },
+    {
+      "checksum_sha256": "c9f99350959504d57fa2aeee079f15d33fa67b9c804dc5d247f8131f1d1cd056",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-17/NY.GDP.MKTP.CD_1990_2025.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_NY.GDP.MKTP.CD_c9f99350959504d5",
+      "record_count": 9540,
+      "retrieved_at": "2026-08-17T21:18:01.081281+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD"
+    },
+    {
+      "checksum_sha256": "a24dbdaa9d50094f0e0cc9b336e909e01b0388b16e7b3d870cbfe016883c3dda",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-17/NY.GDP.PCAP.CD_1990_2025.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_NY.GDP.PCAP.CD_a24dbdaa9d50094f",
+      "record_count": 9540,
+      "retrieved_at": "2026-08-17T21:18:01.081281+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.PCAP.CD"
+    },
+    {
+      "checksum_sha256": "b0a17aad0bd898a8b7a4f9f24c805a2ce2c5402ccad11ba0d7c2b0990b15fba8",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-17/NY.GDP.MKTP.KD.ZG_1990_2025.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_NY.GDP.MKTP.KD.ZG_b0a17aad0bd898a8",
+      "record_count": 9540,
+      "retrieved_at": "2026-08-17T21:18:01.081281+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.KD.ZG"
+    },
+    {
+      "checksum_sha256": "81c93afdc93c02849e94da3fd52c94c73018964d9b24d8803a1459f1ea51a613",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-17/SP.POP.TOTL_1990_2025.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_SP.POP.TOTL_81c93afdc93c0284",
+      "record_count": 9540,
+      "retrieved_at": "2026-08-17T21:18:01.081281+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "SP.POP.TOTL"
+    },
+    {
+      "checksum_sha256": "0b9dfe855e4855c32458d81135e6faaf1637164d83d2986f70e2fcab9f802fbf",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-17/FP.CPI.TOTL.ZG_1990_2025.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_FP.CPI.TOTL.ZG_0b9dfe855e4855c3",
+      "record_count": 9540,
+      "retrieved_at": "2026-08-17T21:18:01.081281+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "FP.CPI.TOTL.ZG"
+    },
+    {
+      "checksum_sha256": "f27ee73dffd178459864618dbec63d57b9135321da410be050aec0dca2ba7604",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-17/SL.UEM.TOTL.ZS_1990_2025.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_SL.UEM.TOTL.ZS_f27ee73dffd17845",
+      "record_count": 9540,
+      "retrieved_at": "2026-08-17T21:18:01.081281+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "SL.UEM.TOTL.ZS"
+    },
+    {
+      "checksum_sha256": "a212fe1ef1b5574b9f7626cf618a135a91864c9c85b6c60d044bf74ad6d5f025",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-17/GC.DOD.TOTL.GD.ZS_1990_2025.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_GC.DOD.TOTL.GD.ZS_a212fe1ef1b5574b",
+      "record_count": 9540,
+      "retrieved_at": "2026-08-17T21:18:01.081281+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "GC.DOD.TOTL.GD.ZS"
+    }
+  ],
+  "rejected_observations": 22514,
+  "source_ids": [
+    "world_bank_wdi"
+  ],
+  "started_at": "2026-08-17T21:18:01.081281+00:00",
+  "status": "completed",
+  "warnings": [
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot"
+  ]
+}

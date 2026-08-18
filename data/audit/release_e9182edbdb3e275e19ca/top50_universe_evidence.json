@@ -1,0 +1,842 @@
+{
+  "candidate_count": 186,
+  "excluded_missing_reference_year": [
+    {
+      "country": "Aruba",
+      "iso3": "ABW",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Afghanistan",
+      "iso3": "AFG",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "United Arab Emirates",
+      "iso3": "ARE",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "American Samoa",
+      "iso3": "ASM",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Bahamas, The",
+      "iso3": "BHS",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Bermuda",
+      "iso3": "BMU",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Channel Islands",
+      "iso3": "CHI",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Cuba",
+      "iso3": "CUB",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Curacao",
+      "iso3": "CUW",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Cayman Islands",
+      "iso3": "CYM",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Eritrea",
+      "iso3": "ERI",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Faroe Islands",
+      "iso3": "FRO",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Gibraltar",
+      "iso3": "GIB",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Greenland",
+      "iso3": "GRL",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Guam",
+      "iso3": "GUM",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Isle of Man",
+      "iso3": "IMN",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Lebanon",
+      "iso3": "LBN",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Liechtenstein",
+      "iso3": "LIE",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "St. Martin (French part)",
+      "iso3": "MAF",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Monaco",
+      "iso3": "MCO",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Northern Mariana Islands",
+      "iso3": "MNP",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "New Caledonia",
+      "iso3": "NCL",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Korea, Dem. People's Rep.",
+      "iso3": "PRK",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "French Polynesia",
+      "iso3": "PYF",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "San Marino",
+      "iso3": "SMR",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "South Sudan",
+      "iso3": "SSD",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Syrian Arab Republic",
+      "iso3": "SYR",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Turks and Caicos Islands",
+      "iso3": "TCA",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "British Virgin Islands",
+      "iso3": "VGB",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Virgin Islands (U.S.)",
+      "iso3": "VIR",
+      "reason": "missing GDP value in reference year 2025"
+    },
+    {
+      "country": "Yemen, Rep.",
+      "iso3": "YEM",
+      "reason": "missing GDP value in reference year 2025"
+    }
+  ],
+  "near_cutoff": [
+    {
+      "country": "Portugal",
+      "gdp_value": 346639825141.821,
+      "iso3": "PRT",
+      "observation_year": 2025,
+      "rank": 45,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Peru",
+      "gdp_value": 334854659181.893,
+      "iso3": "PER",
+      "observation_year": 2025,
+      "rank": 46,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Finland",
+      "gdp_value": 317039368819.607,
+      "iso3": "FIN",
+      "observation_year": 2025,
+      "rank": 47,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Kazakhstan",
+      "gdp_value": 306239209650.024,
+      "iso3": "KAZ",
+      "observation_year": 2025,
+      "rank": 48,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Nigeria",
+      "gdp_value": 290794361542.112,
+      "iso3": "NGA",
+      "observation_year": 2025,
+      "rank": 49,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Algeria",
+      "gdp_value": 287031225987.736,
+      "iso3": "DZA",
+      "observation_year": 2025,
+      "rank": 50,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Greece",
+      "gdp_value": 280635521324.441,
+      "iso3": "GRC",
+      "observation_year": 2025,
+      "rank": 51,
+      "selected": false,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "New Zealand",
+      "gdp_value": 264057413739.965,
+      "iso3": "NZL",
+      "observation_year": 2025,
+      "rank": 52,
+      "selected": false,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Iraq",
+      "gdp_value": 254367293538.462,
+      "iso3": "IRQ",
+      "observation_year": 2025,
+      "rank": 53,
+      "selected": false,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Hungary",
+      "gdp_value": 246490213513.054,
+      "iso3": "HUN",
+      "observation_year": 2025,
+      "rank": 54,
+      "selected": false,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Qatar",
+      "gdp_value": 215559615384.615,
+      "iso3": "QAT",
+      "observation_year": 2025,
+      "rank": 55,
+      "selected": false,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    }
+  ],
+  "rule": {
+    "indicator": "NY.GDP.MKTP.CD",
+    "minimum_nonaggregate_observations": 150,
+    "reference_year": 2025,
+    "selection_count": 50,
+    "sort": "GDP descending, then ISO3 ascending"
+  },
+  "selected": [
+    {
+      "country": "United States",
+      "gdp_value": 30769700000000.0,
+      "iso3": "USA",
+      "observation_year": 2025,
+      "rank": 1,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "China",
+      "gdp_value": 19498039388042.6,
+      "iso3": "CHN",
+      "observation_year": 2025,
+      "rank": 2,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Germany",
+      "gdp_value": 5050922925047.05,
+      "iso3": "DEU",
+      "observation_year": 2025,
+      "rank": 3,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Japan",
+      "gdp_value": 4435162999976.94,
+      "iso3": "JPN",
+      "observation_year": 2025,
+      "rank": 4,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "United Kingdom",
+      "gdp_value": 4002587541846.01,
+      "iso3": "GBR",
+      "observation_year": 2025,
+      "rank": 5,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "India",
+      "gdp_value": 3956067115771.63,
+      "iso3": "IND",
+      "observation_year": 2025,
+      "rank": 6,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "France",
+      "gdp_value": 3366315927447.33,
+      "iso3": "FRA",
+      "observation_year": 2025,
+      "rank": 7,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Russian Federation",
+      "gdp_value": 2561310169358.74,
+      "iso3": "RUS",
+      "observation_year": 2025,
+      "rank": 8,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Italy",
+      "gdp_value": 2551556954100.35,
+      "iso3": "ITA",
+      "observation_year": 2025,
+      "rank": 9,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Canada",
+      "gdp_value": 2319899772425.92,
+      "iso3": "CAN",
+      "observation_year": 2025,
+      "rank": 10,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Brazil",
+      "gdp_value": 2279920092492.13,
+      "iso3": "BRA",
+      "observation_year": 2025,
+      "rank": 11,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Spain",
+      "gdp_value": 1906453309985.88,
+      "iso3": "ESP",
+      "observation_year": 2025,
+      "rank": 12,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Korea, Rep.",
+      "gdp_value": 1872374961553.15,
+      "iso3": "KOR",
+      "observation_year": 2025,
+      "rank": 13,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Mexico",
+      "gdp_value": 1832641364775.52,
+      "iso3": "MEX",
+      "observation_year": 2025,
+      "rank": 14,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Australia",
+      "gdp_value": 1798518933689.21,
+      "iso3": "AUS",
+      "observation_year": 2025,
+      "rank": 15,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Turkiye",
+      "gdp_value": 1597293229287.0,
+      "iso3": "TUR",
+      "observation_year": 2025,
+      "rank": 16,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Indonesia",
+      "gdp_value": 1445642584163.81,
+      "iso3": "IDN",
+      "observation_year": 2025,
+      "rank": 17,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Netherlands",
+      "gdp_value": 1332767651100.39,
+      "iso3": "NLD",
+      "observation_year": 2025,
+      "rank": 18,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Saudi Arabia",
+      "gdp_value": 1276942933333.33,
+      "iso3": "SAU",
+      "observation_year": 2025,
+      "rank": 19,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Switzerland",
+      "gdp_value": 1043529899250.92,
+      "iso3": "CHE",
+      "observation_year": 2025,
+      "rank": 20,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Poland",
+      "gdp_value": 1035491784197.44,
+      "iso3": "POL",
+      "observation_year": 2025,
+      "rank": 21,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Belgium",
+      "gdp_value": 725466462859.646,
+      "iso3": "BEL",
+      "observation_year": 2025,
+      "rank": 22,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Ireland",
+      "gdp_value": 721701359046.313,
+      "iso3": "IRL",
+      "observation_year": 2025,
+      "rank": 23,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Argentina",
+      "gdp_value": 683097891618.597,
+      "iso3": "ARG",
+      "observation_year": 2025,
+      "rank": 24,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Sweden",
+      "gdp_value": 668998664082.081,
+      "iso3": "SWE",
+      "observation_year": 2025,
+      "rank": 25,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Israel",
+      "gdp_value": 610777842873.595,
+      "iso3": "ISR",
+      "observation_year": 2025,
+      "rank": 26,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Singapore",
+      "gdp_value": 603869516998.738,
+      "iso3": "SGP",
+      "observation_year": 2025,
+      "rank": 27,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Austria",
+      "gdp_value": 579470021095.418,
+      "iso3": "AUT",
+      "observation_year": 2025,
+      "rank": 28,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Thailand",
+      "gdp_value": 577009981112.015,
+      "iso3": "THA",
+      "observation_year": 2025,
+      "rank": 29,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Norway",
+      "gdp_value": 530755719438.879,
+      "iso3": "NOR",
+      "observation_year": 2025,
+      "rank": 30,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Viet Nam",
+      "gdp_value": 514697215165.065,
+      "iso3": "VNM",
+      "observation_year": 2025,
+      "rank": 31,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Philippines",
+      "gdp_value": 487086123720.417,
+      "iso3": "PHL",
+      "observation_year": 2025,
+      "rank": 32,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Malaysia",
+      "gdp_value": 472193128644.597,
+      "iso3": "MYS",
+      "observation_year": 2025,
+      "rank": 33,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Denmark",
+      "gdp_value": 462526660468.393,
+      "iso3": "DNK",
+      "observation_year": 2025,
+      "rank": 34,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Colombia",
+      "gdp_value": 457410034202.523,
+      "iso3": "COL",
+      "observation_year": 2025,
+      "rank": 35,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Bangladesh",
+      "gdp_value": 456319229255.578,
+      "iso3": "BGD",
+      "observation_year": 2025,
+      "rank": 36,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Romania",
+      "gdp_value": 428677977854.826,
+      "iso3": "ROU",
+      "observation_year": 2025,
+      "rank": 37,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Hong Kong SAR, China",
+      "gdp_value": 427310315921.993,
+      "iso3": "HKG",
+      "observation_year": 2025,
+      "rank": 38,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "South Africa",
+      "gdp_value": 427184325997.307,
+      "iso3": "ZAF",
+      "observation_year": 2025,
+      "rank": 39,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Pakistan",
+      "gdp_value": 407307214476.222,
+      "iso3": "PAK",
+      "observation_year": 2025,
+      "rank": 40,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Czechia",
+      "gdp_value": 391026962800.475,
+      "iso3": "CZE",
+      "observation_year": 2025,
+      "rank": 41,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Egypt, Arab Rep.",
+      "gdp_value": 365254630179.737,
+      "iso3": "EGY",
+      "observation_year": 2025,
+      "rank": 42,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Iran, Islamic Rep.",
+      "gdp_value": 362682115433.364,
+      "iso3": "IRN",
+      "observation_year": 2025,
+      "rank": 43,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Chile",
+      "gdp_value": 357371159574.862,
+      "iso3": "CHL",
+      "observation_year": 2025,
+      "rank": 44,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Portugal",
+      "gdp_value": 346639825141.821,
+      "iso3": "PRT",
+      "observation_year": 2025,
+      "rank": 45,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Peru",
+      "gdp_value": 334854659181.893,
+      "iso3": "PER",
+      "observation_year": 2025,
+      "rank": 46,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Finland",
+      "gdp_value": 317039368819.607,
+      "iso3": "FIN",
+      "observation_year": 2025,
+      "rank": 47,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Kazakhstan",
+      "gdp_value": 306239209650.024,
+      "iso3": "KAZ",
+      "observation_year": 2025,
+      "rank": 48,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Nigeria",
+      "gdp_value": 290794361542.112,
+      "iso3": "NGA",
+      "observation_year": 2025,
+      "rank": 49,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    },
+    {
+      "country": "Algeria",
+      "gdp_value": 287031225987.736,
+      "iso3": "DZA",
+      "observation_year": 2025,
+      "rank": 50,
+      "selected": true,
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "NY.GDP.MKTP.CD",
+      "territory_classification": null
+    }
+  ]
+}

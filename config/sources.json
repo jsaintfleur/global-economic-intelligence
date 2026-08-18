@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "source_id": "world_bank_wdi",
+      "organization": "World Bank",
+      "dataset": "World Development Indicators",
+      "source_dataset_id": "world_development_indicators",
+      "description": "World Bank cross-country development indicator collection.",
+      "base_endpoint": "https://api.worldbank.org/v2",
+      "documentation_reference": "https://databank.worldbank.org/source/world-development-indicators",
+      "update_frequency": "varies_by_indicator",
+      "adapter": "gei.adapters.WorldBankAdapter",
+      "retrieval_method": "https_json_api",
+      "raw_snapshot_policy": "immutable_date_partition_with_sha256",
+      "versioning_capability": "retrieval_snapshot",
+      "attribution_text": "World Bank, World Development Indicators",
+      "license_name": "CC BY 4.0",
+      "license_reference": "https://datacatalog.worldbank.org/public-licenses",
+      "terms_reference": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets"
+    }
+  ]
+}

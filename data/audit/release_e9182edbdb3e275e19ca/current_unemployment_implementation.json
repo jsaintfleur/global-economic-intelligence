@@ -1,0 +1,564 @@
+[
+  {
+    "availability": {
+      "target_end_year": 2025,
+      "target_start_year": 1990
+    },
+    "category": "Labor market",
+    "caveat": "Modeled ILO estimate; informal labor markets reduce comparability.",
+    "chart_type": "line",
+    "countries_covered": 50,
+    "description": "Share of the labor force without work but available for and seeking employment; modeled ILO estimate.",
+    "directionality": "not_assessed",
+    "display_name": "Unemployment",
+    "earliest_year": 1991,
+    "formatting": "percent",
+    "frequency": "annual",
+    "latest_by_country": [
+      {
+        "country": "United States",
+        "iso3": "USA",
+        "latest_observation_year": 2025,
+        "latest_value": 4.198,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "China",
+        "iso3": "CHN",
+        "latest_observation_year": 2025,
+        "latest_value": 4.615,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Germany",
+        "iso3": "DEU",
+        "latest_observation_year": 2025,
+        "latest_value": 3.711,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Japan",
+        "iso3": "JPN",
+        "latest_observation_year": 2025,
+        "latest_value": 2.451,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "United Kingdom",
+        "iso3": "GBR",
+        "latest_observation_year": 2025,
+        "latest_value": 4.746,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "India",
+        "iso3": "IND",
+        "latest_observation_year": 2025,
+        "latest_value": 4.219,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "France",
+        "iso3": "FRA",
+        "latest_observation_year": 2025,
+        "latest_value": 7.542,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Russian Federation",
+        "iso3": "RUS",
+        "latest_observation_year": 2025,
+        "latest_value": 2.133,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Italy",
+        "iso3": "ITA",
+        "latest_observation_year": 2025,
+        "latest_value": 6.391,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Canada",
+        "iso3": "CAN",
+        "latest_observation_year": 2025,
+        "latest_value": 6.907,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Brazil",
+        "iso3": "BRA",
+        "latest_observation_year": 2025,
+        "latest_value": 5.97,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Spain",
+        "iso3": "ESP",
+        "latest_observation_year": 2025,
+        "latest_value": 10.376,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Korea, Rep.",
+        "iso3": "KOR",
+        "latest_observation_year": 2025,
+        "latest_value": 2.683,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Mexico",
+        "iso3": "MEX",
+        "latest_observation_year": 2025,
+        "latest_value": 2.673,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Australia",
+        "iso3": "AUS",
+        "latest_observation_year": 2025,
+        "latest_value": 4.09,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Turkiye",
+        "iso3": "TUR",
+        "latest_observation_year": 2025,
+        "latest_value": 8.52,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Indonesia",
+        "iso3": "IDN",
+        "latest_observation_year": 2025,
+        "latest_value": 3.237,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Netherlands",
+        "iso3": "NLD",
+        "latest_observation_year": 2025,
+        "latest_value": 3.874,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Saudi Arabia",
+        "iso3": "SAU",
+        "latest_observation_year": 2025,
+        "latest_value": 3.038,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Switzerland",
+        "iso3": "CHE",
+        "latest_observation_year": 2025,
+        "latest_value": 4.873,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Poland",
+        "iso3": "POL",
+        "latest_observation_year": 2025,
+        "latest_value": 2.976,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Belgium",
+        "iso3": "BEL",
+        "latest_observation_year": 2025,
+        "latest_value": 5.906,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Ireland",
+        "iso3": "IRL",
+        "latest_observation_year": 2025,
+        "latest_value": 4.632,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Argentina",
+        "iso3": "ARG",
+        "latest_observation_year": 2025,
+        "latest_value": 7.145,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Sweden",
+        "iso3": "SWE",
+        "latest_observation_year": 2025,
+        "latest_value": 8.694,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Israel",
+        "iso3": "ISR",
+        "latest_observation_year": 2025,
+        "latest_value": 3.489,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Singapore",
+        "iso3": "SGP",
+        "latest_observation_year": 2025,
+        "latest_value": 2.818,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Austria",
+        "iso3": "AUT",
+        "latest_observation_year": 2025,
+        "latest_value": 5.582,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Thailand",
+        "iso3": "THA",
+        "latest_observation_year": 2025,
+        "latest_value": 0.781,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Norway",
+        "iso3": "NOR",
+        "latest_observation_year": 2025,
+        "latest_value": 4.637,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Viet Nam",
+        "iso3": "VNM",
+        "latest_observation_year": 2025,
+        "latest_value": 1.523,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Philippines",
+        "iso3": "PHL",
+        "latest_observation_year": 2025,
+        "latest_value": 2.235,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Malaysia",
+        "iso3": "MYS",
+        "latest_observation_year": 2025,
+        "latest_value": 3.764,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Denmark",
+        "iso3": "DNK",
+        "latest_observation_year": 2025,
+        "latest_value": 5.529,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Colombia",
+        "iso3": "COL",
+        "latest_observation_year": 2025,
+        "latest_value": 8.29,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Bangladesh",
+        "iso3": "BGD",
+        "latest_observation_year": 2025,
+        "latest_value": 3.778,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Romania",
+        "iso3": "ROU",
+        "latest_observation_year": 2025,
+        "latest_value": 5.992,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Hong Kong SAR, China",
+        "iso3": "HKG",
+        "latest_observation_year": 2025,
+        "latest_value": 2.799,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "South Africa",
+        "iso3": "ZAF",
+        "latest_observation_year": 2025,
+        "latest_value": 32.391,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Pakistan",
+        "iso3": "PAK",
+        "latest_observation_year": 2025,
+        "latest_value": 5.42,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Czechia",
+        "iso3": "CZE",
+        "latest_observation_year": 2025,
+        "latest_value": 2.825,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Egypt, Arab Rep.",
+        "iso3": "EGY",
+        "latest_observation_year": 2025,
+        "latest_value": 6.781,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Iran, Islamic Rep.",
+        "iso3": "IRN",
+        "latest_observation_year": 2025,
+        "latest_value": 8.301,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Chile",
+        "iso3": "CHL",
+        "latest_observation_year": 2025,
+        "latest_value": 8.974,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Portugal",
+        "iso3": "PRT",
+        "latest_observation_year": 2025,
+        "latest_value": 6.164,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Peru",
+        "iso3": "PER",
+        "latest_observation_year": 2025,
+        "latest_value": 5.117,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Finland",
+        "iso3": "FIN",
+        "latest_observation_year": 2025,
+        "latest_value": 9.461,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Kazakhstan",
+        "iso3": "KAZ",
+        "latest_observation_year": 2025,
+        "latest_value": 4.771,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Nigeria",
+        "iso3": "NGA",
+        "latest_observation_year": 2025,
+        "latest_value": 3.064,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Algeria",
+        "iso3": "DZA",
+        "latest_observation_year": 2025,
+        "latest_value": 11.633,
+        "metric_id": "unemployment_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "SL.UEM.TOTL.ZS",
+        "years_behind_metric_max": 0
+      }
+    ],
+    "latest_year": 2025,
+    "metric_id": "unemployment_pct",
+    "missing_data_policy": "preserve_missing",
+    "missing_top50_countries": [],
+    "observation_count": 1750,
+    "preferred_decimals": 1,
+    "short_name": "Unemployment",
+    "source": {
+      "adapter": "gei.adapters.WorldBankAdapter",
+      "attribution_text": "World Bank, World Development Indicators",
+      "base_endpoint": "https://api.worldbank.org/v2",
+      "dataset": "World Development Indicators",
+      "description": "World Bank cross-country development indicator collection.",
+      "documentation_reference": "https://databank.worldbank.org/source/world-development-indicators",
+      "license_name": "CC BY 4.0",
+      "license_reference": "https://datacatalog.worldbank.org/public-licenses",
+      "organization": "World Bank",
+      "raw_snapshot_policy": "immutable_date_partition_with_sha256",
+      "retrieval_method": "https_json_api",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "terms_reference": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "update_frequency": "varies_by_indicator",
+      "versioning_capability": "retrieval_snapshot"
+    },
+    "source_dataset_id": "world_development_indicators",
+    "source_id": "world_bank_wdi",
+    "source_indicator_id": "SL.UEM.TOTL.ZS",
+    "source_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS",
+    "transformation": "identity",
+    "transformation_definition": {
+      "description": "Preserve the normalized source value.",
+      "deterministic": true,
+      "name": "Identity",
+      "output_unit_behavior": "preserve",
+      "parameters": [],
+      "required_inputs": [
+        "value"
+      ],
+      "transformation_id": "identity",
+      "version": "1.0"
+    },
+    "unit": "% of total labor force (modeled ILO estimate)",
+    "value_type": "rate"
+  }
+]

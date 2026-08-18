@@ -1,0 +1,8 @@
+metric_id,display_name,source_id,source_dataset_id,source_indicator_id,unit,transformation,observation_count,countries_covered,earliest_year,latest_year,median_latest_year,minimum_latest_year,maximum_latest_year,missing_top50_countries,registry_version
+gdp_current_usd,Nominal GDP,world_bank_wdi,world_development_indicators,NY.GDP.MKTP.CD,current US$,identity,1800,50,1990,2025,2025.0,2025,2025,0,7de47f69e8f16b66
+gdp_per_capita_current_usd,GDP per capita,world_bank_wdi,world_development_indicators,NY.GDP.PCAP.CD,current US$ per person,identity,1800,50,1990,2025,2025.0,2025,2025,0,7de47f69e8f16b66
+gdp_growth_pct,Real GDP growth,world_bank_wdi,world_development_indicators,NY.GDP.MKTP.KD.ZG,% annual change,identity,1796,50,1990,2025,2025.0,2025,2025,0,7de47f69e8f16b66
+population,Population,world_bank_wdi,world_development_indicators,SP.POP.TOTL,people,identity,1800,50,1990,2025,2025.0,2025,2025,0,7de47f69e8f16b66
+inflation_cpi_pct,CPI inflation,world_bank_wdi,world_development_indicators,FP.CPI.TOTL.ZG,% annual change,identity,1754,50,1990,2025,2025.0,2024,2025,0,7de47f69e8f16b66
+unemployment_pct,Unemployment,world_bank_wdi,world_development_indicators,SL.UEM.TOTL.ZS,% of total labor force (modeled ILO estimate),identity,1750,50,1991,2025,2025.0,2025,2025,0,7de47f69e8f16b66
+central_government_debt_pct_gdp,Central government debt,world_bank_wdi,world_development_indicators,GC.DOD.TOTL.GD.ZS,% of GDP,identity,608,35,1990,2024,2021,1990,2024,15,7de47f69e8f16b66

@@ -1,0 +1,10 @@
+@media(max-width:650px){
+  .shell{display:block}
+  .sidebar{position:static;width:100%;height:auto;display:block;padding:15px 12px 10px}
+  .brand{padding:0 4px 12px}
+  .brand span:not(.brand-mark){display:block}
+  .sidebar nav{display:flex;overflow-x:auto;gap:4px;padding-bottom:2px}
+  .sidebar nav button{display:block;height:auto;flex:0 0 auto;font-size:10px;padding:8px 10px}
+  .sidebar nav button:after{content:none}
+  .sidebar nav button.active:before{margin-right:6px}
+}

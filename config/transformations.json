@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "transformations": [
+    {"transformation_id":"identity","name":"Identity","description":"Preserve the normalized source value.","required_inputs":["value"],"parameters":[],"output_unit_behavior":"preserve","deterministic":true,"version":"1.0"},
+    {"transformation_id":"pct_change","name":"Percentage change","description":"Percentage change between two declared periods.","required_inputs":["current_value","previous_value"],"parameters":["periods"],"output_unit_behavior":"percent","deterministic":true,"version":"1.0"},
+    {"transformation_id":"cagr","name":"Compound annual growth rate","description":"Annualized compound change between declared endpoints.","required_inputs":["start_value","end_value"],"parameters":["elapsed_years"],"output_unit_behavior":"percent","deterministic":true,"version":"1.0"},
+    {"transformation_id":"rebase","name":"Index base 100","description":"Rebase a series to 100 in a declared reference period.","required_inputs":["series","base_period"],"parameters":["base_period"],"output_unit_behavior":"index","deterministic":true,"version":"1.0"},
+    {"transformation_id":"per_capita","name":"Per capita","description":"Divide a declared numerator by a compatible population denominator.","required_inputs":["numerator","population"],"parameters":[],"output_unit_behavior":"derived","deterministic":true,"version":"1.0","status":"mechanism_only"},
+    {"transformation_id":"rolling_average","name":"Rolling average","description":"Unweighted mean across a declared trailing window.","required_inputs":["series"],"parameters":["window"],"output_unit_behavior":"preserve","deterministic":true,"version":"1.0","status":"mechanism_only"},
+    {"transformation_id":"rank","name":"Rank","description":"Deterministic ordering across a declared comparison set.","required_inputs":["cross_section"],"parameters":["direction","tie_policy"],"output_unit_behavior":"rank","deterministic":true,"version":"1.0","status":"mechanism_only"}
+  ]
+}

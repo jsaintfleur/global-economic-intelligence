@@ -1,0 +1,28 @@
+{
+  "release_id": "release_e9182edbdb3e275e19ca",
+  "debt_coverage_reconciliation": {
+    "country_universe_count": 50,
+    "ever_observed_1990_2025": 35,
+    "never_observed_1990_2025": 15,
+    "metric_latest_year": 2024,
+    "observed_in_metric_latest_year": 15,
+    "observed_in_2025": 0,
+    "cause": "historical-ever coverage and latest-common-year coverage use different time criteria",
+    "different_metric": false,
+    "different_country_universe": false,
+    "different_transformation": false,
+    "source_indicator_id": "GC.DOD.TOTL.GD.ZS"
+  },
+  "inflation_freshness_cases": [
+    {"iso3": "USA", "latest_observation_year": 2024, "metric_max_year": 2025, "lag_years": 1, "expected_status": "prior_year"},
+    {"iso3": "ARG", "latest_observation_year": 2024, "metric_max_year": 2025, "lag_years": 1, "expected_status": "prior_year"}
+  ],
+  "universe": {
+    "gdp_reference_year": 2025,
+    "selected_entities_with_mixed_gdp_years": 0,
+    "taiwan_present_in_world_bank_country_dimension": false,
+    "conclusion": "same-year consistency does not establish candidate-universe completeness"
+  },
+  "production_universe_path": "gei.pipeline.build",
+  "legacy_universe_test_target": "pipelines.build"
+}

@@ -1,0 +1,564 @@
+[
+  {
+    "availability": {
+      "target_end_year": 2025,
+      "target_start_year": 1990
+    },
+    "category": "Prices",
+    "caveat": "Consumption baskets and methods differ across economies.",
+    "chart_type": "line",
+    "countries_covered": 50,
+    "description": "Annual percentage change in the consumer price index.",
+    "directionality": "not_assessed",
+    "display_name": "CPI inflation",
+    "earliest_year": 1990,
+    "formatting": "percent",
+    "frequency": "annual",
+    "latest_by_country": [
+      {
+        "country": "United States",
+        "iso3": "USA",
+        "latest_observation_year": 2024,
+        "latest_value": 2.94952520485207,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 1
+      },
+      {
+        "country": "China",
+        "iso3": "CHN",
+        "latest_observation_year": 2025,
+        "latest_value": 0.0595646916565403,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Germany",
+        "iso3": "DEU",
+        "latest_observation_year": 2025,
+        "latest_value": 2.17178770949721,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Japan",
+        "iso3": "JPN",
+        "latest_observation_year": 2025,
+        "latest_value": 3.17253034260248,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "United Kingdom",
+        "iso3": "GBR",
+        "latest_observation_year": 2025,
+        "latest_value": 3.88306881626,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "India",
+        "iso3": "IND",
+        "latest_observation_year": 2025,
+        "latest_value": 2.39884954182294,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "France",
+        "iso3": "FRA",
+        "latest_observation_year": 2025,
+        "latest_value": 0.943770212469976,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Russian Federation",
+        "iso3": "RUS",
+        "latest_observation_year": 2025,
+        "latest_value": 8.71986939402666,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Italy",
+        "iso3": "ITA",
+        "latest_observation_year": 2025,
+        "latest_value": 1.5316682765282,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Canada",
+        "iso3": "CAN",
+        "latest_observation_year": 2025,
+        "latest_value": 2.07232411149103,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Brazil",
+        "iso3": "BRA",
+        "latest_observation_year": 2025,
+        "latest_value": 5.01675279604836,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Spain",
+        "iso3": "ESP",
+        "latest_observation_year": 2025,
+        "latest_value": 2.699932857627,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Korea, Rep.",
+        "iso3": "KOR",
+        "latest_observation_year": 2025,
+        "latest_value": 2.12309421458659,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Mexico",
+        "iso3": "MEX",
+        "latest_observation_year": 2025,
+        "latest_value": 3.80668650726485,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Australia",
+        "iso3": "AUS",
+        "latest_observation_year": 2025,
+        "latest_value": 2.87403791660173,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Turkiye",
+        "iso3": "TUR",
+        "latest_observation_year": 2025,
+        "latest_value": 34.8811629820306,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Indonesia",
+        "iso3": "IDN",
+        "latest_observation_year": 2025,
+        "latest_value": 1.9133344329508,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Netherlands",
+        "iso3": "NLD",
+        "latest_observation_year": 2025,
+        "latest_value": 3.2595766451366,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Saudi Arabia",
+        "iso3": "SAU",
+        "latest_observation_year": 2025,
+        "latest_value": 2.08420853585036,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Switzerland",
+        "iso3": "CHE",
+        "latest_observation_year": 2025,
+        "latest_value": 0.154376978290185,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Poland",
+        "iso3": "POL",
+        "latest_observation_year": 2025,
+        "latest_value": 3.81419531520146,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Belgium",
+        "iso3": "BEL",
+        "latest_observation_year": 2025,
+        "latest_value": 2.46705543774613,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Ireland",
+        "iso3": "IRL",
+        "latest_observation_year": 2025,
+        "latest_value": 2.21044788475857,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Argentina",
+        "iso3": "ARG",
+        "latest_observation_year": 2024,
+        "latest_value": 219.883929014578,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 1
+      },
+      {
+        "country": "Sweden",
+        "iso3": "SWE",
+        "latest_observation_year": 2025,
+        "latest_value": 0.679869285243995,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Israel",
+        "iso3": "ISR",
+        "latest_observation_year": 2025,
+        "latest_value": 3.0414132155654,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Singapore",
+        "iso3": "SGP",
+        "latest_observation_year": 2025,
+        "latest_value": 0.902998495002676,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Austria",
+        "iso3": "AUT",
+        "latest_observation_year": 2025,
+        "latest_value": 3.52719439956928,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Thailand",
+        "iso3": "THA",
+        "latest_observation_year": 2025,
+        "latest_value": -0.133634356480207,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Norway",
+        "iso3": "NOR",
+        "latest_observation_year": 2025,
+        "latest_value": 3.05562484410077,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Viet Nam",
+        "iso3": "VNM",
+        "latest_observation_year": 2025,
+        "latest_value": 3.3099931421974,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Philippines",
+        "iso3": "PHL",
+        "latest_observation_year": 2025,
+        "latest_value": 1.6587364525509,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Malaysia",
+        "iso3": "MYS",
+        "latest_observation_year": 2025,
+        "latest_value": 1.38060872293692,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Denmark",
+        "iso3": "DNK",
+        "latest_observation_year": 2025,
+        "latest_value": 1.89367372703044,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Colombia",
+        "iso3": "COL",
+        "latest_observation_year": 2025,
+        "latest_value": 5.14222911946201,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Bangladesh",
+        "iso3": "BGD",
+        "latest_observation_year": 2025,
+        "latest_value": 8.7687628116114,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Romania",
+        "iso3": "ROU",
+        "latest_observation_year": 2025,
+        "latest_value": 7.18903362292063,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Hong Kong SAR, China",
+        "iso3": "HKG",
+        "latest_observation_year": 2025,
+        "latest_value": 1.43633540372673,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "South Africa",
+        "iso3": "ZAF",
+        "latest_observation_year": 2025,
+        "latest_value": 3.20550474112603,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Pakistan",
+        "iso3": "PAK",
+        "latest_observation_year": 2025,
+        "latest_value": 3.54555214890893,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Czechia",
+        "iso3": "CZE",
+        "latest_observation_year": 2025,
+        "latest_value": 2.45996367838865,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Egypt, Arab Rep.",
+        "iso3": "EGY",
+        "latest_observation_year": 2025,
+        "latest_value": 14.0735136645934,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Iran, Islamic Rep.",
+        "iso3": "IRN",
+        "latest_observation_year": 2025,
+        "latest_value": 42.1712244965444,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Chile",
+        "iso3": "CHL",
+        "latest_observation_year": 2025,
+        "latest_value": 4.21293601694293,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Portugal",
+        "iso3": "PRT",
+        "latest_observation_year": 2025,
+        "latest_value": 2.33601620316701,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Peru",
+        "iso3": "PER",
+        "latest_observation_year": 2025,
+        "latest_value": 1.53125450314273,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Finland",
+        "iso3": "FIN",
+        "latest_observation_year": 2025,
+        "latest_value": 0.337874659400574,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Kazakhstan",
+        "iso3": "KAZ",
+        "latest_observation_year": 2025,
+        "latest_value": 11.3879454675914,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Nigeria",
+        "iso3": "NGA",
+        "latest_observation_year": 2025,
+        "latest_value": 23.0101235833333,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Algeria",
+        "iso3": "DZA",
+        "latest_observation_year": 2025,
+        "latest_value": 1.41835151429016,
+        "metric_id": "inflation_cpi_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "FP.CPI.TOTL.ZG",
+        "years_behind_metric_max": 0
+      }
+    ],
+    "latest_year": 2025,
+    "metric_id": "inflation_cpi_pct",
+    "missing_data_policy": "preserve_missing",
+    "missing_top50_countries": [],
+    "observation_count": 1754,
+    "preferred_decimals": 1,
+    "short_name": "Inflation",
+    "source": {
+      "adapter": "gei.adapters.WorldBankAdapter",
+      "attribution_text": "World Bank, World Development Indicators",
+      "base_endpoint": "https://api.worldbank.org/v2",
+      "dataset": "World Development Indicators",
+      "description": "World Bank cross-country development indicator collection.",
+      "documentation_reference": "https://databank.worldbank.org/source/world-development-indicators",
+      "license_name": "CC BY 4.0",
+      "license_reference": "https://datacatalog.worldbank.org/public-licenses",
+      "organization": "World Bank",
+      "raw_snapshot_policy": "immutable_date_partition_with_sha256",
+      "retrieval_method": "https_json_api",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "terms_reference": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "update_frequency": "varies_by_indicator",
+      "versioning_capability": "retrieval_snapshot"
+    },
+    "source_dataset_id": "world_development_indicators",
+    "source_id": "world_bank_wdi",
+    "source_indicator_id": "FP.CPI.TOTL.ZG",
+    "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
+    "transformation": "identity",
+    "transformation_definition": {
+      "description": "Preserve the normalized source value.",
+      "deterministic": true,
+      "name": "Identity",
+      "output_unit_behavior": "preserve",
+      "parameters": [],
+      "required_inputs": [
+        "value"
+      ],
+      "transformation_id": "identity",
+      "version": "1.0"
+    },
+    "unit": "% annual change",
+    "value_type": "rate"
+  }
+]

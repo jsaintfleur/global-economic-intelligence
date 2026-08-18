@@ -1,0 +1,1688 @@
+[
+  {
+    "availability": {
+      "target_end_year": 2025,
+      "target_start_year": 1990
+    },
+    "category": "Economic size",
+    "caveat": "Exchange-rate movements affect cross-country levels and ranks.",
+    "chart_type": "line",
+    "countries_covered": 50,
+    "description": "Gross domestic product at current market prices converted to current US dollars.",
+    "directionality": "not_assessed",
+    "display_name": "Nominal GDP",
+    "earliest_year": 1990,
+    "formatting": "currency",
+    "frequency": "annual",
+    "latest_by_country": [
+      {
+        "country": "United States",
+        "iso3": "USA",
+        "latest_observation_year": 2025,
+        "latest_value": 30769700000000.0,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "China",
+        "iso3": "CHN",
+        "latest_observation_year": 2025,
+        "latest_value": 19498039388042.6,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Germany",
+        "iso3": "DEU",
+        "latest_observation_year": 2025,
+        "latest_value": 5050922925047.05,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Japan",
+        "iso3": "JPN",
+        "latest_observation_year": 2025,
+        "latest_value": 4435162999976.94,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "United Kingdom",
+        "iso3": "GBR",
+        "latest_observation_year": 2025,
+        "latest_value": 4002587541846.01,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "India",
+        "iso3": "IND",
+        "latest_observation_year": 2025,
+        "latest_value": 3956067115771.63,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "France",
+        "iso3": "FRA",
+        "latest_observation_year": 2025,
+        "latest_value": 3366315927447.33,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Russian Federation",
+        "iso3": "RUS",
+        "latest_observation_year": 2025,
+        "latest_value": 2561310169358.74,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Italy",
+        "iso3": "ITA",
+        "latest_observation_year": 2025,
+        "latest_value": 2551556954100.35,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Canada",
+        "iso3": "CAN",
+        "latest_observation_year": 2025,
+        "latest_value": 2319899772425.92,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Brazil",
+        "iso3": "BRA",
+        "latest_observation_year": 2025,
+        "latest_value": 2279920092492.13,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Spain",
+        "iso3": "ESP",
+        "latest_observation_year": 2025,
+        "latest_value": 1906453309985.88,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Korea, Rep.",
+        "iso3": "KOR",
+        "latest_observation_year": 2025,
+        "latest_value": 1872374961553.15,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Mexico",
+        "iso3": "MEX",
+        "latest_observation_year": 2025,
+        "latest_value": 1832641364775.52,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Australia",
+        "iso3": "AUS",
+        "latest_observation_year": 2025,
+        "latest_value": 1798518933689.21,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Turkiye",
+        "iso3": "TUR",
+        "latest_observation_year": 2025,
+        "latest_value": 1597293229287.0,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Indonesia",
+        "iso3": "IDN",
+        "latest_observation_year": 2025,
+        "latest_value": 1445642584163.81,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Netherlands",
+        "iso3": "NLD",
+        "latest_observation_year": 2025,
+        "latest_value": 1332767651100.39,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Saudi Arabia",
+        "iso3": "SAU",
+        "latest_observation_year": 2025,
+        "latest_value": 1276942933333.33,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Switzerland",
+        "iso3": "CHE",
+        "latest_observation_year": 2025,
+        "latest_value": 1043529899250.92,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Poland",
+        "iso3": "POL",
+        "latest_observation_year": 2025,
+        "latest_value": 1035491784197.44,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Belgium",
+        "iso3": "BEL",
+        "latest_observation_year": 2025,
+        "latest_value": 725466462859.646,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Ireland",
+        "iso3": "IRL",
+        "latest_observation_year": 2025,
+        "latest_value": 721701359046.313,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Argentina",
+        "iso3": "ARG",
+        "latest_observation_year": 2025,
+        "latest_value": 683097891618.597,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Sweden",
+        "iso3": "SWE",
+        "latest_observation_year": 2025,
+        "latest_value": 668998664082.081,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Israel",
+        "iso3": "ISR",
+        "latest_observation_year": 2025,
+        "latest_value": 610777842873.595,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Singapore",
+        "iso3": "SGP",
+        "latest_observation_year": 2025,
+        "latest_value": 603869516998.738,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Austria",
+        "iso3": "AUT",
+        "latest_observation_year": 2025,
+        "latest_value": 579470021095.418,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Thailand",
+        "iso3": "THA",
+        "latest_observation_year": 2025,
+        "latest_value": 577009981112.015,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Norway",
+        "iso3": "NOR",
+        "latest_observation_year": 2025,
+        "latest_value": 530755719438.879,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Viet Nam",
+        "iso3": "VNM",
+        "latest_observation_year": 2025,
+        "latest_value": 514697215165.065,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Philippines",
+        "iso3": "PHL",
+        "latest_observation_year": 2025,
+        "latest_value": 487086123720.417,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Malaysia",
+        "iso3": "MYS",
+        "latest_observation_year": 2025,
+        "latest_value": 472193128644.597,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Denmark",
+        "iso3": "DNK",
+        "latest_observation_year": 2025,
+        "latest_value": 462526660468.393,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Colombia",
+        "iso3": "COL",
+        "latest_observation_year": 2025,
+        "latest_value": 457410034202.523,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Bangladesh",
+        "iso3": "BGD",
+        "latest_observation_year": 2025,
+        "latest_value": 456319229255.578,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Romania",
+        "iso3": "ROU",
+        "latest_observation_year": 2025,
+        "latest_value": 428677977854.826,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Hong Kong SAR, China",
+        "iso3": "HKG",
+        "latest_observation_year": 2025,
+        "latest_value": 427310315921.993,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "South Africa",
+        "iso3": "ZAF",
+        "latest_observation_year": 2025,
+        "latest_value": 427184325997.307,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Pakistan",
+        "iso3": "PAK",
+        "latest_observation_year": 2025,
+        "latest_value": 407307214476.222,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Czechia",
+        "iso3": "CZE",
+        "latest_observation_year": 2025,
+        "latest_value": 391026962800.475,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Egypt, Arab Rep.",
+        "iso3": "EGY",
+        "latest_observation_year": 2025,
+        "latest_value": 365254630179.737,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Iran, Islamic Rep.",
+        "iso3": "IRN",
+        "latest_observation_year": 2025,
+        "latest_value": 362682115433.364,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Chile",
+        "iso3": "CHL",
+        "latest_observation_year": 2025,
+        "latest_value": 357371159574.862,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Portugal",
+        "iso3": "PRT",
+        "latest_observation_year": 2025,
+        "latest_value": 346639825141.821,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Peru",
+        "iso3": "PER",
+        "latest_observation_year": 2025,
+        "latest_value": 334854659181.893,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Finland",
+        "iso3": "FIN",
+        "latest_observation_year": 2025,
+        "latest_value": 317039368819.607,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Kazakhstan",
+        "iso3": "KAZ",
+        "latest_observation_year": 2025,
+        "latest_value": 306239209650.024,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Nigeria",
+        "iso3": "NGA",
+        "latest_observation_year": 2025,
+        "latest_value": 290794361542.112,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Algeria",
+        "iso3": "DZA",
+        "latest_observation_year": 2025,
+        "latest_value": 287031225987.736,
+        "metric_id": "gdp_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.CD",
+        "years_behind_metric_max": 0
+      }
+    ],
+    "latest_year": 2025,
+    "metric_id": "gdp_current_usd",
+    "missing_data_policy": "preserve_missing",
+    "missing_top50_countries": [],
+    "observation_count": 1800,
+    "preferred_decimals": 2,
+    "short_name": "GDP",
+    "source": {
+      "adapter": "gei.adapters.WorldBankAdapter",
+      "attribution_text": "World Bank, World Development Indicators",
+      "base_endpoint": "https://api.worldbank.org/v2",
+      "dataset": "World Development Indicators",
+      "description": "World Bank cross-country development indicator collection.",
+      "documentation_reference": "https://databank.worldbank.org/source/world-development-indicators",
+      "license_name": "CC BY 4.0",
+      "license_reference": "https://datacatalog.worldbank.org/public-licenses",
+      "organization": "World Bank",
+      "raw_snapshot_policy": "immutable_date_partition_with_sha256",
+      "retrieval_method": "https_json_api",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "terms_reference": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "update_frequency": "varies_by_indicator",
+      "versioning_capability": "retrieval_snapshot"
+    },
+    "source_dataset_id": "world_development_indicators",
+    "source_id": "world_bank_wdi",
+    "source_indicator_id": "NY.GDP.MKTP.CD",
+    "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+    "transformation": "identity",
+    "transformation_definition": {
+      "description": "Preserve the normalized source value.",
+      "deterministic": true,
+      "name": "Identity",
+      "output_unit_behavior": "preserve",
+      "parameters": [],
+      "required_inputs": [
+        "value"
+      ],
+      "transformation_id": "identity",
+      "version": "1.0"
+    },
+    "unit": "current US$",
+    "value_type": "level"
+  },
+  {
+    "availability": {
+      "target_end_year": 2025,
+      "target_start_year": 1990
+    },
+    "category": "Living standards",
+    "caveat": "Current-dollar levels are not purchasing-power adjusted.",
+    "chart_type": "line",
+    "countries_covered": 50,
+    "description": "Nominal GDP per person in current US dollars.",
+    "directionality": "not_assessed",
+    "display_name": "GDP per capita",
+    "earliest_year": 1990,
+    "formatting": "currency",
+    "frequency": "annual",
+    "latest_by_country": [
+      {
+        "country": "United States",
+        "iso3": "USA",
+        "latest_observation_year": 2025,
+        "latest_value": 90026.5163005744,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "China",
+        "iso3": "CHN",
+        "latest_observation_year": 2025,
+        "latest_value": 13861.970224368,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Germany",
+        "iso3": "DEU",
+        "latest_observation_year": 2025,
+        "latest_value": 60496.4350820414,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Japan",
+        "iso3": "JPN",
+        "latest_observation_year": 2025,
+        "latest_value": 35951.0449549304,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "United Kingdom",
+        "iso3": "GBR",
+        "latest_observation_year": 2025,
+        "latest_value": 57601.9621201954,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "India",
+        "iso3": "IND",
+        "latest_observation_year": 2025,
+        "latest_value": 2702.47987141553,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "France",
+        "iso3": "FRA",
+        "latest_observation_year": 2025,
+        "latest_value": 48985.7307807924,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Russian Federation",
+        "iso3": "RUS",
+        "latest_observation_year": 2025,
+        "latest_value": 17546.609375,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Italy",
+        "iso3": "ITA",
+        "latest_observation_year": 2025,
+        "latest_value": 43308.6403060733,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Canada",
+        "iso3": "CAN",
+        "latest_observation_year": 2025,
+        "latest_value": 55697.6639660837,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Brazil",
+        "iso3": "BRA",
+        "latest_observation_year": 2025,
+        "latest_value": 10713.2856869511,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Spain",
+        "iso3": "ESP",
+        "latest_observation_year": 2025,
+        "latest_value": 38627.2472148623,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Korea, Rep.",
+        "iso3": "KOR",
+        "latest_observation_year": 2025,
+        "latest_value": 36226.9663637512,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Mexico",
+        "iso3": "MEX",
+        "latest_observation_year": 2025,
+        "latest_value": 13889.2339628708,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Australia",
+        "iso3": "AUS",
+        "latest_observation_year": 2025,
+        "latest_value": 65129.7227990563,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Turkiye",
+        "iso3": "TUR",
+        "latest_observation_year": 2025,
+        "latest_value": 18599.4420922378,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Indonesia",
+        "iso3": "IDN",
+        "latest_observation_year": 2025,
+        "latest_value": 5059.62596411213,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Netherlands",
+        "iso3": "NLD",
+        "latest_observation_year": 2025,
+        "latest_value": 73683.917132794,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Saudi Arabia",
+        "iso3": "SAU",
+        "latest_observation_year": 2025,
+        "latest_value": 34536.6555456551,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Switzerland",
+        "iso3": "CHE",
+        "latest_observation_year": 2025,
+        "latest_value": 114769.012314293,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Poland",
+        "iso3": "POL",
+        "latest_observation_year": 2025,
+        "latest_value": 28419.5777395638,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Belgium",
+        "iso3": "BEL",
+        "latest_observation_year": 2025,
+        "latest_value": 60750.2735864647,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Ireland",
+        "iso3": "IRL",
+        "latest_observation_year": 2025,
+        "latest_value": 131592.462547877,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Argentina",
+        "iso3": "ARG",
+        "latest_observation_year": 2025,
+        "latest_value": 14898.0885943842,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Sweden",
+        "iso3": "SWE",
+        "latest_observation_year": 2025,
+        "latest_value": 63133.2126736715,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Israel",
+        "iso3": "ISR",
+        "latest_observation_year": 2025,
+        "latest_value": 60336.8477964194,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Singapore",
+        "iso3": "SGP",
+        "latest_observation_year": 2025,
+        "latest_value": 98813.9788172877,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Austria",
+        "iso3": "AUT",
+        "latest_observation_year": 2025,
+        "latest_value": 62930.0351324599,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Thailand",
+        "iso3": "THA",
+        "latest_observation_year": 2025,
+        "latest_value": 8056.56359761558,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Norway",
+        "iso3": "NOR",
+        "latest_observation_year": 2025,
+        "latest_value": 94594.1929573987,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Viet Nam",
+        "iso3": "VNM",
+        "latest_observation_year": 2025,
+        "latest_value": 5065.99091899299,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Philippines",
+        "iso3": "PHL",
+        "latest_observation_year": 2025,
+        "latest_value": 4170.72347271451,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Malaysia",
+        "iso3": "MYS",
+        "latest_observation_year": 2025,
+        "latest_value": 13124.5554178269,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Denmark",
+        "iso3": "DNK",
+        "latest_observation_year": 2025,
+        "latest_value": 76970.1535217919,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Colombia",
+        "iso3": "COL",
+        "latest_observation_year": 2025,
+        "latest_value": 8561.62091854449,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Bangladesh",
+        "iso3": "BGD",
+        "latest_observation_year": 2025,
+        "latest_value": 2597.34352335275,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Romania",
+        "iso3": "ROU",
+        "latest_observation_year": 2025,
+        "latest_value": 22537.9532108047,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Hong Kong SAR, China",
+        "iso3": "HKG",
+        "latest_observation_year": 2025,
+        "latest_value": 56983.0663059906,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "South Africa",
+        "iso3": "ZAF",
+        "latest_observation_year": 2025,
+        "latest_value": 6597.71450918774,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Pakistan",
+        "iso3": "PAK",
+        "latest_observation_year": 2025,
+        "latest_value": 1595.90912252837,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Czechia",
+        "iso3": "CZE",
+        "latest_observation_year": 2025,
+        "latest_value": 35917.2724081665,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Egypt, Arab Rep.",
+        "iso3": "EGY",
+        "latest_observation_year": 2025,
+        "latest_value": 3085.80712036204,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Iran, Islamic Rep.",
+        "iso3": "IRN",
+        "latest_observation_year": 2025,
+        "latest_value": 3924.38017821898,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Chile",
+        "iso3": "CHL",
+        "latest_observation_year": 2025,
+        "latest_value": 17994.5911957485,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Portugal",
+        "iso3": "PRT",
+        "latest_observation_year": 2025,
+        "latest_value": 32081.8106150292,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Peru",
+        "iso3": "PER",
+        "latest_observation_year": 2025,
+        "latest_value": 9684.41170314988,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Finland",
+        "iso3": "FIN",
+        "latest_observation_year": 2025,
+        "latest_value": 56148.580949046,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Kazakhstan",
+        "iso3": "KAZ",
+        "latest_observation_year": 2025,
+        "latest_value": 14692.1331757237,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Nigeria",
+        "iso3": "NGA",
+        "latest_observation_year": 2025,
+        "latest_value": 1224.25410237743,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Algeria",
+        "iso3": "DZA",
+        "latest_observation_year": 2025,
+        "latest_value": 6051.00322704182,
+        "metric_id": "gdp_per_capita_current_usd",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.PCAP.CD",
+        "years_behind_metric_max": 0
+      }
+    ],
+    "latest_year": 2025,
+    "metric_id": "gdp_per_capita_current_usd",
+    "missing_data_policy": "preserve_missing",
+    "missing_top50_countries": [],
+    "observation_count": 1800,
+    "preferred_decimals": 0,
+    "short_name": "GDP/person",
+    "source": {
+      "adapter": "gei.adapters.WorldBankAdapter",
+      "attribution_text": "World Bank, World Development Indicators",
+      "base_endpoint": "https://api.worldbank.org/v2",
+      "dataset": "World Development Indicators",
+      "description": "World Bank cross-country development indicator collection.",
+      "documentation_reference": "https://databank.worldbank.org/source/world-development-indicators",
+      "license_name": "CC BY 4.0",
+      "license_reference": "https://datacatalog.worldbank.org/public-licenses",
+      "organization": "World Bank",
+      "raw_snapshot_policy": "immutable_date_partition_with_sha256",
+      "retrieval_method": "https_json_api",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "terms_reference": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "update_frequency": "varies_by_indicator",
+      "versioning_capability": "retrieval_snapshot"
+    },
+    "source_dataset_id": "world_development_indicators",
+    "source_id": "world_bank_wdi",
+    "source_indicator_id": "NY.GDP.PCAP.CD",
+    "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+    "transformation": "identity",
+    "transformation_definition": {
+      "description": "Preserve the normalized source value.",
+      "deterministic": true,
+      "name": "Identity",
+      "output_unit_behavior": "preserve",
+      "parameters": [],
+      "required_inputs": [
+        "value"
+      ],
+      "transformation_id": "identity",
+      "version": "1.0"
+    },
+    "unit": "current US$ per person",
+    "value_type": "level"
+  },
+  {
+    "availability": {
+      "target_end_year": 2025,
+      "target_start_year": 1990
+    },
+    "category": "Growth",
+    "caveat": "Constant-price growth; revisions are common.",
+    "chart_type": "line",
+    "countries_covered": 50,
+    "description": "Annual growth rate of GDP at market prices based on constant local currency.",
+    "directionality": "not_assessed",
+    "display_name": "Real GDP growth",
+    "earliest_year": 1990,
+    "formatting": "percent",
+    "frequency": "annual",
+    "latest_by_country": [
+      {
+        "country": "United States",
+        "iso3": "USA",
+        "latest_observation_year": 2025,
+        "latest_value": 2.16138195623856,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "China",
+        "iso3": "CHN",
+        "latest_observation_year": 2025,
+        "latest_value": 4.95994886240992,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Germany",
+        "iso3": "DEU",
+        "latest_observation_year": 2025,
+        "latest_value": 0.239578342117881,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Japan",
+        "iso3": "JPN",
+        "latest_observation_year": 2025,
+        "latest_value": 1.19311288444599,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "United Kingdom",
+        "iso3": "GBR",
+        "latest_observation_year": 2025,
+        "latest_value": 1.38844207858726,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "India",
+        "iso3": "IND",
+        "latest_observation_year": 2025,
+        "latest_value": 7.56666179284244,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "France",
+        "iso3": "FRA",
+        "latest_observation_year": 2025,
+        "latest_value": 0.840949955479587,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Russian Federation",
+        "iso3": "RUS",
+        "latest_observation_year": 2025,
+        "latest_value": 1.00117656925738,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Italy",
+        "iso3": "ITA",
+        "latest_observation_year": 2025,
+        "latest_value": 0.539583636778445,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Canada",
+        "iso3": "CAN",
+        "latest_observation_year": 2025,
+        "latest_value": 1.74268536175708,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Brazil",
+        "iso3": "BRA",
+        "latest_observation_year": 2025,
+        "latest_value": 2.2857464902475,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Spain",
+        "iso3": "ESP",
+        "latest_observation_year": 2025,
+        "latest_value": 2.82495400578509,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Korea, Rep.",
+        "iso3": "KOR",
+        "latest_observation_year": 2025,
+        "latest_value": 1.00701840291242,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Mexico",
+        "iso3": "MEX",
+        "latest_observation_year": 2025,
+        "latest_value": 0.561683456144578,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Australia",
+        "iso3": "AUS",
+        "latest_observation_year": 2025,
+        "latest_value": 1.35039785076631,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Turkiye",
+        "iso3": "TUR",
+        "latest_observation_year": 2025,
+        "latest_value": 3.60462514082589,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Indonesia",
+        "iso3": "IDN",
+        "latest_observation_year": 2025,
+        "latest_value": 5.10808904438025,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Netherlands",
+        "iso3": "NLD",
+        "latest_observation_year": 2025,
+        "latest_value": 1.78463214703797,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Saudi Arabia",
+        "iso3": "SAU",
+        "latest_observation_year": 2025,
+        "latest_value": 4.50246560191663,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Switzerland",
+        "iso3": "CHE",
+        "latest_observation_year": 2025,
+        "latest_value": 1.30007790958307,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Poland",
+        "iso3": "POL",
+        "latest_observation_year": 2025,
+        "latest_value": 3.5727250346774,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Belgium",
+        "iso3": "BEL",
+        "latest_observation_year": 2025,
+        "latest_value": 0.983117967125935,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Ireland",
+        "iso3": "IRL",
+        "latest_observation_year": 2025,
+        "latest_value": 12.3375990291434,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Argentina",
+        "iso3": "ARG",
+        "latest_observation_year": 2025,
+        "latest_value": 4.36733330217022,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Sweden",
+        "iso3": "SWE",
+        "latest_observation_year": 2025,
+        "latest_value": 1.54316373266217,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Israel",
+        "iso3": "ISR",
+        "latest_observation_year": 2025,
+        "latest_value": 2.93114966387968,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Singapore",
+        "iso3": "SGP",
+        "latest_observation_year": 2025,
+        "latest_value": 5.02588199508003,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Austria",
+        "iso3": "AUT",
+        "latest_observation_year": 2025,
+        "latest_value": 0.615747280959056,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Thailand",
+        "iso3": "THA",
+        "latest_observation_year": 2025,
+        "latest_value": 2.44247444990198,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Norway",
+        "iso3": "NOR",
+        "latest_observation_year": 2025,
+        "latest_value": 1.08528185031417,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Viet Nam",
+        "iso3": "VNM",
+        "latest_observation_year": 2025,
+        "latest_value": 8.01882998978245,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Philippines",
+        "iso3": "PHL",
+        "latest_observation_year": 2025,
+        "latest_value": 4.40240158710621,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Malaysia",
+        "iso3": "MYS",
+        "latest_observation_year": 2025,
+        "latest_value": 5.17127082911057,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Denmark",
+        "iso3": "DNK",
+        "latest_observation_year": 2025,
+        "latest_value": 2.92843280014236,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Colombia",
+        "iso3": "COL",
+        "latest_observation_year": 2025,
+        "latest_value": 2.64201548985928,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Bangladesh",
+        "iso3": "BGD",
+        "latest_observation_year": 2025,
+        "latest_value": 3.48990671836833,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Romania",
+        "iso3": "ROU",
+        "latest_observation_year": 2025,
+        "latest_value": 0.677829835052762,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Hong Kong SAR, China",
+        "iso3": "HKG",
+        "latest_observation_year": 2025,
+        "latest_value": 3.48764886355949,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "South Africa",
+        "iso3": "ZAF",
+        "latest_observation_year": 2025,
+        "latest_value": 1.11462608103956,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Pakistan",
+        "iso3": "PAK",
+        "latest_observation_year": 2025,
+        "latest_value": 3.69842668749033,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Czechia",
+        "iso3": "CZE",
+        "latest_observation_year": 2025,
+        "latest_value": 2.58046673293437,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Egypt, Arab Rep.",
+        "iso3": "EGY",
+        "latest_observation_year": 2025,
+        "latest_value": 4.39201068570188,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Iran, Islamic Rep.",
+        "iso3": "IRN",
+        "latest_observation_year": 2025,
+        "latest_value": -2.82597163290347,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Chile",
+        "iso3": "CHL",
+        "latest_observation_year": 2025,
+        "latest_value": 2.45925474781374,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Portugal",
+        "iso3": "PRT",
+        "latest_observation_year": 2025,
+        "latest_value": 1.86448007464475,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Peru",
+        "iso3": "PER",
+        "latest_observation_year": 2025,
+        "latest_value": 3.43056395124466,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Finland",
+        "iso3": "FIN",
+        "latest_observation_year": 2025,
+        "latest_value": 0.173444509584499,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Kazakhstan",
+        "iso3": "KAZ",
+        "latest_observation_year": 2025,
+        "latest_value": 6.5,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Nigeria",
+        "iso3": "NGA",
+        "latest_observation_year": 2025,
+        "latest_value": 4.01336180700973,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      },
+      {
+        "country": "Algeria",
+        "iso3": "DZA",
+        "latest_observation_year": 2025,
+        "latest_value": 3.815543719231,
+        "metric_id": "gdp_growth_pct",
+        "source_id": "world_bank_wdi",
+        "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+        "years_behind_metric_max": 0
+      }
+    ],
+    "latest_year": 2025,
+    "metric_id": "gdp_growth_pct",
+    "missing_data_policy": "preserve_missing",
+    "missing_top50_countries": [],
+    "observation_count": 1796,
+    "preferred_decimals": 1,
+    "short_name": "GDP growth",
+    "source": {
+      "adapter": "gei.adapters.WorldBankAdapter",
+      "attribution_text": "World Bank, World Development Indicators",
+      "base_endpoint": "https://api.worldbank.org/v2",
+      "dataset": "World Development Indicators",
+      "description": "World Bank cross-country development indicator collection.",
+      "documentation_reference": "https://databank.worldbank.org/source/world-development-indicators",
+      "license_name": "CC BY 4.0",
+      "license_reference": "https://datacatalog.worldbank.org/public-licenses",
+      "organization": "World Bank",
+      "raw_snapshot_policy": "immutable_date_partition_with_sha256",
+      "retrieval_method": "https_json_api",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "terms_reference": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "update_frequency": "varies_by_indicator",
+      "versioning_capability": "retrieval_snapshot"
+    },
+    "source_dataset_id": "world_development_indicators",
+    "source_id": "world_bank_wdi",
+    "source_indicator_id": "NY.GDP.MKTP.KD.ZG",
+    "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG",
+    "transformation": "identity",
+    "transformation_definition": {
+      "description": "Preserve the normalized source value.",
+      "deterministic": true,
+      "name": "Identity",
+      "output_unit_behavior": "preserve",
+      "parameters": [],
+      "required_inputs": [
+        "value"
+      ],
+      "transformation_id": "identity",
+      "version": "1.0"
+    },
+    "unit": "% annual change",
+    "value_type": "rate"
+  }
+]
