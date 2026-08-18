@@ -24,3 +24,15 @@ Every attempt writes `data/manifests/<pipeline_run_id>.json`, including failures
 ## Rejections
 
 Rejected rows are written separately with source indicator, raw index, source country code, source period, and structural reason. Missing values remain absent from normalized observations and are never imputed by the adapter.
+
+## Analytical entity registry
+
+`config/analytical_entities.json` is the authoritative application eligibility layer. Each record contains a stable analytical entity ID, explicit eligibility state, effective dates, authoritative source identifiers, review basis, and policy version. Source availability is not treated as geopolitical classification.
+
+## Phase 1.1 analytical assets
+
+The catalog schema is `2.1`. In addition to canonical metric shards, it maps metric IDs to ranking shards and ISO3 codes to country-profile shards.
+
+A ranking asset contains a default ranking year, available historical years, and one exact-year result per year. Every row exposes `ranking_year`, nullable `rank` and `value`, observation year, separately labelled latest historical context, metric maximum year, lag, recency status, coverage counts, and metric-specific 1/5/10-year changes. Missing-year rows are materialized for all cohort entities.
+
+Coverage schema `1.1` contains the complete country × metric matrix, including never-observed pairs. Inventory fields distinguish `ever_observed_country_count` from `ranking_year_observed_country_count`; clients must not substitute one for the other.

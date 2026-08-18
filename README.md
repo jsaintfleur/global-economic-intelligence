@@ -1,117 +1,201 @@
 # Atlas — Global Economic Intelligence
 
-Atlas is a source-traceable Phase 1 comparison product for the world's 50 largest economies. It separates published observations from transformations and presentation, preserves raw API responses, and exposes observation year, indicator code, source, retrieval date, coverage, and caveats in the interface.
+[![CI](https://github.com/jsaintfleur/global-economic-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/jsaintfleur/global-economic-intelligence/actions/workflows/ci.yml)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Data source: World Bank WDI](https://img.shields.io/badge/Data-World%20Bank%20WDI-0071BC)](https://databank.worldbank.org/source/world-development-indicators)
 
-## Phase 1 capabilities
+Atlas is an open-source economic intelligence platform for exploring and comparing the world’s largest economies with reproducible, source-backed macroeconomic data.
 
-- Reproducible Top-50 universe based on nominal GDP in the latest sufficiently complete common year
-- Seven declaratively registered World Bank WDI indicators: GDP, GDP per capita, real GDP growth, population, CPI inflation, unemployment, and central-government debt/GDP
-- Overview, rankings, indexed country comparison, country profiles, data explorer, CSV export, and methodology
-- Raw-response preservation, stable lineage identifiers, normalized country-year observations, rejected-record output, and historical run manifests
-- Content-derived data releases, build-to-build snapshot diffs, configurable regression gates, and three-grain coverage matrices
-- Visible missingness and per-country latest-year logic
-- Structural validation plus unit/integration/data-quality tests for adapters, caching, normalization, lineage, determinism, transformations, and payload integrity
+The project combines a dependency-free static web application with a deterministic Python data pipeline. Every published observation retains its source indicator, observation year, retrieval timestamp, raw snapshot, transformation, pipeline run, and stable lineage identifier.
 
-## Installation
+> **Project status:** Phase 1.1 is implemented and undergoing review on its feature branch. It hardens analytical-entity eligibility, exact-year rankings, observation recency, coverage disclosure, and production UX. Atlas does not include forecasting, scoring, or machine-learning features.
 
-Requires Python 3.11+; the application itself has no package dependencies.
+## What Atlas provides
+
+- A reproducible Top-50 economy universe based on nominal GDP in a common reference year
+- Overview, rankings, country profiles, multi-country comparisons, and a data explorer
+- Interactive historical charts and downloadable CSV exports
+- Shareable URL state for metrics, countries, and year ranges
+- Lazy-loaded, release-versioned metric shards for efficient static delivery
+- Explicit observation years, missing-data states, source codes, coverage, and caveats
+- Immutable raw-source snapshots, stable lineage IDs, release manifests, and snapshot diffs
+- Configuration-driven metric, source, country, transformation, and regression registries
+- Unit, integration, contract, data-quality, and production-payload validation
+
+## Phase 1 metrics
+
+| Metric | World Bank indicator | Unit |
+| --- | --- | --- |
+| Nominal GDP | `NY.GDP.MKTP.CD` | Current US$ |
+| GDP per capita | `NY.GDP.PCAP.CD` | Current US$ per person |
+| Real GDP growth | `NY.GDP.MKTP.KD.ZG` | Annual % change |
+| Population | `SP.POP.TOTL` | People |
+| CPI inflation | `FP.CPI.TOTL.ZG` | Annual % change |
+| Unemployment | `SL.UEM.TOTL.ZS` | % of labor force, modeled ILO estimate |
+| Central-government debt | `GC.DOD.TOTL.GD.ZS` | % of GDP |
+
+Metric definitions, display metadata, transformations, and caveats are declared in [`config/metrics.json`](config/metrics.json). Phase 1 uses identity transformations for all seven published series and does not interpolate missing observations.
+
+## Quick start
+
+### Requirements
+
+- Python 3.11 or newer
+- Node.js for the frontend syntax check
+- A modern web browser
+- `make` for the documented convenience commands
+
+The application and production pipeline otherwise use the Python standard library and browser-native JavaScript—there are no runtime package dependencies to install.
+
+### Clone and run locally
 
 ```bash
 git clone https://github.com/jsaintfleur/global-economic-intelligence.git
 cd global-economic-intelligence
-python3 --version
+make app
 ```
 
-No package installation is required for the Phase 1 static application or its standard-library Python pipeline.
+Open [http://localhost:8765](http://localhost:8765).
 
-## Local development
+The checked-in application assets contain the validated current release, so a network data refresh is not required for local exploration.
 
-Serve the checked-in application payload locally:
+## Validation
 
-```bash
-python -m http.server 8080 --directory app
-```
-
-Open `http://localhost:8080`.
-
-## Data pipeline
-
-The production pipeline retrieves World Bank WDI data, preserves immutable dated raw snapshots, normalizes source records, selects the GDP universe, validates observations, and writes release-bound application assets:
-
-```bash
-python -m gei.pipeline
-```
-
-This command requires network access for a new source refresh. To exercise the pipeline without changing the published production release or using the network:
-
-```bash
-make data-fixture
-```
-
-The alternate snapshot builder can be rerun after a successful refresh with `python -m pipelines.build --from-cache` and is retained for compatibility; the production implementation is `gei.pipeline`.
-
-## Testing and validation
-
-Run the same structural checks used before publication:
+Run the complete local validation sequence:
 
 ```bash
 make check
 make test
+python3 -m unittest tests.data_quality.test_production_payload -v
 make data-fixture
 make inventory
-python -m unittest tests.data_quality.test_production_payload -v
+make build
 ```
 
-The current suite contains 37 tests spanning source contracts, normalization, lineage, transformations, releases, coverage, configuration, and production-payload integrity. The Phase 1.1 audit identifies that legacy universe tests must be moved onto the production `gei.pipeline` selection path.
+| Command | Purpose |
+| --- | --- |
+| `make check` | Compile Python, check frontend JavaScript, validate JSON and registries |
+| `make test` | Run the complete unit, integration, contract, and data-quality suite |
+| `make data-fixture` | Exercise the pipeline deterministically without network access |
+| `make inventory` | Print current metric coverage and observation counts |
+| `make audit` | Regenerate the release-bound economic audit package |
+| `make build` | Validate and create the deployable static package in `dist/` |
 
-## Production build
+GitHub Actions runs configuration checks, all tests, production-payload validation, and the static production build on pushes and pull requests.
 
-Create the deployable static package:
+## Production data pipeline
+
+Run a new World Bank refresh with:
+
+```bash
+make data
+```
+
+The production path is `gei.pipeline`. A successful run:
+
+1. Retrieves the World Bank country dimension and registered indicators.
+2. Preserves immutable, date-partitioned raw responses with SHA-256 checksums.
+3. Normalizes source records into canonical country–metric–year observations.
+4. Records rejected records and structural rejection reasons.
+5. Selects the configured GDP universe and validates the Top-50 panel.
+6. Produces coverage matrices, release manifests, regression results, and diffs.
+7. Writes the static application catalog and per-metric data shards.
+
+A refresh requires network access and may change the selected universe when a newer sufficiently complete GDP year becomes available. Use `make data-fixture` when you only need a safe, offline pipeline check.
+
+The legacy-compatible cache builder remains available as `python3 -m pipelines.build --from-cache`; it is not the current production pipeline.
+
+## Architecture
+
+```text
+World Bank WDI
+      │
+      ▼
+Source adapters ──► immutable raw snapshots
+      │
+      ▼
+Normalization ──► canonical observations + rejected records
+      │
+      ▼
+Registries and validation ──► universe, coverage, releases, diffs
+      │
+      ▼
+Static catalog + metric shards ──► Atlas web application
+```
+
+| Path | Responsibility |
+| --- | --- |
+| `app/` | Dependency-free HTML, CSS, JavaScript, and published runtime data |
+| `gei/` | Production adapters, normalization, validation, releases, and pipeline |
+| `config/` | Versioned metric, source, country, transformation, and regression registries |
+| `data/raw/` | Immutable source responses, excluded from Git except for `.gitkeep` |
+| `data/processed/` | Canonical local pipeline outputs, excluded from Git |
+| `data/manifests/` | Pipeline-run history and source snapshot references |
+| `data/releases/` | Versioned release manifests and regression reports |
+| `data/audit/` | Machine-readable release audit evidence |
+| `docs/audit/` | Human-readable economic and implementation audit reports |
+| `tests/` | Unit, integration, source-contract, and production data-quality tests |
+| `agent_handoff/` | Structured methodology and implementation decisions |
+
+For more detail, see [Architecture](docs/ARCHITECTURE.md), [Data contracts](docs/DATA_CONTRACTS.md), and [Schema versioning](docs/SCHEMA_VERSIONING.md).
+
+## Provenance and release philosophy
+
+Atlas treats provenance as part of the data model rather than supplemental documentation. Every accepted observation carries:
+
+- source and dataset identifiers
+- the authoritative indicator code
+- observation and retrieval dates
+- raw snapshot ID and raw record index
+- raw, transformed, and modeled value fields
+- transformation and pipeline-run identifiers
+- a deterministic observation ID
+
+Successful releases bind application data to raw snapshots, registry fingerprints, source-adapter versions, validation status, and the recorded Git commit. Routine refreshes never overwrite raw evidence.
+
+See [Raw data policy](docs/RAW_DATA_POLICY.md), [Operations](docs/OPERATIONS.md), and the [current audit bundle](docs/audit/README.md).
+
+## Methodology and known limitations
+
+Atlas is explicit about the current release’s methodological boundaries:
+
+- **Exact-year rankings:** every ranking uses one declared year. Missing entities remain visible but unranked; older observations appear only as separately labelled context.
+- **Debt coverage:** the World Bank central-government debt series is not general-government gross debt. In the current release, 35 of 50 economies have any historical observation, while 15 have an observation in the series’ latest year, 2024.
+- **Candidate-universe completeness:** Top-50 GDP values use a common 2025 observation year for entities available in the World Bank source. That source omits some analytical candidates, including Taiwan, so same-year consistency does not establish global candidate completeness.
+- **Entity eligibility:** sovereignty or territory status is not inferred programmatically. A versioned analytical-entity registry records explicit eligibility and authoritative identifiers; Taiwan remains pending review until an approved GDP provider mapping is adopted.
+- **Static release:** the browser reads a published snapshot, not a live World Bank connection.
+
+Read the complete [Phase 1 methodology](docs/METHODOLOGY.md), [Phase 1.1 audit findings](docs/audit/PHASE_1_1_FINDINGS.md), and [implementation specification](agent_handoff/CLAUDE_TO_CODEX.md).
+
+## Building and deployment
+
+Create the production package with:
 
 ```bash
 make build
 ```
 
-The build validates Python, frontend JavaScript, registries, and configuration before writing the static site to `dist/`. `dist/` is generated and intentionally excluded from Git; deployment systems should run the repository build rather than treat local output as source.
+The generated `dist/` directory contains the complete static application plus a build manifest with asset sizes and SHA-256 checksums. It is intentionally excluded from Git; deployment systems should run the repository build and publish `dist/`.
 
-## Repository map
+No server runtime, application secret, API key, database, or rewrite layer is required. See [Deployment](docs/DEPLOYMENT.md) for caching and 404 behavior.
 
-```text
-app/                 Static interactive application
-  data/              Runtime dashboard payload
-gei/                 Adapters, schemas, transformations, pipeline
-data/raw/            Immutable source responses by retrieval date
-data/processed/      Canonical JSON and CSV outputs
-data/manifests/      Machine-readable history of pipeline attempts
-data/releases/       Release manifests and local snapshot archive
-data/diffs/          Machine-readable and Markdown release comparisons
-tests/               Unit and data-contract tests
-docs/                Architecture and methodology
-agent_handoff/       Structured Claude ↔ Codex interface
-```
+## Extending Atlas
 
-The application is deliberately static at runtime. `app/data/catalog.json` loads first, and versioned metric shards under `app/data/metrics/` load on demand. See `docs/ARCHITECTURE.md` and `docs/DEPLOYMENT.md` for the complete design and hosting contract.
+- [Adding a metric](docs/ADDING_A_METRIC.md)
+- [Adding a source adapter](docs/ADDING_AN_ADAPTER.md)
+- [Change classification](docs/CHANGE_TYPES.md)
+- [Phase 2 readiness](docs/PHASE_2_READINESS.md)
 
-## Sources, provenance, and releases
+Economic definitions, source substitutions, entity eligibility, and freshness thresholds require explicit review. Engineering changes should preserve raw evidence, lineage, missingness, and release reproducibility.
 
-Phase 1 uses declaratively registered World Bank World Development Indicators. Every accepted observation retains its source, dataset, indicator, retrieval timestamp, raw snapshot ID, raw record index, transformation ID, pipeline run, and stable observation ID. Raw responses are preserved by retrieval date and SHA-256; release manifests bind application data to source snapshots, registries, code commit, and validation status.
+## Current release
 
-The project does not interpolate missing observations or present modeled values as published facts. See `docs/METHODOLOGY.md`, `docs/RAW_DATA_POLICY.md`, and `docs/DATA_CONTRACTS.md`.
+- Release: `release_c95979a1f2a0d628fbf3`
+- Pipeline run: `run_9c142b7be97fd869979dd671`
+- Universe: 50 economies
+- Metrics: 7
+- Observations: 11,308
+- Reference year: 2025
+- Validation status: passed
 
-## Refresh behavior
-
-The pipeline downloads broad World Bank datasets for all non-aggregate economies before selecting the Top 50. A refresh may therefore change the universe when a newer sufficiently complete GDP year appears. Raw snapshots are date-partitioned; processed outputs are replaced by the latest successful build.
-
-Metrics are defined in `config/metrics.json`. See `docs/ADDING_A_METRIC.md`, `docs/ADDING_AN_ADAPTER.md`, and `docs/DATA_CONTRACTS.md` for extension contracts. The app build also emits per-metric observation shards so a future lazy-loading frontend can avoid shipping the full panel at 100–200 metric scale.
-
-The frontend now consumes those shards directly: it loads the catalog first, fetches overview essentials, then loads additional metrics on demand with request deduplication, in-memory caching, failure/retry states, and shareable query-string state.
-
-## Current limitations
-
-WDI's central-government debt indicator is materially sparse and is not equivalent to general-government gross debt. In the current release, 35 of 50 economies have any historical debt observation, but only 15 have an observation in the metric's latest year, 2024. The static frontend reads a published snapshot, not a live API connection.
-
-Current non-GDP metric rankings use each country's latest available value and can therefore compare different observation years. The common-year GDP universe is internally consistent for entities present in the World Bank source, but that source omits some candidate entities, including Taiwan. Territory/analytical eligibility is not inferred; the current registry leaves classification null.
-
-## Phase 1.1 audit status
-
-Phase 1 is implemented and release-audited. Phase 1.1 is specified but not yet implemented. Its approved work includes common-year metric ranking, explicit observation-recency metadata, production-path universe tests, and an economist-reviewed analytical-entity eligibility registry. Start with `docs/audit/README.md` and `agent_handoff/CLAUDE_TO_CODEX.md`. No Phase 2 forecasting, scoring, or additional economic methodology is part of the current release.
+Release fingerprints and audit navigation are available in [`docs/audit/README.md`](docs/audit/README.md).

@@ -1,0 +1,16 @@
+{
+  "metric_tables": {
+    "function": "gei.analytics.ranking_asset",
+    "historical_rank": "recomputed within each selected year",
+    "missing": "visible with null rank/value and separate historical context",
+    "observation_year": "one exact declared year per ranking",
+    "scope": "current analytical cohort",
+    "ties": "value descending then ISO3 ascending"
+  },
+  "universe": {
+    "candidate_pool": "explicitly included analytical entities with normalized provider GDP",
+    "function": "gei.universe.select_universe via gei.pipeline.build",
+    "observation_year": 2025,
+    "ties": "GDP descending then ISO3 ascending"
+  }
+}

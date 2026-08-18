@@ -1,0 +1,171 @@
+[
+  {
+    "countries_behind_metric_max": [],
+    "countries_with_no_observations": [],
+    "metric_id": "gdp_current_usd",
+    "metric_max_year": 2025,
+    "rejected_observation_count": 2139,
+    "rejection_reasons": [
+      {
+        "count": 411,
+        "reason": "missing_value"
+      },
+      {
+        "count": 1728,
+        "reason": "unknown_or_aggregate_country"
+      }
+    ],
+    "transformation_evidence": "identity preserves normalized source values",
+    "transformation_removed_observations": false
+  },
+  {
+    "countries_behind_metric_max": [],
+    "countries_with_no_observations": [],
+    "metric_id": "gdp_per_capita_current_usd",
+    "metric_max_year": 2025,
+    "rejected_observation_count": 2139,
+    "rejection_reasons": [
+      {
+        "count": 411,
+        "reason": "missing_value"
+      },
+      {
+        "count": 1728,
+        "reason": "unknown_or_aggregate_country"
+      }
+    ],
+    "transformation_evidence": "identity preserves normalized source values",
+    "transformation_removed_observations": false
+  },
+  {
+    "countries_behind_metric_max": [],
+    "countries_with_no_observations": [],
+    "metric_id": "gdp_growth_pct",
+    "metric_max_year": 2025,
+    "rejected_observation_count": 2244,
+    "rejection_reasons": [
+      {
+        "count": 516,
+        "reason": "missing_value"
+      },
+      {
+        "count": 1728,
+        "reason": "unknown_or_aggregate_country"
+      }
+    ],
+    "transformation_evidence": "identity preserves normalized source values",
+    "transformation_removed_observations": false
+  },
+  {
+    "countries_behind_metric_max": [],
+    "countries_with_no_observations": [],
+    "metric_id": "population",
+    "metric_max_year": 2025,
+    "rejected_observation_count": 1728,
+    "rejection_reasons": [
+      {
+        "count": 1728,
+        "reason": "unknown_or_aggregate_country"
+      }
+    ],
+    "transformation_evidence": "identity preserves normalized source values",
+    "transformation_removed_observations": false
+  },
+  {
+    "countries_behind_metric_max": [
+      "USA (2024)",
+      "ARG (2024)"
+    ],
+    "countries_with_no_observations": [],
+    "metric_id": "inflation_cpi_pct",
+    "metric_max_year": 2025,
+    "rejected_observation_count": 3360,
+    "rejection_reasons": [
+      {
+        "count": 1632,
+        "reason": "missing_value"
+      },
+      {
+        "count": 1728,
+        "reason": "unknown_or_aggregate_country"
+      }
+    ],
+    "transformation_evidence": "identity preserves normalized source values",
+    "transformation_removed_observations": false
+  },
+  {
+    "countries_behind_metric_max": [],
+    "countries_with_no_observations": [],
+    "metric_id": "unemployment_pct",
+    "metric_max_year": 2025,
+    "rejected_observation_count": 3009,
+    "rejection_reasons": [
+      {
+        "count": 1281,
+        "reason": "missing_value"
+      },
+      {
+        "count": 1728,
+        "reason": "unknown_or_aggregate_country"
+      }
+    ],
+    "transformation_evidence": "identity preserves normalized source values",
+    "transformation_removed_observations": false
+  },
+  {
+    "countries_behind_metric_max": [
+      "DEU (1990)",
+      "IND (2018)",
+      "ITA (1992)",
+      "AUS (2022)",
+      "IDN (2009)",
+      "NLD (1994)",
+      "POL (1994)",
+      "ISR (1999)",
+      "NOR (1994)",
+      "PHL (2014)",
+      "DNK (1994)",
+      "BGD (2003)",
+      "PAK (2000)",
+      "CZE (1994)",
+      "EGY (2007)",
+      "CHL (2000)",
+      "PRT (1994)",
+      "PER (2021)",
+      "FIN (1994)",
+      "KAZ (2023)"
+    ],
+    "countries_with_no_observations": [
+      "CHN",
+      "JPN",
+      "FRA",
+      "SAU",
+      "BEL",
+      "IRL",
+      "ARG",
+      "SWE",
+      "AUT",
+      "VNM",
+      "ROU",
+      "HKG",
+      "IRN",
+      "NGA",
+      "DZA"
+    ],
+    "metric_id": "central_government_debt_pct_gdp",
+    "metric_max_year": 2024,
+    "rejected_observation_count": 7895,
+    "rejection_reasons": [
+      {
+        "count": 6167,
+        "reason": "missing_value"
+      },
+      {
+        "count": 1728,
+        "reason": "unknown_or_aggregate_country"
+      }
+    ],
+    "transformation_evidence": "identity preserves normalized source values",
+    "transformation_removed_observations": false
+  }
+]

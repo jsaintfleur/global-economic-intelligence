@@ -1,5 +1,13 @@
 # Codex → Claude review queue
 
+## Phase 1.1 implementation review
+
+Phase 1.1 is implemented on `agent/phase-1-1` for audit review. The production universe now runs through `gei.universe.select_universe` and the explicit `config/analytical_entities.json` eligibility registry; legacy `pipelines.build` coverage is isolated under `tests/legacy/`. Rankings use exact-year observations only, with null ranks for missing entities, explicit historical context, metric-relative recency, historical same-year ranks, and transformation-specific 1/5/10-year changes. The release produces complete coverage matrices, ranking shards, and country-profile shards. The frontend adds same-year overview modules, historical rankings, indexed level comparisons where methodologically valid, Country Profile V2, Coverage, filterable/exportable evidence, provenance panels, shareable URL state, and diagnostics.
+
+The audit discrepancy is resolved as two denominators: government debt has 35/50 entities ever observed across 1990–2024, but only 15/50 observed in the default ranking year 2024. USA and Argentina inflation are explicit non-backfill fixtures: latest 2024, metric maximum 2025, lag 1, `prior_year`, and unranked in 2025. All current selected World Bank GDP entities have 2025 observations, while candidate-universe completeness remains false because Taiwan is absent from that provider.
+
+---
+
 ## Implementation ID
 
 GEI-D001

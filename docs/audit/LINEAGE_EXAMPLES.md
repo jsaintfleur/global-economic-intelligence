@@ -19,4 +19,4 @@ Technical summary: two examples per metric were selected deterministically as th
 | central_government_debt_pct_gdp | first | AUS / 1990 | raw_world_bank_wdi_GC.DOD.TOTL.GD.ZS_a212fe1ef1b5574b / 2123 | obs_3209e3a936514ee80d24ef65 | 12.211252069756 → 12.211252069756 → 12.211252069756 | identity |
 | central_government_debt_pct_gdp | last | ZAF / 2024 | raw_world_bank_wdi_GC.DOD.TOTL.GD.ZS_a212fe1ef1b5574b / 8101 | obs_613de87495596de0dd8dee02 | 82.7627080034486 → 82.7627080034486 → 82.7627080034486 | identity |
 
-Full records, checksums, and paths: [`lineage_examples.json`](../../data/audit/release_e9182edbdb3e275e19ca/lineage_examples.json).
+Full records, checksums, and paths: [`lineage_examples.json`](../../data/audit/release_c95979a1f2a0d628fbf3/lineage_examples.json).

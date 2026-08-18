@@ -1,0 +1,351 @@
+metric_id,iso3,country,missing_year_ranges,missing_year_count
+gdp_current_usd,USA,United States,None,0
+gdp_current_usd,CHN,China,None,0
+gdp_current_usd,DEU,Germany,None,0
+gdp_current_usd,JPN,Japan,None,0
+gdp_current_usd,GBR,United Kingdom,None,0
+gdp_current_usd,IND,India,None,0
+gdp_current_usd,FRA,France,None,0
+gdp_current_usd,RUS,Russian Federation,None,0
+gdp_current_usd,ITA,Italy,None,0
+gdp_current_usd,CAN,Canada,None,0
+gdp_current_usd,BRA,Brazil,None,0
+gdp_current_usd,ESP,Spain,None,0
+gdp_current_usd,KOR,"Korea, Rep.",None,0
+gdp_current_usd,MEX,Mexico,None,0
+gdp_current_usd,AUS,Australia,None,0
+gdp_current_usd,TUR,Turkiye,None,0
+gdp_current_usd,IDN,Indonesia,None,0
+gdp_current_usd,NLD,Netherlands,None,0
+gdp_current_usd,SAU,Saudi Arabia,None,0
+gdp_current_usd,CHE,Switzerland,None,0
+gdp_current_usd,POL,Poland,None,0
+gdp_current_usd,BEL,Belgium,None,0
+gdp_current_usd,IRL,Ireland,None,0
+gdp_current_usd,ARG,Argentina,None,0
+gdp_current_usd,SWE,Sweden,None,0
+gdp_current_usd,ISR,Israel,None,0
+gdp_current_usd,SGP,Singapore,None,0
+gdp_current_usd,AUT,Austria,None,0
+gdp_current_usd,THA,Thailand,None,0
+gdp_current_usd,NOR,Norway,None,0
+gdp_current_usd,VNM,Viet Nam,None,0
+gdp_current_usd,PHL,Philippines,None,0
+gdp_current_usd,MYS,Malaysia,None,0
+gdp_current_usd,DNK,Denmark,None,0
+gdp_current_usd,COL,Colombia,None,0
+gdp_current_usd,BGD,Bangladesh,None,0
+gdp_current_usd,ROU,Romania,None,0
+gdp_current_usd,HKG,"Hong Kong SAR, China",None,0
+gdp_current_usd,ZAF,South Africa,None,0
+gdp_current_usd,PAK,Pakistan,None,0
+gdp_current_usd,CZE,Czechia,None,0
+gdp_current_usd,EGY,"Egypt, Arab Rep.",None,0
+gdp_current_usd,IRN,"Iran, Islamic Rep.",None,0
+gdp_current_usd,CHL,Chile,None,0
+gdp_current_usd,PRT,Portugal,None,0
+gdp_current_usd,PER,Peru,None,0
+gdp_current_usd,FIN,Finland,None,0
+gdp_current_usd,KAZ,Kazakhstan,None,0
+gdp_current_usd,NGA,Nigeria,None,0
+gdp_current_usd,DZA,Algeria,None,0
+gdp_per_capita_current_usd,USA,United States,None,0
+gdp_per_capita_current_usd,CHN,China,None,0
+gdp_per_capita_current_usd,DEU,Germany,None,0
+gdp_per_capita_current_usd,JPN,Japan,None,0
+gdp_per_capita_current_usd,GBR,United Kingdom,None,0
+gdp_per_capita_current_usd,IND,India,None,0
+gdp_per_capita_current_usd,FRA,France,None,0
+gdp_per_capita_current_usd,RUS,Russian Federation,None,0
+gdp_per_capita_current_usd,ITA,Italy,None,0
+gdp_per_capita_current_usd,CAN,Canada,None,0
+gdp_per_capita_current_usd,BRA,Brazil,None,0
+gdp_per_capita_current_usd,ESP,Spain,None,0
+gdp_per_capita_current_usd,KOR,"Korea, Rep.",None,0
+gdp_per_capita_current_usd,MEX,Mexico,None,0
+gdp_per_capita_current_usd,AUS,Australia,None,0
+gdp_per_capita_current_usd,TUR,Turkiye,None,0
+gdp_per_capita_current_usd,IDN,Indonesia,None,0
+gdp_per_capita_current_usd,NLD,Netherlands,None,0
+gdp_per_capita_current_usd,SAU,Saudi Arabia,None,0
+gdp_per_capita_current_usd,CHE,Switzerland,None,0
+gdp_per_capita_current_usd,POL,Poland,None,0
+gdp_per_capita_current_usd,BEL,Belgium,None,0
+gdp_per_capita_current_usd,IRL,Ireland,None,0
+gdp_per_capita_current_usd,ARG,Argentina,None,0
+gdp_per_capita_current_usd,SWE,Sweden,None,0
+gdp_per_capita_current_usd,ISR,Israel,None,0
+gdp_per_capita_current_usd,SGP,Singapore,None,0
+gdp_per_capita_current_usd,AUT,Austria,None,0
+gdp_per_capita_current_usd,THA,Thailand,None,0
+gdp_per_capita_current_usd,NOR,Norway,None,0
+gdp_per_capita_current_usd,VNM,Viet Nam,None,0
+gdp_per_capita_current_usd,PHL,Philippines,None,0
+gdp_per_capita_current_usd,MYS,Malaysia,None,0
+gdp_per_capita_current_usd,DNK,Denmark,None,0
+gdp_per_capita_current_usd,COL,Colombia,None,0
+gdp_per_capita_current_usd,BGD,Bangladesh,None,0
+gdp_per_capita_current_usd,ROU,Romania,None,0
+gdp_per_capita_current_usd,HKG,"Hong Kong SAR, China",None,0
+gdp_per_capita_current_usd,ZAF,South Africa,None,0
+gdp_per_capita_current_usd,PAK,Pakistan,None,0
+gdp_per_capita_current_usd,CZE,Czechia,None,0
+gdp_per_capita_current_usd,EGY,"Egypt, Arab Rep.",None,0
+gdp_per_capita_current_usd,IRN,"Iran, Islamic Rep.",None,0
+gdp_per_capita_current_usd,CHL,Chile,None,0
+gdp_per_capita_current_usd,PRT,Portugal,None,0
+gdp_per_capita_current_usd,PER,Peru,None,0
+gdp_per_capita_current_usd,FIN,Finland,None,0
+gdp_per_capita_current_usd,KAZ,Kazakhstan,None,0
+gdp_per_capita_current_usd,NGA,Nigeria,None,0
+gdp_per_capita_current_usd,DZA,Algeria,None,0
+gdp_growth_pct,USA,United States,None,0
+gdp_growth_pct,CHN,China,None,0
+gdp_growth_pct,DEU,Germany,None,0
+gdp_growth_pct,JPN,Japan,None,0
+gdp_growth_pct,GBR,United Kingdom,None,0
+gdp_growth_pct,IND,India,None,0
+gdp_growth_pct,FRA,France,None,0
+gdp_growth_pct,RUS,Russian Federation,None,0
+gdp_growth_pct,ITA,Italy,None,0
+gdp_growth_pct,CAN,Canada,None,0
+gdp_growth_pct,BRA,Brazil,None,0
+gdp_growth_pct,ESP,Spain,None,0
+gdp_growth_pct,KOR,"Korea, Rep.",None,0
+gdp_growth_pct,MEX,Mexico,None,0
+gdp_growth_pct,AUS,Australia,None,0
+gdp_growth_pct,TUR,Turkiye,None,0
+gdp_growth_pct,IDN,Indonesia,None,0
+gdp_growth_pct,NLD,Netherlands,None,0
+gdp_growth_pct,SAU,Saudi Arabia,None,0
+gdp_growth_pct,CHE,Switzerland,None,0
+gdp_growth_pct,POL,Poland,1990,1
+gdp_growth_pct,BEL,Belgium,None,0
+gdp_growth_pct,IRL,Ireland,None,0
+gdp_growth_pct,ARG,Argentina,None,0
+gdp_growth_pct,SWE,Sweden,None,0
+gdp_growth_pct,ISR,Israel,None,0
+gdp_growth_pct,SGP,Singapore,None,0
+gdp_growth_pct,AUT,Austria,None,0
+gdp_growth_pct,THA,Thailand,None,0
+gdp_growth_pct,NOR,Norway,None,0
+gdp_growth_pct,VNM,Viet Nam,None,0
+gdp_growth_pct,PHL,Philippines,None,0
+gdp_growth_pct,MYS,Malaysia,None,0
+gdp_growth_pct,DNK,Denmark,None,0
+gdp_growth_pct,COL,Colombia,None,0
+gdp_growth_pct,BGD,Bangladesh,None,0
+gdp_growth_pct,ROU,Romania,1990,1
+gdp_growth_pct,HKG,"Hong Kong SAR, China",None,0
+gdp_growth_pct,ZAF,South Africa,None,0
+gdp_growth_pct,PAK,Pakistan,None,0
+gdp_growth_pct,CZE,Czechia,1990,1
+gdp_growth_pct,EGY,"Egypt, Arab Rep.",None,0
+gdp_growth_pct,IRN,"Iran, Islamic Rep.",None,0
+gdp_growth_pct,CHL,Chile,None,0
+gdp_growth_pct,PRT,Portugal,None,0
+gdp_growth_pct,PER,Peru,None,0
+gdp_growth_pct,FIN,Finland,None,0
+gdp_growth_pct,KAZ,Kazakhstan,1990,1
+gdp_growth_pct,NGA,Nigeria,None,0
+gdp_growth_pct,DZA,Algeria,None,0
+population,USA,United States,None,0
+population,CHN,China,None,0
+population,DEU,Germany,None,0
+population,JPN,Japan,None,0
+population,GBR,United Kingdom,None,0
+population,IND,India,None,0
+population,FRA,France,None,0
+population,RUS,Russian Federation,None,0
+population,ITA,Italy,None,0
+population,CAN,Canada,None,0
+population,BRA,Brazil,None,0
+population,ESP,Spain,None,0
+population,KOR,"Korea, Rep.",None,0
+population,MEX,Mexico,None,0
+population,AUS,Australia,None,0
+population,TUR,Turkiye,None,0
+population,IDN,Indonesia,None,0
+population,NLD,Netherlands,None,0
+population,SAU,Saudi Arabia,None,0
+population,CHE,Switzerland,None,0
+population,POL,Poland,None,0
+population,BEL,Belgium,None,0
+population,IRL,Ireland,None,0
+population,ARG,Argentina,None,0
+population,SWE,Sweden,None,0
+population,ISR,Israel,None,0
+population,SGP,Singapore,None,0
+population,AUT,Austria,None,0
+population,THA,Thailand,None,0
+population,NOR,Norway,None,0
+population,VNM,Viet Nam,None,0
+population,PHL,Philippines,None,0
+population,MYS,Malaysia,None,0
+population,DNK,Denmark,None,0
+population,COL,Colombia,None,0
+population,BGD,Bangladesh,None,0
+population,ROU,Romania,None,0
+population,HKG,"Hong Kong SAR, China",None,0
+population,ZAF,South Africa,None,0
+population,PAK,Pakistan,None,0
+population,CZE,Czechia,None,0
+population,EGY,"Egypt, Arab Rep.",None,0
+population,IRN,"Iran, Islamic Rep.",None,0
+population,CHL,Chile,None,0
+population,PRT,Portugal,None,0
+population,PER,Peru,None,0
+population,FIN,Finland,None,0
+population,KAZ,Kazakhstan,None,0
+population,NGA,Nigeria,None,0
+population,DZA,Algeria,None,0
+inflation_cpi_pct,USA,United States,2025,1
+inflation_cpi_pct,CHN,China,None,0
+inflation_cpi_pct,DEU,Germany,None,0
+inflation_cpi_pct,JPN,Japan,None,0
+inflation_cpi_pct,GBR,United Kingdom,None,0
+inflation_cpi_pct,IND,India,None,0
+inflation_cpi_pct,FRA,France,None,0
+inflation_cpi_pct,RUS,Russian Federation,1990-1992,3
+inflation_cpi_pct,ITA,Italy,None,0
+inflation_cpi_pct,CAN,Canada,None,0
+inflation_cpi_pct,BRA,Brazil,None,0
+inflation_cpi_pct,ESP,Spain,None,0
+inflation_cpi_pct,KOR,"Korea, Rep.",None,0
+inflation_cpi_pct,MEX,Mexico,None,0
+inflation_cpi_pct,AUS,Australia,None,0
+inflation_cpi_pct,TUR,Turkiye,None,0
+inflation_cpi_pct,IDN,Indonesia,None,0
+inflation_cpi_pct,NLD,Netherlands,None,0
+inflation_cpi_pct,SAU,Saudi Arabia,None,0
+inflation_cpi_pct,CHE,Switzerland,None,0
+inflation_cpi_pct,POL,Poland,None,0
+inflation_cpi_pct,BEL,Belgium,None,0
+inflation_cpi_pct,IRL,Ireland,None,0
+inflation_cpi_pct,ARG,Argentina,1990-2017; 2025,29
+inflation_cpi_pct,SWE,Sweden,None,0
+inflation_cpi_pct,ISR,Israel,None,0
+inflation_cpi_pct,SGP,Singapore,None,0
+inflation_cpi_pct,AUT,Austria,None,0
+inflation_cpi_pct,THA,Thailand,None,0
+inflation_cpi_pct,NOR,Norway,None,0
+inflation_cpi_pct,VNM,Viet Nam,1990-1995,6
+inflation_cpi_pct,PHL,Philippines,None,0
+inflation_cpi_pct,MYS,Malaysia,None,0
+inflation_cpi_pct,DNK,Denmark,None,0
+inflation_cpi_pct,COL,Colombia,None,0
+inflation_cpi_pct,BGD,Bangladesh,None,0
+inflation_cpi_pct,ROU,Romania,1990,1
+inflation_cpi_pct,HKG,"Hong Kong SAR, China",None,0
+inflation_cpi_pct,ZAF,South Africa,None,0
+inflation_cpi_pct,PAK,Pakistan,None,0
+inflation_cpi_pct,CZE,Czechia,1990-1991,2
+inflation_cpi_pct,EGY,"Egypt, Arab Rep.",None,0
+inflation_cpi_pct,IRN,"Iran, Islamic Rep.",None,0
+inflation_cpi_pct,CHL,Chile,None,0
+inflation_cpi_pct,PRT,Portugal,None,0
+inflation_cpi_pct,PER,Peru,None,0
+inflation_cpi_pct,FIN,Finland,None,0
+inflation_cpi_pct,KAZ,Kazakhstan,1990-1993,4
+inflation_cpi_pct,NGA,Nigeria,None,0
+inflation_cpi_pct,DZA,Algeria,None,0
+unemployment_pct,USA,United States,1990,1
+unemployment_pct,CHN,China,1990,1
+unemployment_pct,DEU,Germany,1990,1
+unemployment_pct,JPN,Japan,1990,1
+unemployment_pct,GBR,United Kingdom,1990,1
+unemployment_pct,IND,India,1990,1
+unemployment_pct,FRA,France,1990,1
+unemployment_pct,RUS,Russian Federation,1990,1
+unemployment_pct,ITA,Italy,1990,1
+unemployment_pct,CAN,Canada,1990,1
+unemployment_pct,BRA,Brazil,1990,1
+unemployment_pct,ESP,Spain,1990,1
+unemployment_pct,KOR,"Korea, Rep.",1990,1
+unemployment_pct,MEX,Mexico,1990,1
+unemployment_pct,AUS,Australia,1990,1
+unemployment_pct,TUR,Turkiye,1990,1
+unemployment_pct,IDN,Indonesia,1990,1
+unemployment_pct,NLD,Netherlands,1990,1
+unemployment_pct,SAU,Saudi Arabia,1990,1
+unemployment_pct,CHE,Switzerland,1990,1
+unemployment_pct,POL,Poland,1990,1
+unemployment_pct,BEL,Belgium,1990,1
+unemployment_pct,IRL,Ireland,1990,1
+unemployment_pct,ARG,Argentina,1990,1
+unemployment_pct,SWE,Sweden,1990,1
+unemployment_pct,ISR,Israel,1990,1
+unemployment_pct,SGP,Singapore,1990,1
+unemployment_pct,AUT,Austria,1990,1
+unemployment_pct,THA,Thailand,1990,1
+unemployment_pct,NOR,Norway,1990,1
+unemployment_pct,VNM,Viet Nam,1990,1
+unemployment_pct,PHL,Philippines,1990,1
+unemployment_pct,MYS,Malaysia,1990,1
+unemployment_pct,DNK,Denmark,1990,1
+unemployment_pct,COL,Colombia,1990,1
+unemployment_pct,BGD,Bangladesh,1990,1
+unemployment_pct,ROU,Romania,1990,1
+unemployment_pct,HKG,"Hong Kong SAR, China",1990,1
+unemployment_pct,ZAF,South Africa,1990,1
+unemployment_pct,PAK,Pakistan,1990,1
+unemployment_pct,CZE,Czechia,1990,1
+unemployment_pct,EGY,"Egypt, Arab Rep.",1990,1
+unemployment_pct,IRN,"Iran, Islamic Rep.",1990,1
+unemployment_pct,CHL,Chile,1990,1
+unemployment_pct,PRT,Portugal,1990,1
+unemployment_pct,PER,Peru,1990,1
+unemployment_pct,FIN,Finland,1990,1
+unemployment_pct,KAZ,Kazakhstan,1990,1
+unemployment_pct,NGA,Nigeria,1990,1
+unemployment_pct,DZA,Algeria,1990,1
+central_government_debt_pct_gdp,USA,United States,2025,1
+central_government_debt_pct_gdp,CHN,China,1990-2025,36
+central_government_debt_pct_gdp,DEU,Germany,1991-2025,35
+central_government_debt_pct_gdp,JPN,Japan,1990-2025,36
+central_government_debt_pct_gdp,GBR,United Kingdom,2025,1
+central_government_debt_pct_gdp,IND,India,2019-2025,7
+central_government_debt_pct_gdp,FRA,France,1990-2025,36
+central_government_debt_pct_gdp,RUS,Russian Federation,1990-1997; 2003-2004; 2025,11
+central_government_debt_pct_gdp,ITA,Italy,1990; 1993-2025,34
+central_government_debt_pct_gdp,CAN,Canada,2025,1
+central_government_debt_pct_gdp,BRA,Brazil,1990-2009; 2025,21
+central_government_debt_pct_gdp,ESP,Spain,2025,1
+central_government_debt_pct_gdp,KOR,"Korea, Rep.",1998-2011; 2025,15
+central_government_debt_pct_gdp,MEX,Mexico,2001-2018; 2025,19
+central_government_debt_pct_gdp,AUS,Australia,2023-2025,3
+central_government_debt_pct_gdp,TUR,Turkiye,1999-2007; 2025,10
+central_government_debt_pct_gdp,IDN,Indonesia,2000-2001; 2004-2007; 2010-2025,22
+central_government_debt_pct_gdp,NLD,Netherlands,1995-2025,31
+central_government_debt_pct_gdp,SAU,Saudi Arabia,1990-2025,36
+central_government_debt_pct_gdp,CHE,Switzerland,2025,1
+central_government_debt_pct_gdp,POL,Poland,1990-1993; 1995-2025,35
+central_government_debt_pct_gdp,BEL,Belgium,1990-2025,36
+central_government_debt_pct_gdp,IRL,Ireland,1990-2025,36
+central_government_debt_pct_gdp,ARG,Argentina,1990-2025,36
+central_government_debt_pct_gdp,SWE,Sweden,1990-2025,36
+central_government_debt_pct_gdp,ISR,Israel,2000-2025,26
+central_government_debt_pct_gdp,SGP,Singapore,2025,1
+central_government_debt_pct_gdp,AUT,Austria,1990-2025,36
+central_government_debt_pct_gdp,THA,Thailand,2017; 2025,2
+central_government_debt_pct_gdp,NOR,Norway,1995-2025,31
+central_government_debt_pct_gdp,VNM,Viet Nam,1990-2025,36
+central_government_debt_pct_gdp,PHL,Philippines,2015-2025,11
+central_government_debt_pct_gdp,MYS,Malaysia,1996-2001; 2025,7
+central_government_debt_pct_gdp,DNK,Denmark,1990; 1995-2025,32
+central_government_debt_pct_gdp,COL,Colombia,1990-1997; 2001-2002; 2004-2007; 2025,15
+central_government_debt_pct_gdp,BGD,Bangladesh,1990-2000; 2004-2025,33
+central_government_debt_pct_gdp,ROU,Romania,1990-2025,36
+central_government_debt_pct_gdp,HKG,"Hong Kong SAR, China",1990-2025,36
+central_government_debt_pct_gdp,ZAF,South Africa,2001-2014; 2025,15
+central_government_debt_pct_gdp,PAK,Pakistan,1994-1997; 1999; 2001-2025,30
+central_government_debt_pct_gdp,CZE,Czechia,1990-1992; 1995-2025,34
+central_government_debt_pct_gdp,EGY,"Egypt, Arab Rep.",1990-2006; 2008-2025,35
+central_government_debt_pct_gdp,IRN,"Iran, Islamic Rep.",1990-2025,36
+central_government_debt_pct_gdp,CHL,Chile,1990-1994; 2001-2025,30
+central_government_debt_pct_gdp,PRT,Portugal,1990-1992; 1995-2025,34
+central_government_debt_pct_gdp,PER,Peru,1995-2005; 2022-2025,15
+central_government_debt_pct_gdp,FIN,Finland,1995-2025,31
+central_government_debt_pct_gdp,KAZ,Kazakhstan,1990-2009; 2024-2025,22
+central_government_debt_pct_gdp,NGA,Nigeria,1990-2025,36
+central_government_debt_pct_gdp,DZA,Algeria,1990-2025,36

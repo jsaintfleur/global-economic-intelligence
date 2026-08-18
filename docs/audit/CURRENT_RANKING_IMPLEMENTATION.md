@@ -1,18 +1,18 @@
 # Current Ranking Implementation
 
-Technical summary: universe rank is a common-2025 global-source-candidate GDP rank; metric tables are latest-available rankings within the fixed current Top-50. Historical rank is not implemented.
+Technical summary: universe selection uses explicit eligibility and common-2025 provider GDP. Every metric ranking uses one exact year; historical ranks are recomputed within their own year.
 
 | Concern | Universe construction | Metric ranking tables |
 | --- | --- | --- |
-| Function | `gei.pipeline.build` + `rank_desc` | `buildIndex`, `latest`, `rankingTable` in `app/app.js` |
-| Observation year | Common year 2025 | Each country latest non-null year |
-| Missing values | Excluded from reference-year candidate values; no rank | Sorted after observed values; “Not available”; no displayed rank |
-| Tie handling | Sequential rank, GDP descending then ISO3 ascending | No shared-rank policy and no explicit secondary tie key |
-| Scope | All valid non-aggregate source candidates, then select 50 | Current Top-50 universe only |
-| Historical rank | Not applicable | Not implemented; therefore neither global nor current-Top-50 historical rank |
+| Function | `gei.universe.select_universe` via `gei.pipeline.build` | `gei.analytics.ranking_asset` |
+| Observation year | Common year 2025 | One exact declared year |
+| Missing values | Provider/eligibility limitations disclosed | Visible with null rank/value; historical context separate |
+| Tie handling | GDP descending then ISO3 ascending | Value descending then ISO3 ascending |
+| Scope | Explicitly included analytical entities | Current analytical cohort |
+| Historical rank | Not applicable | Recomputed within each historical year |
 
-Machine-readable evidence: [`ranking_implementation.json`](../../data/audit/release_e9182edbdb3e275e19ca/ranking_implementation.json).
+Machine-readable evidence: [`ranking_implementation.json`](../../data/audit/release_c95979a1f2a0d628fbf3/ranking_implementation.json).
 
 ## Audit note
 
-The current production path is `gei.pipeline.build`. The similarly named universe tests in `tests/test_universe.py` import `pipelines.build`, so they do not directly execute this production selection path.
+`tests/test_universe.py` now exercises `gei.universe.select_universe`, the function called by the production pipeline. Legacy compatibility coverage is isolated under `tests/legacy/`.

@@ -22,4 +22,4 @@ Technical summary: the complete 350-row matrix reports each Top-50 country and P
 | 6 | 1 |
 | no observation | 15 |
 
-Complete evidence: [`country_metric_freshness.csv`](../../data/audit/release_e9182edbdb3e275e19ca/country_metric_freshness.csv).
+Complete evidence: [`country_metric_freshness.csv`](../../data/audit/release_c95979a1f2a0d628fbf3/country_metric_freshness.csv).

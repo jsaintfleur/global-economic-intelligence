@@ -150,15 +150,16 @@ Complete evidence: [`country_metric_freshness.csv`](../../data/audit/{release['r
     included_unknown = [r for r in universe_rows[:50] if r["territory_classification"] is None]
     write(DOCS / "TOP50_UNIVERSE_EVIDENCE.md", f"""# Top-50 Universe Evidence
 
-Technical summary: release `{release['release_id']}` uses one common GDP observation year, `{ref}`, for every selected economy. Mixed observation years do not affect this universe snapshot.
+Technical summary: release `{release['release_id']}` uses one common GDP observation year, `{ref}`, for every selected World Bank-covered economy in the approved cohort. This does not establish candidate-universe completeness.
 
 ## Implemented selection rule
 
 - Indicator: World Bank WDI `NY.GDP.MKTP.CD` (nominal GDP, current US$).
-- Reference year: latest year with at least 150 valid non-aggregate economy observations; current result `{ref}`.
-- Candidate count in that year: {len(values)}.
-- Ranking: GDP descending, then ISO3 ascending; first 50 selected.
-- Aggregate exclusion: country-dimension region ID is neither null nor `NA`, and the ID has three characters.
+- Eligibility policy: explicit `{payload['meta']['eligibility_policy_version']}` registry records.
+- Provider: normalized World Bank GDP observations; `gei.universe.select_universe` is source-neutral.
+- Reference year: latest year containing all 50 approved entities; current result `{ref}`.
+- Ranking: GDP descending, then ISO3 ascending; exactly 50 eligible entities selected.
+- Candidate-universe completeness: false; the current provider omits analytical candidates including Taiwan.
 
 ## Selected economies
 
@@ -172,9 +173,9 @@ Technical summary: release `{release['release_id']}` uses one common GDP observa
 
 {len(excluded)} canonical non-aggregate country-dimension entries have no usable GDP value in `{ref}`. See the machine-readable exclusion file for the exact list.
 
-## Territory/entity evidence boundary
+## Analytical-entity evidence boundary
 
-The country registry states `World Bank country dimension; no sovereignty classification added`. All {len(included_unknown)} selected entries have `territory_classification: null`; therefore this package does not infer which included entries are territories or sovereign states. Claude should review that classification question directly.
+Atlas does not infer sovereignty. The explicit eligibility registry records Taiwan as `pending_review`, identifies it with IMF WEO code `TWN`, and leaves its World Bank code null. Common-year consistency among World Bank-covered entities does not resolve this source-universe omission.
 
 Files: [`top50_universe_candidates.csv`](../../data/audit/{release['release_id']}/top50_universe_candidates.csv), [`top50_universe_missing_reference_year.csv`](../../data/audit/{release['release_id']}/top50_universe_missing_reference_year.csv), and adjacent JSON.
 """)
@@ -261,18 +262,18 @@ Exact country-year gaps: [`missing_country_year_ranges.csv`](../../data/audit/{r
     implementation_report("CURRENT_GDP_IMPLEMENTATION.md", "Current GDP, GDP Per Capita, and Growth Implementation", ["gdp_current_usd", "gdp_per_capita_current_usd", "gdp_growth_pct"], f"Current methodology text: “{methodology_scope}” Structural bases are exactly those stated in each registry definition and unit below.")
 
     # Ranking implementation and UI evidence.
-    write(out / "ranking_implementation.json", json.dumps({"universe": {"function": "gei.pipeline.build + gei.transformations.rank_desc", "candidate_pool": "all normalized non-aggregate World Bank country-dimension economies with GDP in the common reference year", "missing": "excluded from reference_values and therefore not ranked", "ties": "sequential deterministic ranks after GDP descending then ISO3 ascending", "scope": "global source candidate pool, first 50 retained", "observation_year": ref}, "metric_tables": {"function": "app/app.js buildIndex/latest/rankingTable", "observation_year": "each current Top-50 country's latest non-null observation", "missing": "sorted last, displays Not available, no rank", "ties": "JavaScript stable numeric sort; no explicit secondary tie key or shared-rank policy", "scope": "current Top-50 universe", "historical_rank": "not implemented"}}, indent=2, sort_keys=True))
+    write(out / "ranking_implementation.json", json.dumps({"universe": {"function": "gei.universe.select_universe via gei.pipeline.build", "candidate_pool": "explicitly included analytical entities with normalized provider GDP", "ties": "GDP descending then ISO3 ascending", "observation_year": ref}, "metric_tables": {"function": "gei.analytics.ranking_asset", "observation_year": "one exact declared year per ranking", "missing": "visible with null rank/value and separate historical context", "ties": "value descending then ISO3 ascending", "scope": "current analytical cohort", "historical_rank": "recomputed within each selected year"}}, indent=2, sort_keys=True))
     write(DOCS / "CURRENT_RANKING_IMPLEMENTATION.md", f"""# Current Ranking Implementation
 
-Technical summary: universe rank is a common-{ref} global-source-candidate GDP rank; metric tables are latest-available rankings within the fixed current Top-50. Historical rank is not implemented.
+Technical summary: universe selection uses explicit eligibility and common-{ref} provider GDP. Every metric ranking uses one exact year; historical ranks are recomputed within their own year.
 
-{table(['Concern', 'Universe construction', 'Metric ranking tables'], [['Function', '`gei.pipeline.build` + `rank_desc`', '`buildIndex`, `latest`, `rankingTable` in `app/app.js`'], ['Observation year', f'Common year {ref}', 'Each country latest non-null year'], ['Missing values', 'Excluded from reference-year candidate values; no rank', 'Sorted after observed values; “Not available”; no displayed rank'], ['Tie handling', 'Sequential rank, GDP descending then ISO3 ascending', 'No shared-rank policy and no explicit secondary tie key'], ['Scope', 'All valid non-aggregate source candidates, then select 50', 'Current Top-50 universe only'], ['Historical rank', 'Not applicable', 'Not implemented; therefore neither global nor current-Top-50 historical rank']])}
+{table(['Concern', 'Universe construction', 'Metric ranking tables'], [['Function', '`gei.universe.select_universe` via `gei.pipeline.build`', '`gei.analytics.ranking_asset`'], ['Observation year', f'Common year {ref}', 'One exact declared year'], ['Missing values', 'Provider/eligibility limitations disclosed', 'Visible with null rank/value; historical context separate'], ['Tie handling', 'GDP descending then ISO3 ascending', 'Value descending then ISO3 ascending'], ['Scope', 'Explicitly included analytical entities', 'Current analytical cohort'], ['Historical rank', 'Not applicable', 'Recomputed within each historical year']])}
 
 Machine-readable evidence: [`ranking_implementation.json`](../../data/audit/{release['release_id']}/ranking_implementation.json).
 
 ## Audit note
 
-The current production path is `gei.pipeline.build`. The similarly named universe tests in `tests/test_universe.py` import `pipelines.build`, so they do not directly execute this production selection path.
+`tests/test_universe.py` now exercises `gei.universe.select_universe`, the function called by the production pipeline. Legacy compatibility coverage is isolated under `tests/legacy/`.
 """)
 
     ui_rows = [
@@ -324,11 +325,9 @@ Evidence basis: current `app/app.js` rendering functions plus the existing autom
         for node in ast.walk(tree):
             if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)) and node.name.startswith("test"):
                 selected = next((value for key, value in mappings.items() if key in node.name), ("Implementation behavior named by test; inspect test body for exact assertion", "structural", "as applicable"))
-                if str(path.relative_to(ROOT)) == "tests/test_universe.py":
-                    selected = (selected[0] + " (legacy `pipelines.build` path)", selected[1], selected[2])
                 test_rows.append({"test_file": str(path.relative_to(ROOT)), "test_name": node.name, "invariant_protected": selected[0], "classification": selected[1], "phase1_metrics_touched": selected[2]})
     csv_write(out / "test_coverage_map.csv", test_rows)
-    gaps = ["The three tests in `tests/test_universe.py` target legacy `pipelines.build`, not the current production `gei.pipeline.build` universe path.", "No independently economist-approved expected-value fixtures for any Phase 1 metric.", "No test asserts a common-year mode for non-universe metric rankings because that mode is not implemented.", "No test defines a shared-rank policy for ties in UI metric tables.", "No automated DOM assertion covers every page/metadata field in the UI visibility matrix.", "No sovereign-state/territory classification invariant exists; the registry deliberately leaves it null.", "No historical-rank invariant exists because historical rank is not implemented."]
+    gaps = ["No independently economist-approved expected-value fixtures exist beyond the audited release cases.", "No automated DOM assertion covers every page and metadata field; browser QA remains required.", "Analytical eligibility is explicit, but source expansion for Taiwan remains pending economic review."]
     write(DOCS / "TEST_COVERAGE_MAP.md", f"""# Test Coverage Map
 
 Technical summary: {len(test_rows)} tests protect structural contracts; one explicit registry assertion protects the current debt-scope economic contract. The suite does not supply independent economic approval.
@@ -348,7 +347,7 @@ Technical summary: this index binds the audit evidence to the already-published 
 
 ## Release fingerprints
 
-{table(['Fingerprint', 'Value'], [['Release ID', release['release_id']], ['Pipeline run ID', release['pipeline_run_id']], ['Metric registry', release['metric_registry_version']], ['Source registry', release['source_registry_version']], ['Country registry', release['country_registry_version']], ['Transformation registry', release['transformation_registry_version']], ['Git commit', release['code_commit']], ['Observations / countries / metrics', f"{release['observation_count']} / {release['country_count']} / {release['metric_count']}"]])}
+{table(['Fingerprint', 'Value'], [['Release ID', release['release_id']], ['Pipeline run ID', release['pipeline_run_id']], ['Metric registry', release['metric_registry_version']], ['Source registry', release['source_registry_version']], ['Country registry', release['country_registry_version']], ['Analytical entity registry', release.get('analytical_entity_registry_version', 'not recorded')], ['Transformation registry', release['transformation_registry_version']], ['Git commit', release['code_commit']], ['Observations / countries / metrics', f"{release['observation_count']} / {release['country_count']} / {release['metric_count']}"]])}
 
 ## Audit reports
 
