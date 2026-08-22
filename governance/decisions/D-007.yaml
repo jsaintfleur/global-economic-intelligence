@@ -1,0 +1,15 @@
+id: D-007
+title: Comparability class and population_scope govern UI capability
+status: active
+decided_by: claude
+decided_on: 2026-08-17
+amended_on: 2026-08-22
+amendment_reason: split capability enforcement from D-004 single-source integrity
+supersedes: null
+enforced_by:
+  - TEST-C-002
+  - TEST-R-001
+rationale: |
+  Class A/B/C and population_scope are enforcement, not tooltip text. Class C is blocked
+  from ranking axes; subset:* scopes are structurally barred from cross-country comparison.
+  This is the product thesis expressed as code.

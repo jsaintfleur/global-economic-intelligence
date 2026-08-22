@@ -1,0 +1,96 @@
+{
+  "blocking_findings": 0,
+  "findings": [
+    {
+      "actual": [
+        "DZA",
+        "NGA"
+      ],
+      "blocking": false,
+      "message": "Countries disappeared",
+      "rule_id": "country_removed",
+      "severity": "warning",
+      "threshold": {
+        "count": 0
+      }
+    },
+    {
+      "actual": [
+        {
+          "metric_id": "gdp_current_usd",
+          "new": {
+            "source_dataset_id": "world_economic_outlook",
+            "source_id": "imf_weo",
+            "source_indicator_id": "NGDPD"
+          },
+          "old": {
+            "source_dataset_id": "world_development_indicators",
+            "source_id": "world_bank_wdi",
+            "source_indicator_id": "NY.GDP.MKTP.CD"
+          }
+        },
+        {
+          "metric_id": "gdp_growth_pct",
+          "new": {
+            "source_dataset_id": "world_economic_outlook",
+            "source_id": "imf_weo",
+            "source_indicator_id": "NGDP_RPCH"
+          },
+          "old": {
+            "source_dataset_id": "world_development_indicators",
+            "source_id": "world_bank_wdi",
+            "source_indicator_id": "NY.GDP.MKTP.KD.ZG"
+          }
+        },
+        {
+          "metric_id": "gdp_per_capita_current_usd",
+          "new": {
+            "source_dataset_id": "world_economic_outlook",
+            "source_id": "imf_weo",
+            "source_indicator_id": "NGDPDPC"
+          },
+          "old": {
+            "source_dataset_id": "world_development_indicators",
+            "source_id": "world_bank_wdi",
+            "source_indicator_id": "NY.GDP.PCAP.CD"
+          }
+        },
+        {
+          "metric_id": "inflation_cpi_pct",
+          "new": {
+            "source_dataset_id": "world_economic_outlook",
+            "source_id": "imf_weo",
+            "source_indicator_id": "PCPIPCH"
+          },
+          "old": {
+            "source_dataset_id": "world_development_indicators",
+            "source_id": "world_bank_wdi",
+            "source_indicator_id": "FP.CPI.TOTL.ZG"
+          }
+        },
+        {
+          "metric_id": "population",
+          "new": {
+            "source_dataset_id": "world_economic_outlook",
+            "source_id": "imf_weo",
+            "source_indicator_id": "LP"
+          },
+          "old": {
+            "source_dataset_id": "world_development_indicators",
+            "source_id": "world_bank_wdi",
+            "source_indicator_id": "SP.POP.TOTL"
+          }
+        }
+      ],
+      "blocking": false,
+      "message": "Source mappings changed",
+      "rule_id": "source_mapping_changed",
+      "severity": "warning",
+      "threshold": {
+        "count": 0
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "passed"
+}

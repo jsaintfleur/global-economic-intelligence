@@ -6,5 +6,8 @@ requires-python = ">=3.11"
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
-testpaths = ["tests"]
-
+testpaths = ["tests", "governance/tests"]
+markers = [
+    "decision(id): governed decision this test enforces",
+    "test_id(id): stable Atlas test identifier",
+]

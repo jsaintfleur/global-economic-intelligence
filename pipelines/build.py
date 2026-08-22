@@ -1,4 +1,10 @@
-"""Compatibility entry point; the canonical implementation is gei.pipeline."""
+"""DEPRECATED compatibility entry point; not used by production.
+
+The canonical build is :mod:`gei.pipeline`. In particular,
+``select_reference_year`` below is legacy behavior and does not implement governed
+decision D-002 (IMF WEO actual-observation boundaries and latest admissible year).
+New code must not import universe or reference-year logic from this module.
+"""
 
 from __future__ import annotations
 
@@ -9,6 +15,7 @@ from gei.config import load_metric_registry
 
 
 def select_reference_year(rows: list[dict], minimum_countries: int = 150) -> int:
+    """Return the legacy count-threshold year; DEPRECATED, see D-002."""
     counts = Counter(int(row["year"]) for row in rows if row.get("value") is not None)
     eligible = [year for year, count in counts.items() if count >= minimum_countries]
     if not eligible:

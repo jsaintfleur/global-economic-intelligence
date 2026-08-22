@@ -3,7 +3,7 @@
   "rules": [
     {"rule_id":"observation_count_drop","severity":"warning","blocking":false,"threshold":{"percent":5.0}},
     {"rule_id":"country_removed","severity":"warning","blocking":false,"threshold":{"count":0}},
-    {"rule_id":"metric_removed","severity":"error","blocking":true,"threshold":{"count":0}},
+    {"rule_id":"metric_removed","severity":"error","blocking":true,"threshold":{"count":0},"approved_replacements":{"central_government_debt_pct_gdp":"general_government_gross_debt_pct_gdp"}},
     {"rule_id":"source_mapping_changed","severity":"warning","blocking":false,"threshold":{"count":0}},
     {"rule_id":"latest_year_regressed","severity":"warning","blocking":false,"threshold":{"years":0}},
     {"rule_id":"provenance_missing","severity":"error","blocking":true,"threshold":{"count":0}},

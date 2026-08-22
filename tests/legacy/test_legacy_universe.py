@@ -1,4 +1,8 @@
-"""Compatibility coverage for the non-production pipelines.build module."""
+"""Compatibility coverage for deprecated, non-production ``pipelines.build``.
+
+This test preserves legacy behavior only. It does not enforce D-002; production
+reference-year coverage belongs to ``gei.pipeline`` and its governance-marked tests.
+"""
 import unittest
 from pipelines.build import select_reference_year
 

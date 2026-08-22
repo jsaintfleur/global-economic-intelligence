@@ -12,24 +12,26 @@
   <title>ATLAS — Global Economic Intelligence</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="shell">
     <aside class="sidebar">
-      <a class="brand" href="?view=overview" aria-label="Atlas home"><span class="brand-mark">A</span><span>ATLAS<small>Global Economic Intelligence</small></span></a>
+      <a class="brand" href="?view=overview" aria-label="Atlas home"><span class="brand-mark">A</span><span>ATLAS<small>Economic intelligence</small></span></a>
       <nav id="nav">
-        <button data-view="overview" class="active">Overview</button>
-        <button data-view="rankings">Rankings</button>
-        <button data-view="compare">Compare</button>
-        <button data-view="country">Economies</button>
-        <button data-view="coverage">Coverage</button>
-        <button data-view="data">Explore</button>
-        <button data-view="methodology">Methodology</button>
+        <span class="nav-label">Intelligence</span>
+        <button data-view="overview" class="active"><i>01</i>Overview</button>
+        <button data-view="country"><i>02</i>Economies</button>
+        <button data-view="compare"><i>03</i>Compare</button>
+        <span class="nav-label">Research</span>
+        <button data-view="rankings"><i>04</i>Rankings</button>
+        <button data-view="data"><i>05</i>Explore</button>
+        <button data-view="coverage"><i>06</i>Coverage</button>
+        <button data-view="methodology"><i>07</i>Methodology</button>
       </nav>
-      <div class="sidebar-foot"><i></i><span>World Bank WDI<br><b id="freshness">Loading source…</b></span></div>
+      <div class="sidebar-foot"><i></i><span>IMF WEO + World Bank WDI<br><b id="freshness">Loading sources…</b></span></div>
     </aside>
     <main id="main-content" tabindex="-1">
       <header class="topbar">
@@ -42,6 +44,6 @@
   </div>
   <dialog id="command-dialog" class="command-dialog" aria-label="Search Atlas"><form method="dialog"><div class="command-head"><label for="command-input">Search economies, metrics, and analysis</label><button aria-label="Close search">Esc</button></div><input id="command-input" autocomplete="off" placeholder="Try “Japan”, “debt ranking”, or “compare US China”"><div id="command-results" role="listbox"></div><p class="command-hint">↑↓ Navigate · Enter Open · Esc Close</p></form></dialog>
   <div id="chart-tooltip" class="chart-tooltip" hidden></div>
-  <script type="module" src="app.js?v=5"></script>
+  <script type="module" src="app.js?v=6"></script>
 </body>
 </html>

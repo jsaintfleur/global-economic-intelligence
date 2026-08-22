@@ -23,6 +23,42 @@ class DiffTests(unittest.TestCase):
         self.assertEqual(len(diff["metrics"]["source_mapping_changes"]),1)
         self.assertEqual(diff["summary"]["observations_added"],1)
 
+    def test_debt_definition_change_is_metric_removal_and_addition_not_revision(self):
+        old = payload()
+        old["metrics"][0]["metric_id"] = "central_government_debt_pct_gdp"
+        old["observations"][0]["metric_id"] = "central_government_debt_pct_gdp"
+        new = payload(release="r2")
+        new["metrics"][0].update(
+            {
+                "metric_id": "general_government_gross_debt_pct_gdp",
+                "source_id": "imf_weo",
+                "source_dataset_id": "world_economic_outlook",
+                "source_indicator_id": "GGXWDG_NGDP",
+            }
+        )
+        new["observations"][0].update(
+            {
+                "metric_id": "general_government_gross_debt_pct_gdp",
+                "value": 115,
+            }
+        )
+        diff = snapshot_diff(old, new)
+        self.assertEqual(
+            diff["metrics"]["removed"], ["central_government_debt_pct_gdp"]
+        )
+        self.assertEqual(
+            diff["metrics"]["added"], ["general_government_gross_debt_pct_gdp"]
+        )
+        self.assertEqual(diff["observations"]["revised"], [])
+        self.assertEqual(diff["metrics"]["source_mapping_changes"], [])
+
+    def test_same_metric_new_compiler_is_a_structural_source_mapping_change(self):
+        diff = snapshot_diff(payload(metric_source="NY.GDP.MKTP.CD"), payload(
+            metric_source="NGDPD", release="r2"
+        ))
+        self.assertEqual(len(diff["metrics"]["source_mapping_changes"]), 1)
+        self.assertEqual(diff["metrics"]["source_mapping_changes"][0]["metric_id"], "x")
+
     def test_machine_and_human_outputs_are_written(self):
         with tempfile.TemporaryDirectory() as directory:
             paths=write_diff(snapshot_diff(payload(),payload(11,release="r2")),Path(directory),"r1","r2")

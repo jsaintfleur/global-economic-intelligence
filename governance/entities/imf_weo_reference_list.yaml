@@ -1,0 +1,395 @@
+# IMF WEO country-dimension reference list — aggregate exclusion (D-003)
+#
+# Authority: Claude (Agent A). Supplies the reference list D-003 requires so the adapter
+# excludes aggregates by explicit membership, never by code shape.
+#
+# Source:   https://api.imf.org/external/sdmx/2.1/codelist/IMF/CL_COUNTRY
+# Codelist: IMF:CL_COUNTRY(1.6.0)   retrieved 2026-08-22
+# Codes:    343
+#
+# THE POINT OF THIS FILE, stated plainly: CL_COUNTRY contains SIX aggregate codes that are
+# exactly three uppercase letters — AFR, APD, EUR, MCD, WHD (IMF area departments) and SDS
+# (Small Developing States). A /^[A-Z]{3}$/ filter admits every one of them. They are not
+# hypothetical future codes; they are in the codelist today. WEO does not currently publish
+# NGDPD for them, which is the only reason a shape filter has not already corrupted a
+# ranking. That is luck, and it expires without warning.
+#
+codelist:
+  urn: "IMF:CL_COUNTRY(1.6.0)"
+  retrieved_at: "2026-08-22"
+  total_codes: 343
+
+# Aggregates — structural group and UN M49 region codes. Never an economy.
+aggregate_structural:  # 78
+  - {code: G001, name: "World"}
+  - {code: G080, name: "EMDEs by Source of Export Earnings: Fuel"}
+  - {code: G083, name: "EMDEs by Source of Export Earnings: Manufactures"}
+  - {code: G084, name: "EMDEs by Source of Export Earnings: Services (including Income, Transfers)"}
+  - {code: G087, name: "EMDEs by External Financing: Net Debtors with Arrears and/or Reschedulings"}
+  - {code: G089, name: "EMDEs by Source of Export Earnings: Primary Products (excluding Fuel)"}
+  - {code: G092, name: "EMDEs by Source of Export Earnings: Nonfuel"}
+  - {code: G110, name: "Advanced Economies"}
+  - {code: G119, name: "G7"}
+  - {code: G120, name: "G20"}
+  - {code: G1201, name: "Emerging Market and Middle-Income Economies"}
+  - {code: G129, name: "Benelux"}
+  - {code: G1515, name: "Emerging Asia"}
+  - {code: G1614, name: "Sub-Saharan Africa (SSA): Oil Exporters"}
+  - {code: G1626, name: "Sub-Saharan Africa (SSA): Middle-Income"}
+  - {code: G1627, name: "Sub-Saharan Africa (SSA): Low-Income"}
+  - {code: G163, name: "Euro Area (EA)"}
+  - {code: G200, name: "Emerging Market and Developing Economies"}
+  - {code: G201, name: "Low-Income Developing Countries (LIDC)"}
+  - {code: G202, name: "Advanced Asia"}
+  - {code: G205, name: "Latin America and the Caribbean (LAC)"}
+  - {code: G209, name: "EMDEs by External Financing: Net Creditors"}
+  - {code: G216, name: "EMDEs by Source of Export Earnings: Diversified"}
+  - {code: G309, name: "Eastern Caribbean Currency Union (ECCU)"}
+  - {code: G400, name: "Middle East and Central Asia"}
+  - {code: G401, name: "Middle East and Central Asia: Oil Exporters"}
+  - {code: G402, name: "Middle East and Central Asia: Oil Importers"}
+  - {code: G406, name: "Middle East and North Africa (MENA)"}
+  - {code: G450, name: "Gulf Cooperation Council (GCC)"}
+  - {code: G505, name: "Emerging and Developing Asia"}
+  - {code: G510, name: "ASEAN-5"}
+  - {code: G603, name: "Sub-Saharan Africa (SSA)"}
+  - {code: G606, name: "EMDEs by External Financing: Net Debtors"}
+  - {code: G609, name: "CFA franc zone"}
+  - {code: G619, name: "East African Community (EAC)"}
+  - {code: G711, name: "Heavily Indebted Poor Countries (HIPC)"}
+  - {code: G715, name: "Fragile and Conflict-affected States (FCS)"}
+  - {code: G757, name: "Southern African Customs Union (SACU)"}
+  - {code: G758, name: "Central African Economic and Monetary Community (CEMAC)"}
+  - {code: G759, name: "West African Economic and Monetary Union (WAEMU)"}
+  - {code: G760, name: "Common Market for Eastern and Southern Africa (COMESA)"}
+  - {code: G765, name: "Southern African Development Community (SADC)"}
+  - {code: G776, name: "Economic Community of West African States (ECOWAS)"}
+  - {code: G903, name: "Emerging and Developing Europe"}
+  - {code: G906, name: "Advanced Europe"}
+  - {code: G92031, name: "North America"}
+  - {code: G940, name: "Caucasus and Central Asia (CCA)"}
+  - {code: G995, name: "Euro Area (EA) – aggregate of member states"}
+  - {code: G998, name: "European Union (EU)"}
+  - {code: GASEAN, name: "ASEAN"}
+  - {code: GSAC, name: "Southern African Customs Union (SACU)"}
+  - {code: U002, name: "Africa"}
+  - {code: U005, name: "South America"}
+  - {code: U009, name: "Oceania"}
+  - {code: U011, name: "Western Africa"}
+  - {code: U013, name: "Central America"}
+  - {code: U014, name: "Eastern Africa"}
+  - {code: U015, name: "Northern Africa"}
+  - {code: U017, name: "Middle Africa"}
+  - {code: U018, name: "Southern Africa"}
+  - {code: U019, name: "Americas"}
+  - {code: U029, name: "Caribbean"}
+  - {code: U030, name: "Eastern Asia"}
+  - {code: U034, name: "Southern Asia"}
+  - {code: U035, name: "South-eastern Asia"}
+  - {code: U039, name: "Southern Europe"}
+  - {code: U053, name: "Australia and New Zealand"}
+  - {code: U054, name: "Melanesia"}
+  - {code: U057, name: "Micronesia"}
+  - {code: U061, name: "Polynesia"}
+  - {code: U142, name: "Asia"}
+  - {code: U143, name: "Central Asia"}
+  - {code: U145, name: "Western Asia"}
+  - {code: U150, name: "Europe"}
+  - {code: U151, name: "Eastern Europe"}
+  - {code: U154, name: "Northern Europe"}
+  - {code: U155, name: "Western Europe"}
+  - {code: U202, name: "Sub-Saharan Africa"}
+
+# Aggregates — IMF area departments. ALPHA-3 SHAPED. This is the trap.
+aggregate_area_department:  # 5
+  - {code: AFR, name: "Africa (AFR)"}
+  - {code: APD, name: "Asia and Pacific (APD)"}
+  - {code: EUR, name: "Europe (EUR)"}
+  - {code: MCD, name: "Middle East and Central Asia (MCD)"}
+  - {code: WHD, name: "Western Hemisphere (WHD)"}
+
+# Aggregates — analytical grouping. ALPHA-3 SHAPED.
+aggregate_analytical:  # 1
+  - {code: SDS, name: "Small Developing States (SDS)"}
+
+# Dissolved states. Real economies historically; must never enter a current universe.
+dissolved_state:  # 10
+  - {code: ANT, name: "Netherlands Antilles"}
+  - {code: CSK, name: "Czechoslovakia"}
+  - {code: CWX, name: "Curaçao and Sint Maarten"}
+  - {code: DDR, name: "German Democratic Republic"}
+  - {code: SCG, name: "Serbia and Montenegro"}
+  - {code: SUN, name: "Union of Soviet Socialist Republics (USSR)"}
+  - {code: VDR, name: "Vietnam, Democratic Republic of"}
+  - {code: YAR, name: "Yemen Arab Republic"}
+  - {code: YMD, name: "Yemen, People's Democratic Republic of"}
+  - {code: YUG, name: "Yugoslavia, Socialist Federal Republic of"}
+
+# Geographic codes present in CL_COUNTRY but not IMF WEO reporting economies.
+territory_not_reporting:  # 14
+  - {code: ALA, name: "Åland Islands"}
+  - {code: ATF, name: "French Southern Territories"}
+  - {code: BLM, name: "Saint Barthelemy"}
+  - {code: BVT, name: "Bouvet Island"}
+  - {code: CCK, name: "Cocos Islands"}
+  - {code: CXR, name: "Christmas Island"}
+  - {code: GGY, name: "Guernsey"}
+  - {code: HMD, name: "Heard Island and McDonald Islands"}
+  - {code: IMN, name: "Isle of Man"}
+  - {code: JEY, name: "Jersey"}
+  - {code: MAF, name: "Saint Martin"}
+  - {code: NFK, name: "Norfolk Island"}
+  - {code: SGS, name: "South Georgia and the South Sandwich Islands"}
+  - {code: UMI, name: "United States Minor Outlying Islands"}
+
+# Reporting economies. Eligible for the candidate universe subject to R-5 adjudication.
+economy:  # 235
+  - {code: ABW, name: "Aruba, Kingdom of the Netherlands"}
+  - {code: AFG, name: "Afghanistan, Islamic Republic of"}
+  - {code: AGO, name: "Angola"}
+  - {code: AIA, name: "Anguilla, United Kingdom-British Overseas Territory"}
+  - {code: ALB, name: "Albania"}
+  - {code: AND, name: "Andorra, Principality of"}
+  - {code: ARE, name: "United Arab Emirates"}
+  - {code: ARG, name: "Argentina"}
+  - {code: ARM, name: "Armenia, Republic of"}
+  - {code: ASM, name: "American Samoa"}
+  - {code: ATG, name: "Antigua and Barbuda"}
+  - {code: AUS, name: "Australia"}
+  - {code: AUT, name: "Austria"}
+  - {code: AZE, name: "Azerbaijan, Republic of"}
+  - {code: BDI, name: "Burundi"}
+  - {code: BEL, name: "Belgium"}
+  - {code: BEN, name: "Benin"}
+  - {code: BES, name: "Bonaire, Saint Eustatius and Saba"}
+  - {code: BFA, name: "Burkina Faso"}
+  - {code: BGD, name: "Bangladesh"}
+  - {code: BGR, name: "Bulgaria"}
+  - {code: BHR, name: "Bahrain, Kingdom of"}
+  - {code: BHS, name: "Bahamas, The"}
+  - {code: BIH, name: "Bosnia and Herzegovina"}
+  - {code: BLR, name: "Belarus, Republic of"}
+  - {code: BLZ, name: "Belize"}
+  - {code: BMU, name: "Bermuda"}
+  - {code: BOL, name: "Bolivia"}
+  - {code: BRA, name: "Brazil"}
+  - {code: BRB, name: "Barbados"}
+  - {code: BRN, name: "Brunei Darussalam"}
+  - {code: BTN, name: "Bhutan"}
+  - {code: BWA, name: "Botswana"}
+  - {code: CAF, name: "Central African Republic"}
+  - {code: CAN, name: "Canada"}
+  - {code: CHE, name: "Switzerland"}
+  - {code: CHL, name: "Chile"}
+  - {code: CHN, name: "China, People's Republic of"}
+  - {code: CIV, name: "Côte d'Ivoire"}
+  - {code: CMR, name: "Cameroon"}
+  - {code: COD, name: "Congo, Democratic Republic of the"}
+  - {code: COG, name: "Congo, Republic of"}
+  - {code: COK, name: "Cook Islands"}
+  - {code: COL, name: "Colombia"}
+  - {code: COM, name: "Comoros, Union of the"}
+  - {code: CPV, name: "Cabo Verde"}
+  - {code: CRI, name: "Costa Rica"}
+  - {code: CUB, name: "Cuba"}
+  - {code: CUW, name: "Curaçao, Kingdom of the Netherlands"}
+  - {code: CYM, name: "Cayman Islands"}
+  - {code: CYP, name: "Cyprus"}
+  - {code: CZE, name: "Czech Republic"}
+  - {code: DEU, name: "Germany"}
+  - {code: DJI, name: "Djibouti"}
+  - {code: DMA, name: "Dominica"}
+  - {code: DNK, name: "Denmark"}
+  - {code: DOM, name: "Dominican Republic"}
+  - {code: DZA, name: "Algeria"}
+  - {code: ECU, name: "Ecuador"}
+  - {code: EGY, name: "Egypt, Arab Republic of"}
+  - {code: ERI, name: "Eritrea, The State of"}
+  - {code: ESH, name: "Western Sahara"}
+  - {code: ESP, name: "Spain"}
+  - {code: EST, name: "Estonia, Republic of"}
+  - {code: ETH, name: "Ethiopia, The Federal Democratic Republic of"}
+  - {code: FIN, name: "Finland"}
+  - {code: FJI, name: "Fiji, Republic of"}
+  - {code: FLK, name: "Falkland Islands (Malvinas)"}
+  - {code: FRA, name: "France"}
+  - {code: FRO, name: "Faroe Islands"}
+  - {code: FSM, name: "Micronesia, Federated States of"}
+  - {code: GAB, name: "Gabon"}
+  - {code: GBR, name: "United Kingdom"}
+  - {code: GEO, name: "Georgia"}
+  - {code: GHA, name: "Ghana"}
+  - {code: GIB, name: "Gibraltar"}
+  - {code: GIN, name: "Guinea"}
+  - {code: GLP, name: "Guadeloupe"}
+  - {code: GMB, name: "Gambia, The"}
+  - {code: GNB, name: "Guinea-Bissau"}
+  - {code: GNQ, name: "Equatorial Guinea, Republic of"}
+  - {code: GRC, name: "Greece"}
+  - {code: GRD, name: "Grenada"}
+  - {code: GRL, name: "Greenland"}
+  - {code: GTM, name: "Guatemala"}
+  - {code: GUF, name: "French Guiana"}
+  - {code: GUM, name: "Guam"}
+  - {code: GUY, name: "Guyana"}
+  - {code: HKG, name: "Hong Kong Special Administrative Region, People's Republic of China"}
+  - {code: HND, name: "Honduras"}
+  - {code: HRV, name: "Croatia, Republic of"}
+  - {code: HTI, name: "Haiti"}
+  - {code: HUN, name: "Hungary"}
+  - {code: IDN, name: "Indonesia"}
+  - {code: IND, name: "India"}
+  - {code: IOT, name: "British Indian Ocean Territory"}
+  - {code: IRL, name: "Ireland"}
+  - {code: IRN, name: "Iran, Islamic Republic of"}
+  - {code: IRQ, name: "Iraq"}
+  - {code: ISL, name: "Iceland"}
+  - {code: ISR, name: "Israel"}
+  - {code: ITA, name: "Italy"}
+  - {code: JAM, name: "Jamaica"}
+  - {code: JOR, name: "Jordan"}
+  - {code: JPN, name: "Japan"}
+  - {code: KAZ, name: "Kazakhstan, Republic of"}
+  - {code: KEN, name: "Kenya"}
+  - {code: KGZ, name: "Kyrgyz Republic"}
+  - {code: KHM, name: "Cambodia"}
+  - {code: KIR, name: "Kiribati"}
+  - {code: KNA, name: "St. Kitts and Nevis"}
+  - {code: KOR, name: "Korea, Republic of"}
+  - {code: KOS, name: "Kosovo, Republic of"}
+  - {code: KWT, name: "Kuwait"}
+  - {code: LAO, name: "Lao People's Democratic Republic"}
+  - {code: LBN, name: "Lebanon"}
+  - {code: LBR, name: "Liberia"}
+  - {code: LBY, name: "Libya"}
+  - {code: LCA, name: "St. Lucia"}
+  - {code: LIE, name: "Liechtenstein, Principality of"}
+  - {code: LKA, name: "Sri Lanka"}
+  - {code: LSO, name: "Lesotho, Kingdom of"}
+  - {code: LTU, name: "Lithuania, Republic of"}
+  - {code: LUX, name: "Luxembourg"}
+  - {code: LVA, name: "Latvia, Republic of"}
+  - {code: MAC, name: "Macao Special Administrative Region, People's Republic of China"}
+  - {code: MAR, name: "Morocco"}
+  - {code: MCO, name: "Monaco"}
+  - {code: MDA, name: "Moldova, Republic of"}
+  - {code: MDG, name: "Madagascar, Republic of"}
+  - {code: MDV, name: "Maldives"}
+  - {code: MEX, name: "Mexico"}
+  - {code: MHL, name: "Marshall Islands, Republic of the"}
+  - {code: MKD, name: "North Macedonia, Republic of"}
+  - {code: MLI, name: "Mali"}
+  - {code: MLT, name: "Malta"}
+  - {code: MMR, name: "Myanmar"}
+  - {code: MNE, name: "Montenegro"}
+  - {code: MNG, name: "Mongolia"}
+  - {code: MNP, name: "Northern Mariana Islands"}
+  - {code: MOZ, name: "Mozambique, Republic of"}
+  - {code: MRT, name: "Mauritania, Islamic Republic of"}
+  - {code: MSR, name: "Montserrat, United Kingdom-British Overseas Territory"}
+  - {code: MTQ, name: "Martinique"}
+  - {code: MUS, name: "Mauritius"}
+  - {code: MWI, name: "Malawi"}
+  - {code: MYS, name: "Malaysia"}
+  - {code: MYT, name: "Mayotte"}
+  - {code: NAM, name: "Namibia"}
+  - {code: NCL, name: "New Caledonia"}
+  - {code: NER, name: "Niger"}
+  - {code: NGA, name: "Nigeria"}
+  - {code: NIC, name: "Nicaragua"}
+  - {code: NIU, name: "Niue"}
+  - {code: NLD, name: "Netherlands, The"}
+  - {code: NOR, name: "Norway"}
+  - {code: NPL, name: "Nepal"}
+  - {code: NRU, name: "Naoero, Republic of"}
+  - {code: NZL, name: "New Zealand"}
+  - {code: OMN, name: "Oman"}
+  - {code: PAK, name: "Pakistan"}
+  - {code: PAN, name: "Panama"}
+  - {code: PCN, name: "Pitcairn Islands"}
+  - {code: PER, name: "Peru"}
+  - {code: PHL, name: "Philippines"}
+  - {code: PLW, name: "Palau, Republic of"}
+  - {code: PNG, name: "Papua New Guinea"}
+  - {code: POL, name: "Poland, Republic of"}
+  - {code: PRI, name: "Puerto Rico"}
+  - {code: PRK, name: "Korea, Democratic People's Republic of"}
+  - {code: PRT, name: "Portugal"}
+  - {code: PRY, name: "Paraguay"}
+  - {code: PYF, name: "French Polynesia"}
+  - {code: QAT, name: "Qatar"}
+  - {code: REU, name: "Réunion"}
+  - {code: ROU, name: "Romania"}
+  - {code: RUS, name: "Russian Federation"}
+  - {code: RWA, name: "Rwanda"}
+  - {code: SAU, name: "Saudi Arabia"}
+  - {code: SDN, name: "Sudan"}
+  - {code: SEN, name: "Senegal"}
+  - {code: SGP, name: "Singapore"}
+  - {code: SHN, name: "St. Helena"}
+  - {code: SJM, name: "Svalbard and Jan Mayen Islands"}
+  - {code: SLB, name: "Solomon Islands"}
+  - {code: SLE, name: "Sierra Leone"}
+  - {code: SLV, name: "El Salvador"}
+  - {code: SMR, name: "San Marino, Republic of"}
+  - {code: SOM, name: "Somalia"}
+  - {code: SPM, name: "St. Pierre and Miquelon"}
+  - {code: SRB, name: "Serbia, Republic of"}
+  - {code: SSD, name: "South Sudan, Republic of"}
+  - {code: STP, name: "São Tomé and Príncipe, Democratic Republic of"}
+  - {code: SUR, name: "Suriname"}
+  - {code: SVK, name: "Slovak Republic"}
+  - {code: SVN, name: "Slovenia, Republic of"}
+  - {code: SWE, name: "Sweden"}
+  - {code: SWZ, name: "Eswatini, Kingdom of"}
+  - {code: SXM, name: "Sint Maarten, Kingdom of the Netherlands"}
+  - {code: SYC, name: "Seychelles"}
+  - {code: SYR, name: "Syrian Arab Republic"}
+  - {code: TCA, name: "Turks and Caicos Islands"}
+  - {code: TCD, name: "Chad"}
+  - {code: TGO, name: "Togo"}
+  - {code: THA, name: "Thailand"}
+  - {code: TJK, name: "Tajikistan, Republic of"}
+  - {code: TKL, name: "Tokelau"}
+  - {code: TKM, name: "Turkmenistan"}
+  - {code: TLS, name: "Timor-Leste, Democratic Republic of"}
+  - {code: TON, name: "Tonga"}
+  - {code: TTO, name: "Trinidad and Tobago"}
+  - {code: TUN, name: "Tunisia"}
+  - {code: TUR, name: "Türkiye, Republic of"}
+  - {code: TUV, name: "Tuvalu"}
+  - {code: TWN, name: "Taiwan Province of China"}
+  - {code: TZA, name: "Tanzania, United Republic of"}
+  - {code: UGA, name: "Uganda"}
+  - {code: UKR, name: "Ukraine"}
+  - {code: URY, name: "Uruguay"}
+  - {code: USA, name: "United States"}
+  - {code: UZB, name: "Uzbekistan, Republic of"}
+  - {code: VAT, name: "Holy See"}
+  - {code: VCT, name: "St. Vincent and the Grenadines"}
+  - {code: VEN, name: "Venezuela, República Bolivariana de"}
+  - {code: VGB, name: "British Virgin Islands"}
+  - {code: VIR, name: "United States Virgin Islands"}
+  - {code: VNM, name: "Vietnam"}
+  - {code: VUT, name: "Vanuatu"}
+  - {code: WBG, name: "West Bank and Gaza"}
+  - {code: WLF, name: "Wallis and Futuna Islands"}
+  - {code: WSM, name: "Samoa"}
+  - {code: YEM, name: "Yemen, Republic of"}
+  - {code: ZAF, name: "South Africa"}
+  - {code: ZMB, name: "Zambia"}
+  - {code: ZWE, name: "Zimbabwe"}
+
+# Undeclared code observed in data but ABSENT from CL_COUNTRY(1.6.0): GX123.
+# It appears in the NGDPD 2024 response as an aggregate. The adapter must FAIL on any
+# COUNTRY code absent from this reference list rather than defaulting it to economy —
+# otherwise an undeclared aggregate enters the universe silently. GX123 is the proof that
+# undeclared codes occur in practice, not just in principle.
+undeclared_observed:
+  - {code: GX123, note: "present in WEO NGDPD data, absent from CL_COUNTRY; treat as aggregate"}
+
+# Required adapter behaviour (D-003):
+#   1. Load this reference list.
+#   2. A candidate is admitted ONLY if its code appears under `economy`.
+#   3. Any code not present anywhere in this file FAILS the build. Do not default-admit.
+#   4. Never infer status from code shape, name text, region, or adminregion.

@@ -12,6 +12,7 @@ from .adapters import SourceAdapter, WorldBankAdapter
 from .config import APP_DATA, DIFFS, END_YEAR, MANIFESTS, PROCESSED, RAW, REGRESSION_RULES_PATH, RELEASES, ROOT, START_YEAR, TOP_N, load_metric_registry
 from .analytics import country_profile, ranking_asset
 from .coverage import coverage_matrix
+from .capabilities import metric_capabilities
 from .diff import snapshot_diff, write_diff
 from .ids import stable_id
 from .manifest import PipelineManifest
@@ -19,7 +20,7 @@ from .logging import log_event
 from .registries import ANALYTICAL_ENTITY_REGISTRY_PATH, COUNTRY_REGISTRY_PATH, SOURCE_REGISTRY_PATH, TRANSFORMATION_REGISTRY_PATH, load_versioned_registry, registry_version, validate_analytical_entity_registry, validate_country_registry, validate_registries, write_country_registry
 from .regression import evaluate_regressions
 from .release import build_release, write_release
-from .universe import NormalizedGDPProvider, select_universe
+from .weo import read_metric_fixture_observations, read_ngdpd_snapshot, select_weo_universe
 from .validation import validate_metric_registry, validate_observations
 
 
@@ -48,31 +49,62 @@ def build(start: int = START_YEAR, end: int = END_YEAR, adapter: SourceAdapter |
         if country_errors: raise ValueError("Country registry validation failed: " + "; ".join(country_errors))
         observations: list[dict] = []
         rejected: list[dict] = []
-        for definition in metrics:
+        for definition in (metric for metric in metrics if metric["source_id"] == adapter.source_id):
             result = adapter.fetch_indicator(definition["source_indicator_id"], start, end, started_at)
             manifest.raw_snapshots.append(result.snapshot.to_dict())
             manifest.warnings.extend(result.warnings)
             manifest.raw_observations_received += len(result.records)
             normalized, discarded = _normalize_observations(result.records, definition, countries, result.snapshot.raw_snapshot_id, run_id, started_at)
             observations.extend(normalized); rejected.extend(discarded)
-
-        gdp_rows = [r for r in observations if r["metric_id"] == "gdp_current_usd" and r["value"] is not None]
-        entity_by_wb = {row["authoritative_ids"].get("world_bank_code"): row for row in entity_registry["entities"] if row["authoritative_ids"].get("world_bank_code")}
-        selection_entities = {iso: {**country, **entity_by_wb[iso]} for iso, country in countries.items() if iso in entity_by_wb}
-        reference_year, universe, universe_exclusions = select_universe(NormalizedGDPProvider(gdp_rows), selection_entities, TOP_N, TOP_N)
+        governance = ROOT / "governance"
+        entity_evidence = governance / "entities"
+        universe_data = read_ngdpd_snapshot(
+            governance / "fixtures" / "weo_2026-04-14" / "ngdpd_2024_raw.csv.gz",
+            entity_evidence / "imf_weo_reference_list.yaml",
+            entity_evidence / "eligibility_adjudication.yaml",
+        )
+        universe, universe_exclusions = select_weo_universe(
+            universe_data, entity_evidence / "eligibility_adjudication.yaml", TOP_N
+        )
+        reference_year = universe[0]["reference_year"]
+        for country in universe:
+            wb = countries.get(country["iso3"], {})
+            country.update(
+                {
+                    "iso2": wb.get("iso2"),
+                    "region": wb.get("region", "Not classified"),
+                    "income_group": wb.get("income_group", "Not classified"),
+                    "name": country["display_name"],
+                    "eligibility_policy_version": entity_registry["eligibility_policy_version"],
+                }
+            )
+        weo_observations, weo_snapshots = read_metric_fixture_observations(
+            governance / "fixtures" / "weo_metrics_2026-04-14",
+            entity_evidence / "imf_weo_reference_list.yaml",
+            metrics,
+            run_id,
+            started_at,
+            reference_year,
+            {country["iso3"] for country in universe},
+        )
+        observations.extend(weo_observations)
+        manifest.raw_snapshots.extend(weo_snapshots)
+        manifest.raw_observations_received += len(weo_observations)
         universe_iso3 = [row["iso3"] for row in universe]
         panel = sorted((row for row in observations if row["iso3"] in universe_iso3), key=lambda row: (row["metric_id"], row["iso3"], row["year"]))
         validation = validate_observations(panel, universe, metrics)
         validation.require_valid()
 
         completed_at = now or datetime.now(timezone.utc).isoformat()
-        source_registry = [{**source,"name":f"{source['organization']} — {source['dataset']}","url":source["documentation_reference"],"retrieved_at":started_at,"license":source["license_name"],"credibility":"Primary multilateral"} for source in sources if source["source_id"]==adapter.source_id]
-        metric_payload = [{**metric, "name": metric["display_name"], "code": metric["source_indicator_id"], "family": metric["category"], "format": metric["formatting"], "caveats": metric["caveat"]} for metric in metrics]
-        payload = {"meta": {"schema_version": "2.1", "pipeline_run_id": run_id, "generated_at": completed_at, "reference_year": reference_year, "universe_size": len(universe), "start_year": start, "end_year": end, "freshness_rules": {"annual":{"current_year":0,"prior_year":1,"historical_min_lag":2,"unavailable":"no_observation"}}, "eligibility_policy_version": entity_registry["eligibility_policy_version"], "universe_provider_id": "world_bank_wdi", "candidate_universe_complete": False, "universe_exclusions": universe_exclusions}, "countries": universe, "metrics": metric_payload, "sources": source_registry, "observations": panel}
+        used_source_ids = {metric["source_id"] for metric in metrics}
+        source_registry = [{**source,"name":f"{source['organization']} — {source['dataset']}","url":source["documentation_reference"],"retrieved_at":started_at,"license":source["license_name"],"credibility":"Primary multilateral"} for source in sources if source["source_id"] in used_source_ids]
+        metric_payload = [{**metric, "ranking_year":reference_year, "capabilities":metric_capabilities(metric), "name": metric["display_name"], "code": metric["source_indicator_id"], "family": metric["category"], "format": metric["formatting"], "caveats": metric["caveat"]} for metric in metrics]
+        metric_ranking_years = {metric["metric_id"]: reference_year for metric in metrics}
+        payload = {"meta": {"schema_version": "2.2", "pipeline_run_id": run_id, "generated_at": completed_at, "reference_year": reference_year, "universe_size": len(universe), "start_year": start, "end_year": end, "freshness_rules": {"annual":{"current_year":0,"prior_year":1,"historical_min_lag":2,"unavailable":"no_observation"}}, "eligibility_policy_version": entity_registry["eligibility_policy_version"], "universe_provider_id": "imf_weo", "candidate_universe_complete": True, "universe_exclusions": universe_exclusions, "universe_lineage": {"provider_id":"imf_weo","ranking_indicator":"NGDPD","reference_year":reference_year,"cohort_actual_coverage":"50/50","pool_actual_coverage":f"{universe_data.pool_actual_count}/{universe_data.pool_count}","selected_count":len(universe),"boundary_included":universe[-1],"boundary_excluded":universe_exclusions[0],"publication_date":universe_data.publication_date,"update_date":universe_data.update_date},"metric_ranking_years":metric_ranking_years}, "countries": universe, "metrics": metric_payload, "sources": source_registry, "observations": panel}
         previous = json.loads((PROCESSED / "dashboard.json").read_text()) if (PROCESSED / "dashboard.json").exists() else None
         registry_versions={"metric_registry":registry_version(ROOT/"config/metrics.json"),"country_registry":registry_version(COUNTRY_REGISTRY_PATH),"analytical_entity_registry":registry_version(ANALYTICAL_ENTITY_REGISTRY_PATH),"source_registry":registry_version(SOURCE_REGISTRY_PATH),"transformation_registry":registry_version(TRANSFORMATION_REGISTRY_PATH)}
         code_commit=_code_commit()
-        release=build_release(payload,[row["raw_snapshot_id"] for row in manifest.raw_snapshots],code_commit,registry_versions,{adapter.source_id:"1.0"},manifest.warnings)
+        release=build_release(payload,[row["raw_snapshot_id"] for row in manifest.raw_snapshots],code_commit,registry_versions,{adapter.source_id:"1.0","imf_weo":"9.0.0"},manifest.warnings)
         payload["meta"].update({"release_id":release["release_id"],"asset_version":release["asset_version"],"data_release_schema_version":"1.0"})
         diff=snapshot_diff(previous,payload) if previous else None
         rules=json.loads(REGRESSION_RULES_PATH.read_text())["rules"]
@@ -128,6 +160,9 @@ def _write_outputs(payload: dict, panel: list[dict], universe: list[dict], rejec
     metric_dir = APP_DATA / "metrics"; metric_dir.mkdir(parents=True, exist_ok=True)
     ranking_dir = APP_DATA / "rankings"; ranking_dir.mkdir(parents=True, exist_ok=True)
     profile_dir = APP_DATA / "profiles"; profile_dir.mkdir(parents=True, exist_ok=True)
+    for directory in (metric_dir, ranking_dir, profile_dir):
+        for stale in directory.glob("*.json"):
+            stale.unlink()
     by_metric: dict[str, list[dict]] = defaultdict(list)
     for row in panel: by_metric[row["metric_id"]].append(row)
     for metric_id, rows in by_metric.items():
@@ -140,7 +175,7 @@ def _write_outputs(payload: dict, panel: list[dict], universe: list[dict], rejec
         profile = country_profile(panel, universe, payload["metrics"], country["iso3"])
         (profile_dir / f"{country['iso3']}.json").write_text(json.dumps(profile,separators=(",", ":"),sort_keys=True),encoding="utf-8")
     version=payload["meta"].get("asset_version","dev")
-    catalog = {"meta": payload["meta"], "countries": payload["countries"], "metrics": payload["metrics"], "sources": payload["sources"], "overview_metric_ids":["gdp_current_usd","gdp_growth_pct","inflation_cpi_pct","unemployment_pct","central_government_debt_pct_gdp"], "observation_shards": {metric_id: f"data/metrics/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}, "ranking_shards": {metric_id:f"data/rankings/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}, "profile_shards": {country["iso3"]:f"data/profiles/{country['iso3']}.json?v={version}" for country in universe}}
+    catalog = {"meta": payload["meta"], "countries": payload["countries"], "metrics": payload["metrics"], "sources": payload["sources"], "overview_metric_ids":["gdp_current_usd","gdp_growth_pct","inflation_cpi_pct","unemployment_pct","general_government_gross_debt_pct_gdp"], "observation_shards": {metric_id: f"data/metrics/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}, "ranking_shards": {metric_id:f"data/rankings/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}, "profile_shards": {country["iso3"]:f"data/profiles/{country['iso3']}.json?v={version}" for country in universe}}
     (APP_DATA / "catalog.json").write_text(json.dumps(catalog, separators=(",", ":"), sort_keys=True), encoding="utf-8")
     _write_dashboard_json(payload)
     return ["data/processed/dashboard.json", "data/processed/observations.csv", "data/processed/countries.csv", "data/processed/rejected_observations.csv", "app/data/dashboard.json", "app/data/catalog.json", "app/data/metrics/*.json", "app/data/rankings/*.json", "app/data/profiles/*.json"]

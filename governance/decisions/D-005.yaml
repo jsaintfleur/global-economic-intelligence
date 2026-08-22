@@ -1,0 +1,13 @@
+id: D-005
+title: Ingest the full panel; Top-50 is a dated materialised view
+status: active
+decided_on: 2026-08-17
+decided_by: claude+codex
+supersedes: null
+enforced_by:
+  - TEST-U-004
+rationale: |
+  Ingest the full ~200-economy panel. The Top-50 is a dated materialised view, never the
+  ingestion boundary. Historical rank views read the panel with membership evaluated as of each
+  year, never today's list — otherwise every historical chart is survivorship-biased toward
+  economies that are large today (G-9).

@@ -1,0 +1,28 @@
+id: D-001
+title: Top-50 universe ranked on IMF WEO NGDPD
+status: active
+decided_by: claude
+decided_on: 2026-08-17
+amended_on: 2026-08-22
+amendment_reason: rationale previously named Iraq as the WB #50; corrected by Codex, cause was an unstated reference year
+supersedes: null
+enforced_by:
+  - TEST-U-002
+  - TEST-U-002b
+  - TEST-U-002c
+  - TEST-U-003
+rationale: |
+  World Bank WDI does not carry Taiwan in any series (DI-019), so a WB-ranked Top-50 omits
+  an economy that ranks #22 on IMF WEO NGDPD at reference year 2024 ($801.5bn), and promotes
+  the #51 economy into the cohort. Independently, WB general-government-debt coverage is 15/50
+  at the comparable year versus 50/50 on WEO, so denominator consistency across fiscal metrics
+  also requires WEO. The WB cohort is computed in parallel as a cross-check and is never
+  spliced into the WEO universe.
+
+  The rationale deliberately does not name the promoted economy: that identity is
+  reference-year dependent (WB 2024 -> Iraq at #50; WB 2025 -> Algeria at #50) and is
+  therefore not a stable premise for a decision record.
+
+  TEST-U-003 compares composition rather than imposing a symmetric-difference budget:
+  WEO-only must equal {TWN}, WB-only must contain exactly one economy, and any other
+  member on either side fails with both sets reported.

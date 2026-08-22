@@ -18,6 +18,29 @@
       "license_name": "CC BY 4.0",
       "license_reference": "https://datacatalog.worldbank.org/public-licenses",
       "terms_reference": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets"
+    },
+    {
+      "source_id": "imf_weo",
+      "organization": "International Monetary Fund",
+      "dataset": "World Economic Outlook",
+      "source_dataset_id": "world_economic_outlook",
+      "description": "IMF staff macroeconomic observations and projections with per-series actual-data boundaries.",
+      "base_endpoint": "https://api.imf.org/external/sdmx/2.1",
+      "documentation_reference": "https://data.imf.org/en/datasets/IMF.RES:WEO",
+      "update_frequency": "semiannual",
+      "adapter": "gei.weo.WEOFixtureGDPProvider",
+      "retrieval_method": "pinned_sdmx_csv_snapshot",
+      "raw_snapshot_policy": "immutable_vintage_with_sha256",
+      "versioning_capability": "publication_and_update_date",
+      "attribution_text": "International Monetary Fund, World Economic Outlook",
+      "license_name": "IMF Terms of Use",
+      "license_reference": "https://www.imf.org/external/terms.htm",
+      "terms_reference": "https://www.imf.org/external/terms.htm",
+      "agency": "IMF.RES",
+      "dataflow": "WEO",
+      "version": "9.0.0",
+      "ranking_indicator": "NGDPD",
+      "estimate_boundary_field": "LATEST_ACTUAL_ANNUAL_DATA"
     }
   ]
 }

@@ -1,0 +1,38 @@
+id: D-002
+title: Reference year is the latest year with non-projected data for the selected cohort
+status: active
+decided_by: claude
+decided_on: 2026-08-17
+amended_on: 2026-08-22
+amendment_reason: >
+  cohort-vs-pool scope was ambiguous; fiscal-year boundary forms were unspecified; and the
+  published pool figures (197 candidates, 158 actual) were wrong — see
+  governance/fixtures/weo_2026-04-14/MANIFEST.yaml for the defect and the corrected 195/169
+supersedes: null
+enforced_by:
+  - TEST-U-005
+  - TEST-F-001
+rationale: |
+  Reference year = latest year for which every economy in the selected cohort has an ACTUAL
+  (non-projected) observation, determined from the WEO LATEST_ACTUAL_ANNUAL_DATA attribute.
+  Never "latest year with any data."
+
+  SCOPE CLARIFICATION (2026-08-22): the threshold is COHORT-scoped, not pool-scoped. At
+  reference year 2024 the selected 50 are 100% actual (50/50) while the 195-economy candidate
+  pool is 87% actual (169/195). The earlier ">=95%" wording was ambiguous between the two and an implementer was
+  entitled to read it either way. The cohort figure governs; the pool figure is recorded in
+  release lineage as context.
+
+  Every year above the reference year must be REJECTED for the rule to select correctly —
+  D-002 takes the LATEST admissible year, so the rejections are half the rule and are proven
+  offline from governance/fixtures/weo_2026-04-14/ngdpd_2025_2031_raw.csv.gz:
+    2025  cohort_actual 38/50  (pool 74/193)   REJECT
+    2026-2031  cohort_actual 0/50              REJECT — entirely projection
+  2024 at 50/50 is therefore the latest admissible year over the published horizon.
+
+  LATEST_ACTUAL_ANNUAL_DATA is not always an integer. Fiscal-year reporters publish forms such
+  as FY2024/25 (IND, BGD, IRN, EGY, PAK among the 50). Normalise FY(\d{4})/\d{2} to the first
+  year. An int() cast throws; a string comparison silently misclassifies.
+
+  A candidate is an economy with a NON-EMPTY OBS_VALUE. WEO publishes empty 2024 NGDPD for
+  SYR and ERI; they are not candidates. Never coerce an empty value to zero.

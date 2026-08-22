@@ -1,4 +1,5 @@
 import unittest
+import pytest
 
 from gei.regression import evaluate_regressions
 from gei.release import build_release
@@ -8,6 +9,8 @@ RULES=[{"rule_id":key,"severity":"error" if key in {"provenance_missing","duplic
 
 
 class ReleaseRegressionTests(unittest.TestCase):
+    @pytest.mark.decision("D-006")
+    @pytest.mark.test_id("TEST-T-002")
     def test_release_id_is_content_deterministic(self):
         payload={"meta":{"pipeline_run_id":"run","generated_at":"now"},"observations":[{"observation_id":"o","value":1,"year":2024}],"countries":[{}],"metrics":[{}]}
         args=(payload,["raw"],None,{"metric_registry":"m","country_registry":"c","source_registry":"s","transformation_registry":"t"},{"a":"1"},[])

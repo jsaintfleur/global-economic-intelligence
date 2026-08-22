@@ -1,0 +1,14 @@
+id: D-011
+title: Composite scores publish a rank interval, not a point rank
+status: adopted_pending_implementation
+decided_by: claude
+decided_on: 2026-08-17
+supersedes: null
+enforced_by:
+  - TEST-R-004
+rationale: |
+  5th-95th percentile over 2,000 Dirichlet-sampled weight vectors. Overlapping intervals
+  are reported as "not distinguishable."
+
+  Exposing weight sliders is insufficient — users anchor on the default. Supersedes the master
+  prompt section 9 single-score presentation.

@@ -1,0 +1,98 @@
+# Phase-1 WEO metric snapshots — deterministic offline fixture
+#
+# Companion to weo_2026-04-14/. That directory pins the UNIVERSE (NGDPD at the reference year
+# plus the 2025-2031 rejection horizon). This directory pins the METRIC PANELS over the full
+# release window, so metric ingestion, coverage and ranking can be tested without a network
+# call — the gap Codex identified: the universe fixture alone cannot supply debt or any other
+# WEO metric, and nothing may be fabricated from a coverage report.
+#
+# All seven files are the SAME VINTAGE as the universe fixture. Verified on load, not assumed.
+
+vintage:
+  dataflow: "IMF.RES,WEO,9.0.0"
+  publication_date: "2026-04-14T13:00:00Z"
+  update_date: "2026-04-15T13:00:00Z"
+
+request_headers:
+  User-Agent: "curl/8.5.0"            # Node default and Mozilla UAs receive HTTP 403
+  Accept: "application/vnd.sdmx.data+csv;version=1.0.0"
+retrieved_at: "2026-08-22"
+endpoint_base: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0"
+release_window: { start_year: 1990, end_year: 2025 }   # matches gei/config.py START_YEAR/END_YEAR
+
+files:
+  - path: NGDPD_1990_2025.csv.gz
+    indicator: NGDPD
+    concept: "GDP, current prices, USD"
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.NGDPD.A?detail=full&startPeriod=1990&endPeriod=2025"
+    sha256: "945f673dc1268189c82be59c8d5e9b5b18d6f0ed897be7ee4b2f0c2d79258cf3"
+    rows: 7235
+    bytes_gz: 188452
+  - path: NGDPDPC_1990_2025.csv.gz
+    indicator: NGDPDPC
+    concept: "GDP per capita, current prices, USD"
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.NGDPDPC.A?detail=full&startPeriod=1990&endPeriod=2025"
+    sha256: "6c8c389b8b14235c7bd3c86a19f50282dc2309c963132d13a21c0ce73dd503de"
+    rows: 6731
+    bytes_gz: 192078
+  - path: NGDP_RPCH_1990_2025.csv.gz
+    indicator: NGDP_RPCH
+    concept: "Real GDP growth, percent"
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.NGDP_RPCH.A?detail=full&startPeriod=1990&endPeriod=2025"
+    sha256: "21bf88416d9e6a0ce2ba6aa3910ccded2f9077198ba9da0af06b02031c5d42fa"
+    rows: 7182
+    bytes_gz: 188664
+  - path: PCPIPCH_1990_2025.csv.gz
+    indicator: PCPIPCH
+    concept: "Inflation, average consumer prices, percent change"
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.PCPIPCH.A?detail=full&startPeriod=1990&endPeriod=2025"
+    sha256: "d408bd7d40278c26bc3d7b3e3770c4b32f35a0159c698a3ec483ecf37f6fdc0c"
+    rows: 7125
+    bytes_gz: 167838
+  - path: GGXWDG_NGDP_1990_2025.csv.gz
+    indicator: GGXWDG_NGDP
+    concept: "General government gross debt, percent of GDP"
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.GGXWDG_NGDP.A?detail=full&startPeriod=1990&endPeriod=2025"
+    sha256: "80d473a03860d2b9fc187e70c272571408041b5dabfcce5af0b3b4c0f8783b37"
+    rows: 6048
+    bytes_gz: 201265
+  - path: GGXCNL_NGDP_1990_2025.csv.gz
+    indicator: GGXCNL_NGDP
+    concept: "General government net lending/borrowing, percent of GDP"
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.GGXCNL_NGDP.A?detail=full&startPeriod=1990&endPeriod=2025"
+    sha256: "892da9ac2d9ce0ed12965734b5355819b72c84df7616e10babd9af1eefe5edc7"
+    rows: 6529
+    bytes_gz: 213317
+  - path: LP_1990_2025.csv.gz
+    indicator: LP
+    concept: "Population, millions"
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.LP.A?detail=full&startPeriod=1990&endPeriod=2025"
+    sha256: "61fe7be6b890a03ddaabf9ac41179cc1337c5bb9eaf18fd71c92168fd005d0d8"
+    rows: 6764
+    bytes_gz: 143027
+
+not_included:
+  - indicator: LUR
+    reason: >
+      Unemployment remains World Bank SL.UEM.TOTL.ZS until D-008 is formally superseded.
+      Shipping a WEO LUR snapshot here would imply a substitution that has not been
+      adjudicated. Available on request once that decision is made.
+  - indicator: PPPPC
+    reason: >
+      Not a Phase-1 registry metric. When added, note it publishes NO
+      LATEST_ACTUAL_ANNUAL_DATA attribute and inherits its boundary from NGDPD.
+
+replay_contract: |
+  1. Verify each file's sha256 against this manifest before parsing.
+  2. Verify PUBLICATION_DATE on every file equals the vintage block above. A mixed-vintage
+     fixture set is the failure this check exists to catch: each file would pass its own hash
+     while the panel silently spanned two WEO editions.
+  3. Drop rows with an empty TIME_PERIOD before year keying.
+  4. Empty OBS_VALUE is not zero.
+  5. Normalise FY(YYYY)/YY boundaries to the first year.
+  6. Classify COUNTRY codes against governance/entities/imf_weo_reference_list.yaml; fail
+     closed on any code absent from it.
+  7. No network call anywhere in this path.
+
+  Refreshing the vintage re-fetches EVERY file from its own request_url, regenerates all
+  hashes, and re-pins expectations. Never partially.

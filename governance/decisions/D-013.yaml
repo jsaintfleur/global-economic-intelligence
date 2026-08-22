@@ -1,0 +1,15 @@
+id: D-013
+title: Growth Drivers renamed Historical Associations
+status: adopted_pending_implementation
+decided_by: claude
+decided_on: 2026-08-17
+supersedes: null
+enforced_by:
+  - TEST-R-001
+rationale: |
+  Master prompt section 19 "Growth Drivers" is renamed "Historical Associations" in all
+  code, config and UI copy. Specifications are pre-registered in-repo before running; all are
+  displayed, not the best one.
+
+  Nickell bias at N=50 / T~30 with a lagged dependent variable; investment -> growth is the
+  canonical endogeneity case; tree ensembles memorise country identity.

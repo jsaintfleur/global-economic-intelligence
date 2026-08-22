@@ -3,6 +3,7 @@ import json
 import tempfile
 import unittest
 import urllib.error
+import pytest
 from unittest.mock import patch
 from pathlib import Path
 
@@ -15,6 +16,8 @@ class Response(io.BytesIO):
 
 
 class AdapterTests(unittest.TestCase):
+    @pytest.mark.decision("D-006")
+    @pytest.mark.test_id("TEST-T-001")
     def test_raw_snapshot_is_preserved_with_checksum(self):
         payload = [{"pages":1},[{"countryiso3code":"USA","date":"2024","value":1}]]
         with tempfile.TemporaryDirectory() as directory:
