@@ -18,7 +18,10 @@ def evaluate_regressions(old: dict | None, new: dict, diff: dict | None, rules: 
         old_count=diff["summary"]["old_observation_count"];new_count=diff["summary"]["new_observation_count"];drop=0 if old_count==0 else (old_count-new_count)/old_count*100
         if drop>config["observation_count_drop"]["threshold"]["percent"]:add("observation_count_drop","Observation count decreased",drop)
         if len(diff["countries"]["removed"])>config["country_removed"]["threshold"]["count"]:add("country_removed","Countries disappeared",diff["countries"]["removed"])
-        if len(diff["metrics"]["removed"])>config["metric_removed"]["threshold"]["count"]:add("metric_removed","Metrics disappeared",diff["metrics"]["removed"])
+        replacements=config["metric_removed"].get("approved_replacements",{})
+        approved_removed={old_id for old_id,new_id in replacements.items() if new_id in diff["metrics"]["added"]}
+        unexpected_removed=sorted(set(diff["metrics"]["removed"])-approved_removed)
+        if len(unexpected_removed)>config["metric_removed"]["threshold"]["count"]:add("metric_removed","Metrics disappeared",unexpected_removed)
         if diff["metrics"]["source_mapping_changes"]:add("source_mapping_changed","Source mappings changed",diff["metrics"]["source_mapping_changes"])
         regressed=[row for row in diff["latest_year_changes"] if row["old_latest_year"] is not None and row["new_latest_year"] is not None and row["new_latest_year"]<row["old_latest_year"]]
         if regressed:add("latest_year_regressed","Latest available year regressed",regressed)

@@ -1,0 +1,144 @@
+{
+  "accepted_observations": 51756,
+  "code_version": "0.2.0",
+  "completed_at": "2026-08-22T23:15:04.529146+00:00",
+  "countries_requested": "all source countries",
+  "duplicate_observations": 0,
+  "errors": [],
+  "indicators_requested": [
+    "NGDPD",
+    "NGDPDPC",
+    "NGDP_RPCH",
+    "LP",
+    "PCPIPCH",
+    "SL.UEM.TOTL.ZS",
+    "GGXWDG_NGDP",
+    "GGXCNL_NGDP"
+  ],
+  "missing_observations": 10740,
+  "output_files": [
+    "data/processed/dashboard.json",
+    "data/processed/observations.csv",
+    "data/processed/countries.csv",
+    "data/processed/rejected_observations.csv",
+    "app/data/dashboard.json",
+    "app/data/catalog.json",
+    "app/data/metrics/*.json",
+    "app/data/rankings/*.json",
+    "app/data/rankings_worldwide/*.json",
+    "app/data/profiles/*.json",
+    "data/processed/vintages/release_770e0ce265f624e2a214.observations.json",
+    "data/releases/release_770e0ce265f624e2a214.json",
+    "data/releases/snapshots/release_770e0ce265f624e2a214.json",
+    "data/processed/coverage.json",
+    "data/releases/release_770e0ce265f624e2a214.regression.json"
+  ],
+  "pipeline_run_id": "run_cac20515725fd92e257ef943",
+  "raw_observations_received": 54765,
+  "raw_snapshots": [
+    {
+      "checksum_sha256": "174ea73141db73c7692b5b40b3420a49c0d79d11e53708c161004f960b52def6",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-22/country_dimension_all.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_country_dimension_174ea73141db73c7",
+      "record_count": 295,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "country_dimension"
+    },
+    {
+      "checksum_sha256": "f27ee73dffd178459864618dbec63d57b9135321da410be050aec0dca2ba7604",
+      "dataset_version": null,
+      "path": "data/raw/2026-08-22/SL.UEM.TOTL.ZS_1990_2025.json",
+      "raw_snapshot_id": "raw_world_bank_wdi_SL.UEM.TOTL.ZS_f27ee73dffd17845",
+      "record_count": 9540,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_development_indicators",
+      "source_id": "world_bank_wdi",
+      "source_indicator_id": "SL.UEM.TOTL.ZS"
+    },
+    {
+      "checksum_sha256": "892da9ac2d9ce0ed12965734b5355819b72c84df7616e10babd9af1eefe5edc7",
+      "raw_snapshot_id": "raw_e435d8a47bc2baed7088cf1d",
+      "record_count": 6529,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_economic_outlook",
+      "source_id": "imf_weo",
+      "source_indicator_id": "GGXCNL_NGDP",
+      "storage_path": "governance/fixtures/weo_metrics_2026-04-14/GGXCNL_NGDP_1990_2025.csv.gz"
+    },
+    {
+      "checksum_sha256": "80d473a03860d2b9fc187e70c272571408041b5dabfcce5af0b3b4c0f8783b37",
+      "raw_snapshot_id": "raw_060e034f9e54c7d9536c92a5",
+      "record_count": 6048,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_economic_outlook",
+      "source_id": "imf_weo",
+      "source_indicator_id": "GGXWDG_NGDP",
+      "storage_path": "governance/fixtures/weo_metrics_2026-04-14/GGXWDG_NGDP_1990_2025.csv.gz"
+    },
+    {
+      "checksum_sha256": "61fe7be6b890a03ddaabf9ac41179cc1337c5bb9eaf18fd71c92168fd005d0d8",
+      "raw_snapshot_id": "raw_1b97b8457f747fa0aa968252",
+      "record_count": 6764,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_economic_outlook",
+      "source_id": "imf_weo",
+      "source_indicator_id": "LP",
+      "storage_path": "governance/fixtures/weo_metrics_2026-04-14/LP_1990_2025.csv.gz"
+    },
+    {
+      "checksum_sha256": "945f673dc1268189c82be59c8d5e9b5b18d6f0ed897be7ee4b2f0c2d79258cf3",
+      "raw_snapshot_id": "raw_c33e8e2508e37b0e78bee84d",
+      "record_count": 7235,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_economic_outlook",
+      "source_id": "imf_weo",
+      "source_indicator_id": "NGDPD",
+      "storage_path": "governance/fixtures/weo_metrics_2026-04-14/NGDPD_1990_2025.csv.gz"
+    },
+    {
+      "checksum_sha256": "6c8c389b8b14235c7bd3c86a19f50282dc2309c963132d13a21c0ce73dd503de",
+      "raw_snapshot_id": "raw_da5b2f62b3497ce58f526606",
+      "record_count": 6731,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_economic_outlook",
+      "source_id": "imf_weo",
+      "source_indicator_id": "NGDPDPC",
+      "storage_path": "governance/fixtures/weo_metrics_2026-04-14/NGDPDPC_1990_2025.csv.gz"
+    },
+    {
+      "checksum_sha256": "21bf88416d9e6a0ce2ba6aa3910ccded2f9077198ba9da0af06b02031c5d42fa",
+      "raw_snapshot_id": "raw_6869b1faa5718f23dd9119ee",
+      "record_count": 7182,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_economic_outlook",
+      "source_id": "imf_weo",
+      "source_indicator_id": "NGDP_RPCH",
+      "storage_path": "governance/fixtures/weo_metrics_2026-04-14/NGDP_RPCH_1990_2025.csv.gz"
+    },
+    {
+      "checksum_sha256": "d408bd7d40278c26bc3d7b3e3770c4b32f35a0159c698a3ec483ecf37f6fdc0c",
+      "raw_snapshot_id": "raw_49f48491731a984112e0bfa3",
+      "record_count": 7125,
+      "retrieved_at": "2026-08-22T23:15:02.206594+00:00",
+      "source_dataset_id": "world_economic_outlook",
+      "source_id": "imf_weo",
+      "source_indicator_id": "PCPIPCH",
+      "storage_path": "governance/fixtures/weo_metrics_2026-04-14/PCPIPCH_1990_2025.csv.gz"
+    }
+  ],
+  "rejected_observations": 3009,
+  "schema_version": "1.0",
+  "source_ids": [
+    "imf_weo",
+    "world_bank_wdi"
+  ],
+  "started_at": "2026-08-22T23:15:02.206594+00:00",
+  "status": "completed",
+  "warnings": [
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "analytical_entity_registry_version": "6a4f3172c95042f0",
+  "asset_version": "770e0ce265f624e2",
+  "code_commit": "56cf760a0c1bc5903249a791e31f938339ebed93",
+  "country_count": 50,
+  "country_registry_version": "a441d2a5ab24e696",
+  "generated_at": "2026-08-22T23:15:04.529146+00:00",
+  "metric_count": 8,
+  "metric_registry_version": "78f231e873449edf",
+  "observation_count": 51409,
+  "pipeline_run_id": "run_cac20515725fd92e257ef943",
+  "raw_snapshot_ids": [
+    "raw_world_bank_wdi_country_dimension_174ea73141db73c7",
+    "raw_world_bank_wdi_SL.UEM.TOTL.ZS_f27ee73dffd17845",
+    "raw_e435d8a47bc2baed7088cf1d",
+    "raw_060e034f9e54c7d9536c92a5",
+    "raw_1b97b8457f747fa0aa968252",
+    "raw_c33e8e2508e37b0e78bee84d",
+    "raw_da5b2f62b3497ce58f526606",
+    "raw_6869b1faa5718f23dd9119ee",
+    "raw_49f48491731a984112e0bfa3"
+  ],
+  "release_id": "release_770e0ce265f624e2a214",
+  "schema_version": "1.1",
+  "source_adapter_versions": {
+    "imf_weo": "9.0.0",
+    "world_bank_wdi": "1.0"
+  },
+  "source_registry_version": "d312a4f80f897c6e",
+  "transformation_registry_version": "847e98dd3caa62a1",
+  "validation_status": "passed",
+  "warnings": [
+    "cache_hit:dated_snapshot",
+    "cache_hit:dated_snapshot"
+  ],
+  "year_range": {
+    "end": 2025,
+    "start": 1990
+  }
+}

@@ -1,0 +1,14 @@
+id: D-012
+title: Forecast benchmark is the IMF WEO forecast at matching horizon
+status: adopted_pending_implementation
+decided_by: claude
+decided_on: 2026-08-17
+supersedes: null
+enforced_by:
+  - TEST-T-002
+rationale: |
+  Benchmark against the IMF WEO forecast at matching horizon on true out-of-sample
+  vintages, not a naive baseline. Requires vintage archiving from Phase 1.
+
+  We already ingest WEO forecasts to 2031; beating a random walk is not a claim worth making.
+  See Q-009.

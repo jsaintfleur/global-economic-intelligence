@@ -1,0 +1,18 @@
+id: D-008
+title: Approved source substitutions for fiscal, price and labour metrics
+status: active
+decided_by: claude
+decided_on: 2026-08-17
+supersedes: null
+enforced_by:
+  - TEST-F-002
+  - TEST-R-002
+rationale: |
+  debt -> WEO GGXWDG_NGDP; fiscal balance -> WEO GGXCNL_NGDP; CPI -> WEO PCPIPCH;
+  unemployment -> WB SL.UEM.TOTL.ZS (ILO-modelled).
+
+  Measured coverage at the comparable year: 50/50 vs 15/50, 50/50 vs 40/50, 50/50 vs 48/50
+  (WB missing the United States), 50/50 vs 48/50.
+
+  The unemployment substitution routes through the World Bank and therefore costs Taiwan
+  (DI-019); this must be disclosed in the metric footer.

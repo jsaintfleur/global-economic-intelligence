@@ -1,0 +1,14 @@
+id: D-009
+title: Metrics excluded from Phase 1 ingestion
+status: active
+decided_by: claude
+decided_on: 2026-08-17
+supersedes: null
+enforced_by:
+  - TEST-F-003
+rationale: |
+  Do not ingest: DT.DOD.DECT.CD, FR.INR.RINR, FR.INR.LEND, GC.DOD.TOTL.GD.ZS,
+  SL.UEM.TOTL.NE.ZS.
+
+  Coverage 19/50 (and subset-by-construction), 15/50, 15/50, 15/50 respectively, and
+  SL.UEM.TOTL.NE.ZS is definitionally incompatible with M-014.

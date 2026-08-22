@@ -8,6 +8,10 @@ from typing import Iterable, Optional
 RECENCY_STATUSES = {"current_year", "prior_year", "historical", "unavailable"}
 
 
+def _analytical_observation(row: dict) -> bool:
+    return row.get("observation_class") in (None, "actual", "estimate")
+
+
 def recency(latest_year: Optional[int], metric_max_year: Optional[int]) -> dict:
     if latest_year is None or metric_max_year is None:
         return {"latest_observation_year": latest_year, "metric_max_year": metric_max_year, "lag_years": None, "recency_status": "unavailable"}
@@ -18,11 +22,11 @@ def recency(latest_year: Optional[int], metric_max_year: Optional[int]) -> dict:
 
 def rank_metric_year(observations: Iterable[dict], countries: Iterable[dict], metric_id: str, ranking_year: int) -> dict:
     cohort = list(countries)
-    by_iso = {row["iso3"]: row for row in observations if row["metric_id"] == metric_id and row["year"] == ranking_year and row.get("value") is not None}
+    by_iso = {row["iso3"]: row for row in observations if row["metric_id"] == metric_id and row["year"] == ranking_year and row.get("value") is not None and _analytical_observation(row)}
     history: dict[str, list[dict]] = defaultdict(list)
     metric_rows = []
     for row in observations:
-        if row["metric_id"] == metric_id and row.get("value") is not None:
+        if row["metric_id"] == metric_id and row.get("value") is not None and _analytical_observation(row):
             history[row["iso3"]].append(row)
             metric_rows.append(row)
     metric_max_year = max((row["year"] for row in metric_rows), default=None)
@@ -43,7 +47,18 @@ def rank_metric_year(observations: Iterable[dict], countries: Iterable[dict], me
             "latest_historical_value": latest["value"] if latest else None, "metric_max_year": metric_max_year,
             "lag_years": recency(latest["year"] if latest else None, metric_max_year)["lag_years"],
             "recency_status": recency(latest["year"] if latest else None, metric_max_year)["recency_status"],
-            "missing_reason": None if observed else "no_observation_in_ranking_year",
+            "observation_class": observed.get("observation_class") if observed else None,
+            "source_id": observed.get("source_id") if observed else None,
+            "source_dataset_id": observed.get("source_dataset_id") if observed else None,
+            "source_indicator_id": observed.get("source_indicator_id") if observed else None,
+            "source_vintage": observed.get("source_vintage") if observed else None,
+            "raw_snapshot_id": observed.get("raw_snapshot_id") if observed else None,
+            "coverage_state": "observed" if observed else "missing",
+            "missing_reason": None if observed else (
+                "not_reported_by_source"
+                if not history.get(iso)
+                else "no_observation_in_ranking_year"
+            ),
             "ranked_entity_count": ranked_count, "cohort_size": cohort_size,
             "coverage_ratio": ranked_count / cohort_size if cohort_size else 0,
         })
@@ -51,7 +66,8 @@ def rank_metric_year(observations: Iterable[dict], countries: Iterable[dict], me
 
 
 def ranking_asset(observations: list[dict], countries: list[dict], metric: dict) -> dict:
-    years = sorted({row["year"] for row in observations if row["metric_id"] == metric["metric_id"] and row.get("value") is not None}, reverse=True)
+    maximum_ranking_year = metric.get("ranking_year")
+    years = sorted({row["year"] for row in observations if row["metric_id"] == metric["metric_id"] and row.get("value") is not None and _analytical_observation(row) and (maximum_ranking_year is None or row["year"] <= maximum_ranking_year)}, reverse=True)
     rankings = {str(year): rank_metric_year(observations, countries, metric["metric_id"], year) for year in years}
     lookup = {(row["iso3"], row["year"]): row["value"] for row in observations if row["metric_id"] == metric["metric_id"] and row.get("value") is not None}
     for year, ranking in ((int(key), value) for key, value in rankings.items()):
@@ -83,8 +99,8 @@ def country_profile(observations: list[dict], countries: list[dict], metrics: li
     country = next(row for row in countries if row["iso3"] == iso3)
     result = {"country": country, "metrics": {}}
     for metric in metrics:
-        rows = sorted((row for row in observations if row["metric_id"] == metric["metric_id"] and row["iso3"] == iso3 and row.get("value") is not None), key=lambda row: row["year"])
-        max_year = max((row["year"] for row in observations if row["metric_id"] == metric["metric_id"] and row.get("value") is not None), default=None)
+        rows = sorted((row for row in observations if row["metric_id"] == metric["metric_id"] and row["iso3"] == iso3 and row.get("value") is not None and _analytical_observation(row)), key=lambda row: row["year"])
+        max_year = metric.get("ranking_year") or max((row["year"] for row in observations if row["metric_id"] == metric["metric_id"] and row.get("value") is not None and _analytical_observation(row)), default=None)
         latest = rows[-1] if rows else None
         ranking = rank_metric_year(observations, countries, metric["metric_id"], max_year) if max_year else None
         rank_row = next((row for row in ranking["rows"] if row["iso3"] == iso3), None) if ranking else None

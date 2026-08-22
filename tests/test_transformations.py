@@ -1,4 +1,5 @@
 import unittest
+import pytest
 
 from gei.transformations import cagr, latest_by_country, pct_change, rank_desc, rebase
 
@@ -13,9 +14,13 @@ class TransformationTests(unittest.TestCase):
         self.assertAlmostEqual(pct_change(110, 100), 10)
         self.assertIsNone(pct_change(10, 0))
 
+    @pytest.mark.decision("D-007")
+    @pytest.mark.test_id("TEST-R-001")
     def test_rank_desc_is_deterministic_and_missing_visible(self):
         self.assertEqual(rank_desc({"B": 5, "A": 5, "C": None}), {"B": 2, "A": 1, "C": None})
 
+    @pytest.mark.decision("D-002")
+    @pytest.mark.test_id("TEST-U-005")
     def test_latest_by_country_uses_each_country_latest_not_global_year(self):
         rows = [
             {"iso3": "A", "year": 2022, "metric_id": "x", "value": 1},

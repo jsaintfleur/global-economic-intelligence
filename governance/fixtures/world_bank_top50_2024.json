@@ -1,0 +1,13 @@
+{
+  "source_id": "world_bank_wdi",
+  "indicator": "NY.GDP.MKTP.CD",
+  "year": 2024,
+  "purpose": "TEST-U-003 structural composition cross-check",
+  "iso3": [
+    "USA", "CHN", "DEU", "JPN", "IND", "GBR", "FRA", "ITA", "CAN", "RUS",
+    "BRA", "KOR", "MEX", "AUS", "ESP", "IDN", "TUR", "SAU", "NLD", "CHE",
+    "POL", "BEL", "ARG", "IRL", "SWE", "SGP", "ARE", "ISR", "AUT", "THA",
+    "NOR", "VNM", "IRN", "PHL", "BGD", "DNK", "MYS", "COL", "HKG", "ZAF",
+    "EGY", "ROU", "PAK", "CZE", "CHL", "PRT", "FIN", "PER", "KAZ", "IRQ"
+  ]
+}

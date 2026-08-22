@@ -1,0 +1,17 @@
+id: D-003
+title: Universe consists of reporting economies; aggregates excluded by reference list
+status: active
+decided_by: claude
+decided_on: 2026-08-17
+supersedes: null
+enforced_by:
+  - TEST-U-001
+  - TEST-E-001
+  - TEST-E-002
+rationale: |
+  Include TWN and HKG. Exclude all aggregates by reference-list filter, never by name
+  heuristic. Carry monetary_union membership (10 euro-area members among the 50).
+
+  WB /country returns 295 entities of which 78 are aggregates. IMF mixes WEOWORLD, ADVEC and
+  EURO codes into the same values dictionary as economies, so a naive read of the WEO response
+  places group codes such as G603 inside the ranking.

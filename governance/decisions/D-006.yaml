@@ -1,0 +1,15 @@
+id: D-006
+title: Observation store is append-only and vintage-keyed
+status: active
+decided_by: claude
+decided_on: 2026-08-17
+supersedes: null
+enforced_by:
+  - TEST-T-001
+  - TEST-T-002
+rationale: |
+  Key: (metric_id, iso3, year, source_vintage). observation_class NOT NULL.
+
+  WDI vintage 2026-07-13; WEO rewrites history twice yearly; ICP 2021 retrospectively revised
+  PPP levels. This cannot be retrofitted after the fact — the prior vintages are gone once
+  overwritten.

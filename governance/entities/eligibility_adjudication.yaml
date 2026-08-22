@@ -1,0 +1,474 @@
+# Analytical entity eligibility — adjudication for the IMF WEO universe
+#
+# Authority: Claude (Agent A), per R-5.3 of CLAUDE_TO_CODEX_PHASE_1_1.md.
+# Codex implements the schema, loader and gate; Codex does NOT populate these values.
+# Resolves OQ-11-004 for every entity that can reach the Top-50.
+#
+# Pinned against WEO vintage 2026-04-14 (IMF.RES,WEO,9.0.0), NGDPD, reference year 2024.
+# Scope: ranks 1-65. The buffer beyond 50 exists so that a vintage shift promoting an
+# economy into the cohort cannot trip the R-5.2 review gate during a release.
+#
+adjudicated_by: claude
+adjudicated_on: 2026-08-22
+source_of_truth: imf_weo
+pinned_vintage: "2026-04-14"
+reference_year: 2024
+scope: "NGDPD rank 1-65 plus named exceptions"
+
+entities:
+  USA:
+    rank: 1
+    imf_label: "United States"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  CHN:
+    rank: 2
+    imf_label: "China, People's Republic of"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  DEU:
+    rank: 3
+    imf_label: "Germany"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  JPN:
+    rank: 4
+    imf_label: "Japan"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  IND:
+    rank: 5
+    imf_label: "India"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  GBR:
+    rank: 6
+    imf_label: "United Kingdom"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  FRA:
+    rank: 7
+    imf_label: "France"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  ITA:
+    rank: 8
+    imf_label: "Italy"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  CAN:
+    rank: 9
+    imf_label: "Canada"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  RUS:
+    rank: 10
+    imf_label: "Russian Federation"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  BRA:
+    rank: 11
+    imf_label: "Brazil"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  KOR:
+    rank: 12
+    imf_label: "Korea, Republic of"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  MEX:
+    rank: 13
+    imf_label: "Mexico"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  AUS:
+    rank: 14
+    imf_label: "Australia"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  ESP:
+    rank: 15
+    imf_label: "Spain"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  IDN:
+    rank: 16
+    imf_label: "Indonesia"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  TUR:
+    rank: 17
+    imf_label: "Türkiye, Republic of"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  SAU:
+    rank: 18
+    imf_label: "Saudi Arabia"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  NLD:
+    rank: 19
+    imf_label: "Netherlands"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  CHE:
+    rank: 20
+    imf_label: "Switzerland"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  POL:
+    rank: 21
+    imf_label: "Poland"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  TWN:
+    rank: 22
+    imf_label: "Taiwan Province of China"
+    eligibility: eligible
+    display_label: "Taiwan"
+    iso2: "TW"
+    eligibility_reason: >
+      Reported as a distinct economy in the IMF WEO under COUNTRY code TWN with complete NGDPD 
+      coverage. Eligibility follows the reporting practice of the ranking source and asserts nothing 
+      about political status. Absent from every World Bank series (DI-019), so WB-sourced metrics 
+      show at most 49/50 and Taiwan cells type as not_reported_by_source.
+    consolidated_into: null
+  BEL:
+    rank: 23
+    imf_label: "Belgium"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  ARG:
+    rank: 24
+    imf_label: "Argentina"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  IRL:
+    rank: 25
+    imf_label: "Ireland"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  SWE:
+    rank: 26
+    imf_label: "Sweden"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  SGP:
+    rank: 27
+    imf_label: "Singapore"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  ARE:
+    rank: 28
+    imf_label: "United Arab Emirates"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  ISR:
+    rank: 29
+    imf_label: "Israel"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  AUT:
+    rank: 30
+    imf_label: "Austria"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  THA:
+    rank: 31
+    imf_label: "Thailand"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  NOR:
+    rank: 32
+    imf_label: "Norway"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  PHL:
+    rank: 33
+    imf_label: "Philippines"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  VNM:
+    rank: 34
+    imf_label: "Vietnam"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  BGD:
+    rank: 35
+    imf_label: "Bangladesh"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  DNK:
+    rank: 36
+    imf_label: "Denmark"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  MYS:
+    rank: 37
+    imf_label: "Malaysia"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  COL:
+    rank: 38
+    imf_label: "Colombia"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  IRN:
+    rank: 39
+    imf_label: "Iran"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  HKG:
+    rank: 40
+    imf_label: "Hong Kong SAR"
+    eligibility: eligible
+    display_label: "Hong Kong SAR"
+    eligibility_reason: >
+      Special Administrative Region reported separately by the IMF WEO. WEO China (CHN) excludes 
+      Hong Kong and Macao, so HKG is NOT consolidated into CHN and reporting both does not double-count. 
+      This must be asserted, not inferred: a naive reading of the relationship would consolidate 
+      and silently delete an economy.
+    consolidated_into: null
+  ZAF:
+    rank: 41
+    imf_label: "South Africa"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  EGY:
+    rank: 42
+    imf_label: "Egypt"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  ROU:
+    rank: 43
+    imf_label: "Romania"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  PAK:
+    rank: 44
+    imf_label: "Pakistan"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  CZE:
+    rank: 45
+    imf_label: "Czech Republic"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  CHL:
+    rank: 46
+    imf_label: "Chile"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  PRT:
+    rank: 47
+    imf_label: "Portugal"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  FIN:
+    rank: 48
+    imf_label: "Finland"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  PER:
+    rank: 49
+    imf_label: "Peru"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  KAZ:
+    rank: 50
+    imf_label: "Kazakhstan"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  IRQ:
+    rank: 51
+    imf_label: "Iraq"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  DZA:
+    rank: 52
+    imf_label: "Algeria"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  NZL:
+    rank: 53
+    imf_label: "New Zealand"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  GRC:
+    rank: 54
+    imf_label: "Greece"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  NGA:
+    rank: 55
+    imf_label: "Nigeria"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  HUN:
+    rank: 56
+    imf_label: "Hungary"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  QAT:
+    rank: 57
+    imf_label: "Qatar"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  UKR:
+    rank: 58
+    imf_label: "Ukraine"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  KWT:
+    rank: 59
+    imf_label: "Kuwait"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  MAR:
+    rank: 60
+    imf_label: "Morocco"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  ETH:
+    rank: 61
+    imf_label: "Ethiopia"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  SVK:
+    rank: 62
+    imf_label: "Slovak Republic"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+    monetary_union: euro_area
+  PRI:
+    rank: 63
+    imf_label: "Puerto Rico"
+    eligibility: eligible
+    display_label: "Puerto Rico"
+    eligibility_reason: >
+      US territory reported separately by the IMF WEO. BEA excludes Puerto Rico from United States 
+      GDP, so PRI and USA do not overlap. Outside the Top-50 at rank 63 on the pinned vintage; 
+      adjudicated in the buffer so a vintage shift cannot trip the review gate mid-release.
+    consolidated_into: null
+  DOM:
+    rank: 64
+    imf_label: "Dominican Republic"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  ECU:
+    rank: 65
+    imf_label: "Ecuador"
+    eligibility: eligible
+    eligibility_reason: "IMF WEO reporting economy; no special status."
+    consolidated_into: null
+  MAC:
+    rank: 95
+    imf_label: "Macao SAR"
+    eligibility: eligible
+    display_label: "Macao SAR"
+    consolidated_into: null
+    eligibility_reason: >
+      Special Administrative Region reported separately by the IMF WEO; same non-consolidation 
+      reasoning as HKG. Far outside the Top-50; adjudicated for completeness.
+  WBG:
+    rank: 138
+    imf_label: "West Bank and Gaza"
+    eligibility: eligible
+    consolidated_into: null
+    eligibility_reason: >
+      Reported by the IMF WEO under a code that is NOT ISO 3166-1 alpha-3. Requires an
+      explicit crosswalk entry; do not assume the registry key is an ISO code. Far outside
+      the Top-50, so it cannot enter the universe on this vintage, but the crosswalk gap is
+      real and will break any join that presumes ISO-3166 keys.
+  KOS:
+    rank: 150
+    imf_label: "Kosovo"
+    eligibility: eligible
+    consolidated_into: null
+    eligibility_reason: >
+      Reported by the IMF WEO under a code that is NOT ISO 3166-1 alpha-3. Requires an
+      explicit crosswalk entry; do not assume the registry key is an ISO code. Far outside
+      the Top-50, so it cannot enter the universe on this vintage, but the crosswalk gap is
+      real and will break any join that presumes ISO-3166 keys.
+
+# Codes present in the WEO candidate pool that are NOT ISO 3166-1 alpha-3: WBG, KOS. These
+# are the only two among 197 economy-classified rows (195 non-empty candidates).
+#
+# WARNING for the implementer: filtering candidates by the SHAPE of the code (/^[A-Z]{3}$/)
+# happens to exclude every WEO aggregate on this vintage, because aggregate codes carry
+# digits (G603, and similar). That is a coincidence of the current codelist, NOT the
+# approved mechanism. D-003 requires exclusion by explicit reference list. A shape filter
+# will admit an aggregate the day the IMF issues an all-alpha group code, and it will do so
+# silently.

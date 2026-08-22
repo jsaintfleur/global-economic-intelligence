@@ -1,4 +1,5 @@
 import unittest
+import pytest
 
 from gei.universe import NormalizedGDPProvider, select_universe
 

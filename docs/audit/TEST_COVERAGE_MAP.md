@@ -1,6 +1,6 @@
 # Test Coverage Map
 
-Technical summary: 50 tests protect structural contracts; one explicit registry assertion protects the current debt-scope economic contract. The suite does not supply independent economic approval.
+Technical summary: 54 tests protect structural contracts; one explicit registry assertion protects the current debt-scope economic contract. The suite does not supply independent economic approval.
 
 | Test file | Test | Invariant | Class | Metrics |
 | --- | --- | --- | --- | --- |
@@ -15,6 +15,10 @@ Technical summary: 50 tests protect structural contracts; one explicit registry 
 | tests/test_frontend_contract.py | test_exact_year_missing_state_and_historical_context | Implementation behavior named by test; inspect test body for exact assertion | structural | as applicable |
 | tests/test_frontend_contract.py | test_url_state_and_coverage_are_first_class | Coverage matrices and metric inventory grains | structural | all Phase 1 metrics |
 | tests/test_frontend_contract.py | test_export_contains_lineage | Implementation behavior named by test; inspect test body for exact assertion | structural | as applicable |
+| tests/test_frontend_contract.py | test_product_shell_supports_theme_and_command_search | Implementation behavior named by test; inspect test body for exact assertion | structural | as applicable |
+| tests/test_frontend_contract.py | test_compare_supports_four_distinct_modes | Implementation behavior named by test; inspect test body for exact assertion | structural | as applicable |
+| tests/test_frontend_contract.py | test_scatter_is_exact_year_and_noncausal | Implementation behavior named by test; inspect test body for exact assertion | structural | as applicable |
+| tests/test_frontend_contract.py | test_design_system_has_light_dark_and_reduced_motion | Implementation behavior named by test; inspect test body for exact assertion | structural | as applicable |
 | tests/test_metrics.py | test_registry_is_structurally_valid | Implementation behavior named by test; inspect test body for exact assertion | structural | as applicable |
 | tests/test_metrics.py | test_metric_ids_are_unique | Metric registry fields and uniqueness | structural | all Phase 1 metrics |
 | tests/test_metrics.py | test_every_metric_has_canonical_fields | Metric registry fields and uniqueness | structural | all Phase 1 metrics |

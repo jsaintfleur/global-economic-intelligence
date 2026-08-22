@@ -1,0 +1,116 @@
+# Deterministic offline fixture — IMF WEO NGDPD, reference year 2024
+#
+# Purpose: make TEST-U-002 / 002b / 002c replayable with NO network access. The production
+# test MUST read this snapshot, never the live endpoint. A test that calls api.imf.org is
+# not a test of the universe; it is a test of what the IMF published this morning.
+#
+# Closes the reproducibility gap Codex identified: the repository pinned expected results
+# but not the source candidate set they were derived from.
+
+vintage:
+  dataflow: "IMF.RES,WEO,9.0.0"
+  publication_date: "2026-04-14T13:00:00Z"
+  update_date: "2026-04-15T13:00:00Z"
+
+# Acquisition. Headers are shared by every request; each file records the exact URL that
+# produced it, so the snapshot is reproducible from acquisition through verification and a
+# vintage refresh cannot silently re-fetch a different period range.
+request_headers:
+  User-Agent: "curl/8.5.0"            # Node default and Mozilla UAs receive HTTP 403
+  Accept: "application/vnd.sdmx.data+csv;version=1.0.0"
+retrieved_at: "2026-08-22"
+endpoint_base: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0"
+
+files:
+  - path: ngdpd_2024_raw.csv.gz
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.NGDPD.A?detail=full&startPeriod=2024&endPeriod=2024"
+    description: "Byte-preserved SDMX-CSV response, gzipped. The authoritative artefact."
+    sha256: "5beb72dc596a4214962255c400bf927c7b005dd42d5991b6f327223755f5aed1"
+    rows: 210
+  - path: ngdpd_2024_normalized.csv
+    request_url: null      # derived, not fetched — regenerated from ngdpd_2024_raw.csv.gz
+    description: >
+      Derived extract for human diffing and the fiscal-year boundary assertions. Regenerate
+      from the raw file; never hand-edit.
+    sha256: "5e5f8c343ce38f65f24dfe4cff4d61618e5a6161f7edc8132cebde0074873e2a"
+    rows: 210
+  - path: ngdpd_2025_2031_raw.csv.gz
+    request_url: "https://api.imf.org/external/sdmx/2.1/data/IMF.RES,WEO,9.0.0/.NGDPD.A?detail=full&startPeriod=2025&endPeriod=2031"
+    description: >
+      Byte-preserved SDMX-CSV response for NGDPD 2025-2031, same vintage. Exists to prove
+      the reference-year REJECTIONS offline. Without it the repository can show that 2024
+      passes but cannot show that no later year does — and D-002 selects the LATEST passing
+      year, so the rejections are half the rule.
+    sha256: "93794398b767adc3f130721baf2acae315e31d5341db6d58b7b11b414e1b8d41"
+    rows: 1419
+
+counts:
+  total_rows: 210
+  classified_economy: 197
+  economy_rows_with_a_value: 195
+  economy_rows_with_EMPTY_value: 2    # SYR, ERI
+  classified_aggregate_or_other: 12
+  classified_undeclared: 1                          # GX123
+  pool_actual_at_2024: 169
+  pool_candidates: 195
+  cohort_actual_at_2024: 50
+
+# CORRECTION (2026-08-22). Two figures I published earlier were wrong, both from the same
+# defect in a verification probe: it filtered candidates with isFinite(+value), and
+# +"" === 0 in JavaScript, so the two economies WEO publishes with an EMPTY 2024 value
+# (SYR, ERI) were admitted as candidates worth $0. That probe also compared the
+# estimate boundary as a raw string, so FY2024/25 reporters were miscounted as non-actual.
+#   pool candidates   published 197 -> correct 195
+#   pool actual       published 158/197 (80%) -> correct 169/195 (87%)
+# Neither error touches the cohort: 50/50 actual, Taiwan #22, tail
+# FIN/PER/KAZ with IRQ first excluded — all reconfirmed from this snapshot.
+# D-002 and RELEASE_AND_ALIAS_PLAN.md are amended to match.
+
+# Reference-year rejection table (D-002), derived from ngdpd_2025_2031_raw.csv.gz.
+# A year is admissible only when all 50 selected economies are actual.
+reference_year_rejections:
+  - {year: 2025, candidates: 193, pool_actual: 74, cohort_actual: 38, verdict: REJECT}
+  - {year: 2026, candidates: 190, pool_actual: 0, cohort_actual: 0, verdict: REJECT}
+  - {year: 2027, candidates: 189, pool_actual: 0, cohort_actual: 0, verdict: REJECT}
+  - {year: 2028, candidates: 188, pool_actual: 0, cohort_actual: 0, verdict: REJECT}
+  - {year: 2029, candidates: 188, pool_actual: 0, cohort_actual: 0, verdict: REJECT}
+  - {year: 2030, candidates: 188, pool_actual: 0, cohort_actual: 0, verdict: REJECT}
+  - {year: 2031, candidates: 188, pool_actual: 0, cohort_actual: 0, verdict: REJECT}
+  # 2024 is the latest admissible year: cohort_actual 50/50. See counts above.
+  #
+  # Note the shape of the 2025 rejection. Pool-wide it is 74/193 (38%), but the COHORT is
+  # 38/50 (76%) — the large economies are further ahead in their reporting than the pool,
+  # so a pool-scoped test rejects 2025 far more emphatically than a cohort-scoped one does.
+  # That gap is exactly the ambiguity D-002 previously carried. The cohort measure is the
+  # binding one and it still rejects 2025 decisively; recorded here so the choice of
+  # measure is auditable rather than incidental.
+  #
+  # 2026-2031 carry ZERO actual observations by construction: they are entirely projection.
+  # They are included so the rule is proven exhaustively over the published horizon rather
+  # than at the single adjacent year.
+
+blank_time_period_rows:
+  count: 4
+  countries: [ERI, LKA, SYR, WBG]
+  note: >
+    WEO emits rows with an EMPTY TIME_PERIOD. A parser that keys on year without checking
+    for the empty case will either crash or silently create a phantom period. Drop them.
+
+replay_contract: |
+  1. Read ngdpd_2024_raw.csv.gz. Verify its sha256 against this manifest before parsing.
+  2. Classify every COUNTRY code against governance/entities/imf_weo_reference_list.yaml.
+     Fail the build on any code absent from that file (GX123 is the standing example).
+  3. Drop economy rows whose OBS_VALUE is empty. They are not candidates. Do NOT coerce an
+     empty value to zero — that is the defect corrected above, and at the bottom of a
+     descending sort it hides rather than announces itself.
+  4. Rank remaining `economy` rows by OBS_VALUE descending; take the top 50.
+  5. Assert against governance/fixtures/weo_universe_2026-04-14.json.
+  6. Assert the rejection table above from ngdpd_2025_2031_raw.csv.gz: no year 2025-2031
+     reaches cohort_actual 50/50, therefore 2024 is the latest admissible reference year.
+  7. Drop rows with an empty TIME_PERIOD before any year keying.
+  8. No network call anywhere in this path.
+
+  Refreshing the vintage is a deliberate, reviewed act: re-fetch EACH file from its own
+  request_url with the shared headers,
+  regenerate both files and all hashes, re-pin the expectations, and record the diff in the
+  release notes. It is never automatic.

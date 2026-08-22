@@ -1,0 +1,16 @@
+id: D-010
+title: Inequality metrics are Class C and barred from composites
+status: adopted_pending_implementation
+decided_by: claude
+decided_on: 2026-08-17
+supersedes: null
+enforced_by:
+  - TEST-C-001
+  - TEST-R-003
+rationale: |
+  Gini and top-decile share are Class C, country-page only, and barred from every composite
+  score. The inequality dimension is dropped from the Economic Performance Score rather than
+  imputed.
+
+  Clears 40/50 in 2018 only; 9 of the 50 are absent even then; surveys mix consumption with
+  income and gross with net. See Q-008.

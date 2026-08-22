@@ -13,7 +13,7 @@ class PayloadQualityTests(unittest.TestCase):
         self.assertEqual(len(payload["countries"]), 50)
         self.assertEqual(len({c["iso3"] for c in payload["countries"]}), 50)
         self.assertTrue(all(o["source_id"] for o in payload["observations"]))
-        self.assertTrue(all(o["raw_value"] == o["value"] for o in payload["observations"]))
+        self.assertTrue(all(float(o["raw_value"]) == o["value"] for o in payload["observations"]))
 
 
 if __name__ == "__main__":

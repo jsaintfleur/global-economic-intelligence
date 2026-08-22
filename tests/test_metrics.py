@@ -18,9 +18,12 @@ class MetricRegistryTests(unittest.TestCase):
     def test_every_metric_has_canonical_fields(self):
         self.assertTrue(all(REQUIRED_METRIC_FIELDS <= metric.keys() for metric in self.metrics))
 
-    def test_debt_definition_remains_central_government(self):
-        debt = next(m for m in self.metrics if m["metric_id"] == "central_government_debt_pct_gdp")
-        self.assertIn("Central government", debt["display_name"])
+    def test_debt_definition_is_general_government_with_new_identity(self):
+        debt = next(m for m in self.metrics if m["metric_id"] == "general_government_gross_debt_pct_gdp")
+        self.assertIn("General government", debt["display_name"])
+        self.assertEqual(debt["source_id"], "imf_weo")
+        self.assertEqual(debt["source_indicator_id"], "GGXWDG_NGDP")
+        self.assertNotIn("central_government_debt_pct_gdp", {m["metric_id"] for m in self.metrics})
 
 
 if __name__ == "__main__":

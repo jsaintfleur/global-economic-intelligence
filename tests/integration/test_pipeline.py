@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 from gei.adapters import AdapterResult, SourceAdapter
 from gei.pipeline import build
-from gei.universe import select_universe
+from gei.weo import select_weo_universe
 from gei.schemas import RawSnapshot
 
 
@@ -44,7 +44,9 @@ class PipelineIntegrationTests(unittest.TestCase):
                 self.assertEqual(len(first["countries"]),50)
                 self.assertEqual(len(list(manifests.glob("*.json"))),1)
                 self.assertEqual(first["meta"]["pipeline_run_id"],second["meta"]["pipeline_run_id"])
-                self.assertIs(select_universe,__import__("gei.pipeline",fromlist=["select_universe"]).select_universe)
+                self.assertIs(select_weo_universe,__import__("gei.pipeline",fromlist=["select_weo_universe"]).select_weo_universe)
+                self.assertEqual(first["meta"]["universe_provider_id"], "imf_weo")
+                self.assertTrue(first["meta"]["candidate_universe_complete"])
             finally:
                 for item in reversed(patches):item.stop()
 

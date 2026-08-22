@@ -1,0 +1,78 @@
+{
+  "_comment": "Pinned expectations for TEST-U-002/002b/002c. If the WEO vintage changes, the test MUST fail loudly and a human must re-pin. Do not auto-update.",
+  "vintage": {
+    "dataflow": "IMF.RES,WEO,9.0.0",
+    "publication_date": "2026-04-14T13:00:00Z",
+    "update_date": "2026-04-15T13:00:00Z"
+  },
+  "ranking": {
+    "provider_id": "imf_weo",
+    "indicator": "NGDPD",
+    "frequency": "A",
+    "reference_year": 2024
+  },
+  "coverage": {
+    "candidate_pool": 195,
+    "pool_actual": 169,
+    "cohort_size": 50,
+    "cohort_actual": 50,
+    "economy_rows_with_empty_value": [
+      "SYR",
+      "ERI"
+    ],
+    "_note": "candidate_pool counts economies with a NON-EMPTY OBS_VALUE. Earlier values (197/158) were wrong; see fixtures/weo_2026-04-14/MANIFEST.yaml."
+  },
+  "assertions": {
+    "universe_size": 50,
+    "taiwan": {
+      "iso3": "TWN",
+      "present": true,
+      "rank": 22,
+      "value_usd": 801495464000
+    },
+    "boundary": {
+      "included": [
+        {
+          "rank": 48,
+          "iso3": "FIN",
+          "value_usd": 298600000000
+        },
+        {
+          "rank": 49,
+          "iso3": "PER",
+          "value_usd": 295200000000
+        },
+        {
+          "rank": 50,
+          "iso3": "KAZ",
+          "value_usd": 291500000000
+        }
+      ],
+      "excluded": [
+        {
+          "rank": 51,
+          "iso3": "IRQ",
+          "value_usd": 286500000000
+        },
+        {
+          "rank": 52,
+          "iso3": "DZA",
+          "value_usd": 269100000000
+        }
+      ]
+    },
+    "fiscal_year_boundary_reporters": {
+      "raw_value": "FY2024/25",
+      "normalised_year": 2024,
+      "expect_classified_actual_at_2024": [
+        "IND",
+        "BGD",
+        "IRN",
+        "EGY",
+        "PAK"
+      ]
+    },
+    "boundary_exactly_ref_year_count": 12
+  },
+  "source_snapshot": "governance/fixtures/weo_2026-04-14/"
+}

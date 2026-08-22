@@ -1,0 +1,30 @@
+{
+  "audit_date": "2026-08-22",
+  "classification_definitions": {
+    "PASS": "The marked test fails when the governed behavior is deliberately reversed.",
+    "WEAK": "The marked test enforces part, but not all, of the decision.",
+    "VACUOUS": "The marker exists without a behavioral assertion of the decision.",
+    "MISBOUND": "The test asserts behavior unrelated to the marked decision."
+  },
+  "bindings": [
+    {"decision":"D-001","test_id":"TEST-U-002","classification":"PASS","test":"test_production_universe_contains_pinned_taiwan"},
+    {"decision":"D-001","test_id":"TEST-U-002b","classification":"PASS","test":"test_production_universe_has_pinned_boundary_and_cardinality"},
+    {"decision":"D-001","test_id":"TEST-U-002c","classification":"PASS","test":"test_fiscal_year_boundaries_are_actual_at_reference_year"},
+    {"decision":"D-001","test_id":"TEST-U-003","classification":"PASS","test":"test_world_bank_cross_check_difference_has_structural_composition"},
+    {"decision":"D-002","test_id":"TEST-U-005","classification":"PASS","test":"test_exact_year_ranking_has_no_historical_fallback and release fixtures"},
+    {"decision":"D-002","test_id":"TEST-F-001","classification":"PASS","test":"test_recency_classification and profile/release fixtures"},
+    {"decision":"D-003","test_id":"TEST-U-001","classification":"PASS","test":"test_reference_list_explicitly_excludes_alpha_aggregates","note":"Binding moved to the IMF reference-list test that directly rejects current alpha-3 aggregate codes."},
+    {"decision":"D-003","test_id":"TEST-E-001","classification":"PASS","test":"test_selected_entities_are_explicitly_eligible_and_not_consolidated"},
+    {"decision":"D-003","test_id":"TEST-E-002","classification":"WEAK","test":"test_orphan_and_invalid_iso_are_rejected","reason":"The production validator rejects malformed and orphan entity keys, but this binding does not independently inject an unknown IMF codelist value through the complete adapter.","risk":"A future adapter refactor could weaken the explicit unknown-code failure without this test detecting it.","remediation":"Add a synthetic gzipped SDMX fixture containing an undeclared code and assert that read_metric_fixture_observations fails closed.","owner":"Phase 1.1 adapter hardening","status":"open_non_release_blocking","blocks_public_release":false,"blocks_map_or_phase_2":true},
+    {"decision":"D-004","test_id":"TEST-C-001","classification":"PASS","test":"test_each_metric_has_one_primary_source_and_no_spliced_history"},
+    {"decision":"D-005","test_id":"TEST-U-004","classification":"PASS","test":"test_historical_rank_uses_contemporaneous_ingestion_universe","note":"Corrected from a vacuous two-row sorting assertion."},
+    {"decision":"D-006","test_id":"TEST-T-001","classification":"PASS","test":"test_vintage_store_is_append_only_and_collision_safe plus adapter/validation tests"},
+    {"decision":"D-006","test_id":"TEST-T-002","classification":"PASS","test":"test_vintage_store_is_append_only_and_collision_safe","note":"The binding now executes the append-only store twice and rejects a changed payload at the same vintage path."},
+    {"decision":"D-007","test_id":"TEST-C-002","classification":"PASS","test":"test_comparability_and_scope_govern_capabilities"},
+    {"decision":"D-007","test_id":"TEST-R-001","classification":"PASS","test":"test_rank_desc_is_deterministic_and_missing_visible"},
+    {"decision":"D-008","test_id":"TEST-F-002","classification":"PASS","test":"test_approved_source_substitutions_are_exact"},
+    {"decision":"D-008","test_id":"TEST-R-002","classification":"PASS","test":"test_approved_source_substitutions_are_exact","note":"Moved from an unrelated universe tie-break test."},
+    {"decision":"D-009","test_id":"TEST-F-003","classification":"PASS","test":"test_excluded_indicators_are_absent_from_registry"}
+  ],
+  "summary": {"decisions_audited": 9, "pass": 17, "weak": 1, "vacuous": 0, "misbound": 0, "corrected_bindings": 4}
+}

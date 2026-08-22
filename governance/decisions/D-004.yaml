@@ -1,0 +1,49 @@
+id: D-004
+title: One metric, one primary source, whole history
+status: active
+decided_by: claude
+decided_on: 2026-08-17
+amended_on: 2026-08-22
+amendment_reason: measured three-band GDP cross-check policy replaces unspecified divergence tolerance
+supersedes: null
+enforced_by:
+  - TEST-C-001
+cross_check_tolerance:
+  metric: gdp_usd_current
+  reference:
+    source_id: world_bank_wdi
+    indicator: NY.GDP.MKTP.CD
+  bands:
+    agree:
+      max_abs_pct: 2.0
+      action: record_silently
+    review:
+      min_abs_pct_exclusive: 2.0
+      max_abs_pct: 10.0
+      action: flag_in_release_notes
+    diverge:
+      min_abs_pct_exclusive: 10.0
+      action: require_documented_reason
+  fail_closed_on_undocumented_divergence: true
+  prohibited_actions:
+    - average_sources
+    - splice_to_extend_coverage
+    - suppress_the_cross_check
+  known_documented_divergences:
+    reason: USD conversion factor under managed, multiple, or parallel exchange-rate regimes
+    economies:
+      - BDI
+      - TKM
+      - SDN
+      - ZWE
+      - AGO
+      - LBN
+      - IRN
+      - COM
+rationale: |
+  Cross-checks are parallel series and are never averaged or spliced. Measured 2024
+  absolute divergence between WEO NGDPD and World Bank NY.GDP.MKTP.CD across 189
+  overlapping economies is bimodal: median 0.03%, but the maximum is 59.3%.
+  Divergences above 10% reflect defensible USD conversion-factor differences in managed,
+  multiple, or parallel exchange-rate regimes. Known cases require a documented reason;
+  any new entrant above 10% fails closed. A metric with a coverage gap reports the gap.

@@ -41,6 +41,8 @@ class CanonicalObservation:
     raw_record_index: int
     transformation_id: str
     pipeline_run_id: str
+    observation_class: str
+    source_vintage: str
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -56,4 +58,3 @@ class RejectedObservation:
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
-

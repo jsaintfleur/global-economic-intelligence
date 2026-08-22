@@ -10,7 +10,10 @@ required=[source/"index.html",source/"app.js",source/"styles.css",source/"data/c
 missing=[str(path.relative_to(ROOT)) for path in required if not path.exists()]
 if missing:raise SystemExit(f"Static build missing required files: {missing}")
 if target.exists():shutil.rmtree(target)
-shutil.copytree(source,target)
+def ignore_static(directory,names):
+    path=Path(directory)
+    return {"dashboard.json"} if path == source/"data" else set()
+shutil.copytree(source,target,ignore=ignore_static)
 assets=[]
 for path in sorted(target.rglob("*")):
     if path.is_file():assets.append({"path":str(path.relative_to(target)),"bytes":path.stat().st_size,"sha256":hashlib.sha256(path.read_bytes()).hexdigest()})

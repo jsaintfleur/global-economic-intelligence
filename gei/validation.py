@@ -14,7 +14,9 @@ REQUIRED_OBSERVATION_FIELDS = {
     "observation_id", "country_id", "iso3", "reference_period", "year", "metric_id", "value",
     "unit", "frequency", "source_id", "source_dataset_id", "source_indicator_id", "retrieved_at",
     "raw_snapshot_id", "raw_record_index", "transformation_id", "pipeline_run_id",
+    "observation_class", "source_vintage",
 }
+ALLOWED_OBSERVATION_CLASSES = {"actual", "estimate", "projection", "imputed"}
 
 
 @dataclass
@@ -50,13 +52,12 @@ def validate_observations(observations: Iterable[dict], countries: Iterable[dict
     report = ValidationReport()
     country_ids = {c["iso3"] for c in countries}
     metric_ids = {m["metric_id"] for m in metrics}
-    keys: set[tuple[str, int, str]] = set()
+    keys: set[tuple[str, int, str, str]] = set()
     observation_ids: set[str] = set()
     for index, row in enumerate(observations):
         missing = REQUIRED_OBSERVATION_FIELDS - row.keys()
         if missing:
             report.errors.append(f"observation[{index}] missing fields: {sorted(missing)}")
-            continue
         iso3 = row["iso3"]
         if not isinstance(iso3, str) or len(iso3) != 3 or not iso3.isupper():
             report.errors.append(f"observation[{index}] invalid ISO3: {iso3!r}")
@@ -71,7 +72,12 @@ def validate_observations(observations: Iterable[dict], countries: Iterable[dict
             report.errors.append(f"observation[{index}] nonnumeric value")
         if not row["source_id"] or not row["raw_snapshot_id"] or not row["pipeline_run_id"]:
             report.errors.append(f"observation[{index}] missing provenance")
-        key = (iso3, row["year"], row["metric_id"])
+        if row.get("observation_class") not in ALLOWED_OBSERVATION_CLASSES:
+            report.errors.append(
+                f"observation[{index}] unauthorized observation_class: "
+                f"{row.get('observation_class')!r}"
+            )
+        key = (iso3, row["year"], row["metric_id"], row.get("source_vintage"))
         if key in keys:
             report.errors.append(f"duplicate observation key: {key}")
         keys.add(key)
