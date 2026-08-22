@@ -26,19 +26,41 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("Meta+K Control+K",self.html)
         self.assertIn("setupCommandSearch",self.js)
 
-    def test_compare_supports_four_distinct_modes(self):
-        for mode in ("absolute","indexed","rank","change"): self.assertIn(mode,self.js)
+    def test_compare_supports_six_distinct_modes(self):
+        for mode in ("absolute","indexed","rank","change","matrix","small"): self.assertIn(mode,self.js)
         self.assertIn("Rank within Atlas cohort",self.js)
+        self.assertIn("compareMatrix",self.js)
+        self.assertIn("compareSmallMultiples",self.js)
+
+    def test_world_explorer_is_synchronized_and_governance_gated(self):
+        self.assertIn("WORLD EXPLORER",self.js)
+        self.assertIn('data-chart="world-distribution"',self.js)
+        self.assertIn("Map integration is prepared, not simulated",self.js)
+        self.assertIn("worldExplorerRows",self.js)
+
+    def test_country_view_has_benchmarks_and_descriptive_milestones(self):
+        self.assertIn("countryBenchmark",self.js)
+        self.assertIn("historicalMilestones",self.js)
+        self.assertIn("no composite score",self.js)
+
+    def test_chart_exports_and_direct_economy_identity_are_available(self):
+        self.assertIn("data-export-svg",self.js)
+        self.assertIn("data-export-chart-csv",self.js)
+        self.assertIn("countryColor",self.js)
+        self.assertIn("flagcdn.com",self.js)
 
     def test_scatter_is_exact_year_and_noncausal(self):
         self.assertIn("Association does not imply causation",self.js)
         self.assertIn("scatterRows",self.js)
-        self.assertIn("Exact-year matches only",self.js)
+        self.assertIn("Common-year descriptive scatter",self.js)
 
     def test_design_system_has_light_dark_and_reduced_motion(self):
         css=(ROOT/"app/styles.css").read_text()
         self.assertIn('[data-theme="dark"]',css)
         self.assertIn('@media(prefers-reduced-motion:reduce)',css)
         self.assertIn('--chart-1:',css)
+        self.assertIn("Manrope",css)
+        self.assertIn("DM Mono",css)
+        self.assertIn("linear-gradient",css)
 
 if __name__ == "__main__": unittest.main()

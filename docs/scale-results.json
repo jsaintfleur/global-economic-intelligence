@@ -5,8 +5,8 @@
     "years": 30,
     "observations": 150000,
     "json_bytes": 30675003,
-    "generation_seconds": 1.7,
-    "serialization_seconds": 2.42,
+    "generation_seconds": 1.626,
+    "serialization_seconds": 1.976,
     "peak_memory_mb": 120.0
   },
   {
@@ -15,8 +15,8 @@
     "years": 30,
     "observations": 600000,
     "json_bytes": 122987091,
-    "generation_seconds": 7.038,
-    "serialization_seconds": 8.557,
+    "generation_seconds": 6.41,
+    "serialization_seconds": 7.815,
     "peak_memory_mb": 480.6
   }
 ]
