@@ -27,10 +27,27 @@ class AnalyticsTests(unittest.TestCase):
 
     @pytest.mark.decision("D-005")
     @pytest.mark.test_id("TEST-U-004")
-    def test_historical_rank_is_within_same_year_cohort(self):
-        rows=[{"metric_id":"x","iso3":"AAA","year":2000,"value":1},{"metric_id":"x","iso3":"BBB","year":2000,"value":2}]
-        result=rank_metric_year(rows,COUNTRIES,"x",2000)
-        self.assertEqual([(r["iso3"],r["rank"]) for r in result["rows"]],[("BBB",1),("AAA",2)])
+    def test_historical_rank_uses_contemporaneous_ingestion_universe(self):
+        ingestion_entities=COUNTRIES+[{"country_id":"country:CCC","analytical_entity_id":"entity:CCC","iso3":"CCC","name":"Historically large, not current cohort"}]
+        current_display_cohort=COUNTRIES
+        rows=[
+            {"metric_id":"x","iso3":"AAA","year":2000,"value":1},
+            {"metric_id":"x","iso3":"BBB","year":2000,"value":2},
+            {"metric_id":"x","iso3":"CCC","year":2000,"value":100},
+        ]
+        self.assertNotIn("CCC", {row["iso3"] for row in current_display_cohort})
+        result=rank_metric_year(rows,ingestion_entities,"x",2000)
+        self.assertEqual(result["rows"][0]["iso3"],"CCC")
+        self.assertEqual(result["rows"][0]["rank"],1)
+
+    def test_ranking_rows_preserve_classification_and_provenance(self):
+        rows=[{"metric_id":"x","iso3":"AAA","year":2024,"value":1,"observation_class":"estimate","source_id":"s","source_dataset_id":"d","source_indicator_id":"i","source_vintage":"v","raw_snapshot_id":"raw"}]
+        result=rank_metric_year(rows,COUNTRIES,"x",2024)
+        observed=next(row for row in result["rows"] if row["iso3"]=="AAA")
+        self.assertEqual(observed["observation_class"],"estimate")
+        self.assertEqual(observed["source_vintage"],"v")
+        structural=next(row for row in result["rows"] if row["iso3"]=="BBB")
+        self.assertEqual(structural["missing_reason"],"not_reported_by_source")
 
     def test_indexed_trajectory(self):
         rows=[{"year":2000,"value":20},{"year":2001,"value":30}]

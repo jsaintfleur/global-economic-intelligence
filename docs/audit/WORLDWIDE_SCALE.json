@@ -1,0 +1,35 @@
+{
+  "architecture": "catalog plus lazy metric/profile/ranking shards; canonical worldwide store is not an initial browser payload",
+  "browser_compatibility_payload_bytes": 11698107,
+  "browser_compatibility_payload_deployed": false,
+  "browser_initial_payload_bytes": 122990,
+  "canonical_load_ms": 926.34,
+  "canonical_store_bytes": 43207214,
+  "catalog_bytes": 122990,
+  "catalog_load_ms": 3.09,
+  "ingested_entities": 195,
+  "materialized_top50": 50,
+  "metric_shards": {
+    "bytes": 11653329,
+    "count": 8,
+    "max_bytes": 1558644
+  },
+  "observations": 51409,
+  "peak_measurement_memory_mb": 146.36,
+  "profile_shards": {
+    "bytes": 765820,
+    "count": 50,
+    "max_bytes": 15614
+  },
+  "release_id": "release_770e0ce265f624e2a214",
+  "top50_ranking_shards": {
+    "bytes": 12068075,
+    "count": 8,
+    "max_bytes": 1534931
+  },
+  "worldwide_ranking_shards": {
+    "bytes": 47842064,
+    "count": 8,
+    "max_bytes": 6096404
+  }
+}

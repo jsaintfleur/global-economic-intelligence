@@ -1,0 +1,2936 @@
+{
+  "entities": [
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ABW",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AW",
+      "iso3": "ABW",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ABW",
+        "world_bank": "ABW"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:AFG",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AF",
+      "iso3": "AFG",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "AFG",
+        "world_bank": "AFG"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:AGO",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AO",
+      "iso3": "AGO",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "AGO",
+        "world_bank": "AGO"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ALB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AL",
+      "iso3": "ALB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ALB",
+        "world_bank": "ALB"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:AND",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AD",
+      "iso3": "AND",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "AND",
+        "world_bank": "AND"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:ARE",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AE",
+      "iso3": "ARE",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ARE",
+        "world_bank": "ARE"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:ARG",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AR",
+      "iso3": "ARG",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ARG",
+        "world_bank": "ARG"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ARM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AM",
+      "iso3": "ARM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ARM",
+        "world_bank": "ARM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ATG",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AG",
+      "iso3": "ATG",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ATG",
+        "world_bank": "ATG"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:AUS",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AU",
+      "iso3": "AUS",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "AUS",
+        "world_bank": "AUS"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:AUT",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AT",
+      "iso3": "AUT",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "AUT",
+        "world_bank": "AUT"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:AZE",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "AZ",
+      "iso3": "AZE",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "AZE",
+        "world_bank": "AZE"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BDI",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BI",
+      "iso3": "BDI",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BDI",
+        "world_bank": "BDI"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:BEL",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BE",
+      "iso3": "BEL",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BEL",
+        "world_bank": "BEL"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BEN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BJ",
+      "iso3": "BEN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BEN",
+        "world_bank": "BEN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BFA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BF",
+      "iso3": "BFA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BFA",
+        "world_bank": "BFA"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:BGD",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BD",
+      "iso3": "BGD",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BGD",
+        "world_bank": "BGD"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BGR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BG",
+      "iso3": "BGR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BGR",
+        "world_bank": "BGR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BHR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BH",
+      "iso3": "BHR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BHR",
+        "world_bank": "BHR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BHS",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BS",
+      "iso3": "BHS",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BHS",
+        "world_bank": "BHS"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BIH",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BA",
+      "iso3": "BIH",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BIH",
+        "world_bank": "BIH"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BLR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BY",
+      "iso3": "BLR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BLR",
+        "world_bank": "BLR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BLZ",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BZ",
+      "iso3": "BLZ",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BLZ",
+        "world_bank": "BLZ"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BOL",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BO",
+      "iso3": "BOL",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BOL",
+        "world_bank": "BOL"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:BRA",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BR",
+      "iso3": "BRA",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BRA",
+        "world_bank": "BRA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BRB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BB",
+      "iso3": "BRB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BRB",
+        "world_bank": "BRB"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BRN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BN",
+      "iso3": "BRN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BRN",
+        "world_bank": "BRN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BTN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BT",
+      "iso3": "BTN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BTN",
+        "world_bank": "BTN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:BWA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "BW",
+      "iso3": "BWA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "BWA",
+        "world_bank": "BWA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:CAF",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CF",
+      "iso3": "CAF",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CAF",
+        "world_bank": "CAF"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:CAN",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CA",
+      "iso3": "CAN",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CAN",
+        "world_bank": "CAN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:CHE",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CH",
+      "iso3": "CHE",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CHE",
+        "world_bank": "CHE"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:CHL",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CL",
+      "iso3": "CHL",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CHL",
+        "world_bank": "CHL"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:CHN",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CN",
+      "iso3": "CHN",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CHN",
+        "world_bank": "CHN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:CIV",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CI",
+      "iso3": "CIV",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CIV",
+        "world_bank": "CIV"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:CMR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CM",
+      "iso3": "CMR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CMR",
+        "world_bank": "CMR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:COD",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CD",
+      "iso3": "COD",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "COD",
+        "world_bank": "COD"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:COG",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CG",
+      "iso3": "COG",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "COG",
+        "world_bank": "COG"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:COL",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CO",
+      "iso3": "COL",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "COL",
+        "world_bank": "COL"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:COM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KM",
+      "iso3": "COM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "COM",
+        "world_bank": "COM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:CPV",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CV",
+      "iso3": "CPV",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CPV",
+        "world_bank": "CPV"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:CRI",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CR",
+      "iso3": "CRI",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CRI",
+        "world_bank": "CRI"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:CYP",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CY",
+      "iso3": "CYP",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CYP",
+        "world_bank": "CYP"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:CZE",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "CZ",
+      "iso3": "CZE",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "CZE",
+        "world_bank": "CZE"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:DEU",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "DE",
+      "iso3": "DEU",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "DEU",
+        "world_bank": "DEU"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:DJI",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "DJ",
+      "iso3": "DJI",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "DJI",
+        "world_bank": "DJI"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:DMA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "DM",
+      "iso3": "DMA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "DMA",
+        "world_bank": "DMA"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:DNK",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "DK",
+      "iso3": "DNK",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "DNK",
+        "world_bank": "DNK"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:DOM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "DO",
+      "iso3": "DOM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "DOM",
+        "world_bank": "DOM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:DZA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "DZ",
+      "iso3": "DZA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "DZA",
+        "world_bank": "DZA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ECU",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "EC",
+      "iso3": "ECU",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ECU",
+        "world_bank": "ECU"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:EGY",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "EG",
+      "iso3": "EGY",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "EGY",
+        "world_bank": "EGY"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:ESP",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ES",
+      "iso3": "ESP",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ESP",
+        "world_bank": "ESP"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:EST",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "EE",
+      "iso3": "EST",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "EST",
+        "world_bank": "EST"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ETH",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ET",
+      "iso3": "ETH",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ETH",
+        "world_bank": "ETH"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:FIN",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "FI",
+      "iso3": "FIN",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "FIN",
+        "world_bank": "FIN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:FJI",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "FJ",
+      "iso3": "FJI",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "FJI",
+        "world_bank": "FJI"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:FRA",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "FR",
+      "iso3": "FRA",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "FRA",
+        "world_bank": "FRA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:FSM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "FM",
+      "iso3": "FSM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "FSM",
+        "world_bank": "FSM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GAB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GA",
+      "iso3": "GAB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GAB",
+        "world_bank": "GAB"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:GBR",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GB",
+      "iso3": "GBR",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GBR",
+        "world_bank": "GBR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GEO",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GE",
+      "iso3": "GEO",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GEO",
+        "world_bank": "GEO"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GHA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GH",
+      "iso3": "GHA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GHA",
+        "world_bank": "GHA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GIN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GN",
+      "iso3": "GIN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GIN",
+        "world_bank": "GIN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GMB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GM",
+      "iso3": "GMB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GMB",
+        "world_bank": "GMB"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GNB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GW",
+      "iso3": "GNB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GNB",
+        "world_bank": "GNB"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GNQ",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GQ",
+      "iso3": "GNQ",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GNQ",
+        "world_bank": "GNQ"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GRC",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GR",
+      "iso3": "GRC",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GRC",
+        "world_bank": "GRC"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GRD",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GD",
+      "iso3": "GRD",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GRD",
+        "world_bank": "GRD"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GTM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GT",
+      "iso3": "GTM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GTM",
+        "world_bank": "GTM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:GUY",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "GY",
+      "iso3": "GUY",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "GUY",
+        "world_bank": "GUY"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:HKG",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "HK",
+      "iso3": "HKG",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "HKG",
+        "world_bank": "HKG"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:HND",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "HN",
+      "iso3": "HND",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "HND",
+        "world_bank": "HND"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:HRV",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "HR",
+      "iso3": "HRV",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "HRV",
+        "world_bank": "HRV"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:HTI",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "HT",
+      "iso3": "HTI",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "HTI",
+        "world_bank": "HTI"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:HUN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "HU",
+      "iso3": "HUN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "HUN",
+        "world_bank": "HUN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:IDN",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ID",
+      "iso3": "IDN",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "IDN",
+        "world_bank": "IDN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:IND",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "IN",
+      "iso3": "IND",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "IND",
+        "world_bank": "IND"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:IRL",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "IE",
+      "iso3": "IRL",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "IRL",
+        "world_bank": "IRL"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:IRN",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "IR",
+      "iso3": "IRN",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "IRN",
+        "world_bank": "IRN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:IRQ",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "IQ",
+      "iso3": "IRQ",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "IRQ",
+        "world_bank": "IRQ"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ISL",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "IS",
+      "iso3": "ISL",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ISL",
+        "world_bank": "ISL"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:ISR",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "IL",
+      "iso3": "ISR",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ISR",
+        "world_bank": "ISR"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:ITA",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "IT",
+      "iso3": "ITA",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ITA",
+        "world_bank": "ITA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:JAM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "JM",
+      "iso3": "JAM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "JAM",
+        "world_bank": "JAM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:JOR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "JO",
+      "iso3": "JOR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "JOR",
+        "world_bank": "JOR"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:JPN",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "JP",
+      "iso3": "JPN",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "JPN",
+        "world_bank": "JPN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:KAZ",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KZ",
+      "iso3": "KAZ",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "KAZ",
+        "world_bank": "KAZ"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:KEN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KE",
+      "iso3": "KEN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "KEN",
+        "world_bank": "KEN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:KGZ",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KG",
+      "iso3": "KGZ",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "KGZ",
+        "world_bank": "KGZ"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:KHM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KH",
+      "iso3": "KHM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "KHM",
+        "world_bank": "KHM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:KIR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KI",
+      "iso3": "KIR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "KIR",
+        "world_bank": "KIR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:KNA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KN",
+      "iso3": "KNA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "KNA",
+        "world_bank": "KNA"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:KOR",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KR",
+      "iso3": "KOR",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "KOR",
+        "world_bank": "KOR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:KOS",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": null,
+      "iso3": "KOS",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": false,
+      "source_ids": {
+        "imf_weo": "KOS",
+        "world_bank": null
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:KWT",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "KW",
+      "iso3": "KWT",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "KWT",
+        "world_bank": "KWT"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LAO",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LA",
+      "iso3": "LAO",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LAO",
+        "world_bank": "LAO"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LBN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LB",
+      "iso3": "LBN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LBN",
+        "world_bank": "LBN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LBR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LR",
+      "iso3": "LBR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LBR",
+        "world_bank": "LBR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LBY",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LY",
+      "iso3": "LBY",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LBY",
+        "world_bank": "LBY"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LCA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LC",
+      "iso3": "LCA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LCA",
+        "world_bank": "LCA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LIE",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LI",
+      "iso3": "LIE",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LIE",
+        "world_bank": "LIE"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LKA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LK",
+      "iso3": "LKA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LKA",
+        "world_bank": "LKA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LSO",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LS",
+      "iso3": "LSO",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LSO",
+        "world_bank": "LSO"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LTU",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LT",
+      "iso3": "LTU",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LTU",
+        "world_bank": "LTU"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LUX",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LU",
+      "iso3": "LUX",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LUX",
+        "world_bank": "LUX"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:LVA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "LV",
+      "iso3": "LVA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "LVA",
+        "world_bank": "LVA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MAC",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MO",
+      "iso3": "MAC",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MAC",
+        "world_bank": "MAC"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MAR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MA",
+      "iso3": "MAR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MAR",
+        "world_bank": "MAR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MDA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MD",
+      "iso3": "MDA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MDA",
+        "world_bank": "MDA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MDG",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MG",
+      "iso3": "MDG",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MDG",
+        "world_bank": "MDG"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MDV",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MV",
+      "iso3": "MDV",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MDV",
+        "world_bank": "MDV"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:MEX",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MX",
+      "iso3": "MEX",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MEX",
+        "world_bank": "MEX"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MHL",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MH",
+      "iso3": "MHL",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MHL",
+        "world_bank": "MHL"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MKD",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MK",
+      "iso3": "MKD",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MKD",
+        "world_bank": "MKD"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MLI",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ML",
+      "iso3": "MLI",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MLI",
+        "world_bank": "MLI"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MLT",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MT",
+      "iso3": "MLT",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MLT",
+        "world_bank": "MLT"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MMR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MM",
+      "iso3": "MMR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MMR",
+        "world_bank": "MMR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MNE",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ME",
+      "iso3": "MNE",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MNE",
+        "world_bank": "MNE"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MNG",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MN",
+      "iso3": "MNG",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MNG",
+        "world_bank": "MNG"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MOZ",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MZ",
+      "iso3": "MOZ",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MOZ",
+        "world_bank": "MOZ"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MRT",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MR",
+      "iso3": "MRT",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MRT",
+        "world_bank": "MRT"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MUS",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MU",
+      "iso3": "MUS",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MUS",
+        "world_bank": "MUS"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:MWI",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MW",
+      "iso3": "MWI",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MWI",
+        "world_bank": "MWI"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:MYS",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "MY",
+      "iso3": "MYS",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "MYS",
+        "world_bank": "MYS"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:NAM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NA",
+      "iso3": "NAM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NAM",
+        "world_bank": "NAM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:NER",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NE",
+      "iso3": "NER",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NER",
+        "world_bank": "NER"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:NGA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NG",
+      "iso3": "NGA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NGA",
+        "world_bank": "NGA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:NIC",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NI",
+      "iso3": "NIC",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NIC",
+        "world_bank": "NIC"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:NLD",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NL",
+      "iso3": "NLD",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NLD",
+        "world_bank": "NLD"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:NOR",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NO",
+      "iso3": "NOR",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NOR",
+        "world_bank": "NOR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:NPL",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NP",
+      "iso3": "NPL",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NPL",
+        "world_bank": "NPL"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:NRU",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NR",
+      "iso3": "NRU",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NRU",
+        "world_bank": "NRU"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:NZL",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "NZ",
+      "iso3": "NZL",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "NZL",
+        "world_bank": "NZL"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:OMN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "OM",
+      "iso3": "OMN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "OMN",
+        "world_bank": "OMN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:PAK",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PK",
+      "iso3": "PAK",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PAK",
+        "world_bank": "PAK"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:PAN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PA",
+      "iso3": "PAN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PAN",
+        "world_bank": "PAN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:PER",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PE",
+      "iso3": "PER",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PER",
+        "world_bank": "PER"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:PHL",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PH",
+      "iso3": "PHL",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PHL",
+        "world_bank": "PHL"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:PLW",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PW",
+      "iso3": "PLW",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PLW",
+        "world_bank": "PLW"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:PNG",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PG",
+      "iso3": "PNG",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PNG",
+        "world_bank": "PNG"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:POL",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PL",
+      "iso3": "POL",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "POL",
+        "world_bank": "POL"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:PRI",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PR",
+      "iso3": "PRI",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PRI",
+        "world_bank": "PRI"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:PRT",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PT",
+      "iso3": "PRT",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PRT",
+        "world_bank": "PRT"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:PRY",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "PY",
+      "iso3": "PRY",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "PRY",
+        "world_bank": "PRY"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:QAT",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "QA",
+      "iso3": "QAT",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "QAT",
+        "world_bank": "QAT"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:ROU",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "RO",
+      "iso3": "ROU",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ROU",
+        "world_bank": "ROU"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:RUS",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "RU",
+      "iso3": "RUS",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "RUS",
+        "world_bank": "RUS"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:RWA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "RW",
+      "iso3": "RWA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "RWA",
+        "world_bank": "RWA"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:SAU",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SA",
+      "iso3": "SAU",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SAU",
+        "world_bank": "SAU"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SDN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SD",
+      "iso3": "SDN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SDN",
+        "world_bank": "SDN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SEN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SN",
+      "iso3": "SEN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SEN",
+        "world_bank": "SEN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:SGP",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SG",
+      "iso3": "SGP",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SGP",
+        "world_bank": "SGP"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SLB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SB",
+      "iso3": "SLB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SLB",
+        "world_bank": "SLB"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SLE",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SL",
+      "iso3": "SLE",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SLE",
+        "world_bank": "SLE"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SLV",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SV",
+      "iso3": "SLV",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SLV",
+        "world_bank": "SLV"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SMR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SM",
+      "iso3": "SMR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SMR",
+        "world_bank": "SMR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SOM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SO",
+      "iso3": "SOM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SOM",
+        "world_bank": "SOM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SRB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "RS",
+      "iso3": "SRB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SRB",
+        "world_bank": "SRB"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SSD",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SS",
+      "iso3": "SSD",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SSD",
+        "world_bank": "SSD"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:STP",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ST",
+      "iso3": "STP",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "STP",
+        "world_bank": "STP"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SUR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SR",
+      "iso3": "SUR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SUR",
+        "world_bank": "SUR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SVK",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SK",
+      "iso3": "SVK",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SVK",
+        "world_bank": "SVK"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SVN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SI",
+      "iso3": "SVN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SVN",
+        "world_bank": "SVN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:SWE",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SE",
+      "iso3": "SWE",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SWE",
+        "world_bank": "SWE"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SWZ",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SZ",
+      "iso3": "SWZ",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SWZ",
+        "world_bank": "SWZ"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:SYC",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "SC",
+      "iso3": "SYC",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "SYC",
+        "world_bank": "SYC"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TCD",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TD",
+      "iso3": "TCD",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TCD",
+        "world_bank": "TCD"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TGO",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TG",
+      "iso3": "TGO",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TGO",
+        "world_bank": "TGO"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:THA",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TH",
+      "iso3": "THA",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "THA",
+        "world_bank": "THA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TJK",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TJ",
+      "iso3": "TJK",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TJK",
+        "world_bank": "TJK"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TKM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TM",
+      "iso3": "TKM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TKM",
+        "world_bank": "TKM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TLS",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TL",
+      "iso3": "TLS",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TLS",
+        "world_bank": "TLS"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TON",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TO",
+      "iso3": "TON",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TON",
+        "world_bank": "TON"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TTO",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TT",
+      "iso3": "TTO",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TTO",
+        "world_bank": "TTO"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TUN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TN",
+      "iso3": "TUN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TUN",
+        "world_bank": "TUN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:TUR",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TR",
+      "iso3": "TUR",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TUR",
+        "world_bank": "TUR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TUV",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TV",
+      "iso3": "TUV",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TUV",
+        "world_bank": "TUV"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:TWN",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TW",
+      "iso3": "TWN",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": false,
+      "source_ids": {
+        "imf_weo": "TWN",
+        "world_bank": "TWN"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:TZA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "TZ",
+      "iso3": "TZA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "TZA",
+        "world_bank": "TZA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:UGA",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "UG",
+      "iso3": "UGA",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "UGA",
+        "world_bank": "UGA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:UKR",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "UA",
+      "iso3": "UKR",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "UKR",
+        "world_bank": "UKR"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:URY",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "UY",
+      "iso3": "URY",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "URY",
+        "world_bank": "URY"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:USA",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "US",
+      "iso3": "USA",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "USA",
+        "world_bank": "USA"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:UZB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "UZ",
+      "iso3": "UZB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "UZB",
+        "world_bank": "UZB"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:VCT",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "VC",
+      "iso3": "VCT",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "VCT",
+        "world_bank": "VCT"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:VEN",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "VE",
+      "iso3": "VEN",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "VEN",
+        "world_bank": "VEN"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:VNM",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "VN",
+      "iso3": "VNM",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "VNM",
+        "world_bank": "VNM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:VUT",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "VU",
+      "iso3": "VUT",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "VUT",
+        "world_bank": "VUT"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:WBG",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": null,
+      "iso3": "WBG",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": false,
+      "source_ids": {
+        "imf_weo": "WBG",
+        "world_bank": null
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:WSM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "WS",
+      "iso3": "WSM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "WSM",
+        "world_bank": "WSM"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:YEM",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "YE",
+      "iso3": "YEM",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "YEM",
+        "world_bank": "YEM"
+      }
+    },
+    {
+      "adjudication_status": "phase_1_1_display_approved",
+      "canonical_entity_id": "entity:ZAF",
+      "flag_available": true,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ZA",
+      "iso3": "ZAF",
+      "mapping_status": "MISSING GEOMETRY",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ZAF",
+        "world_bank": "ZAF"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ZMB",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ZM",
+      "iso3": "ZMB",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ZMB",
+        "world_bank": "ZMB"
+      }
+    },
+    {
+      "adjudication_status": "worldwide_review_required",
+      "canonical_entity_id": "entity:ZWE",
+      "flag_available": false,
+      "geometry_available": false,
+      "geometry_id": null,
+      "iso2": "ZW",
+      "iso3": "ZWE",
+      "mapping_status": "MISSING GOVERNANCE",
+      "region_metadata_available": true,
+      "source_ids": {
+        "imf_weo": "ZWE",
+        "world_bank": "ZWE"
+      }
+    }
+  ],
+  "geometry_registry_present": false,
+  "release_id": "release_770e0ce265f624e2a214",
+  "schema_version": "1.0",
+  "summary": {
+    "MISSING GEOMETRY": 50,
+    "MISSING GOVERNANCE": 145
+  }
+}

@@ -35,7 +35,7 @@ class FrontendContractTests(unittest.TestCase):
     def test_world_explorer_is_synchronized_and_governance_gated(self):
         self.assertIn("WORLD EXPLORER",self.js)
         self.assertIn('data-chart="world-distribution"',self.js)
-        self.assertIn("Map integration is prepared, not simulated",self.js)
+        self.assertIn("Map unavailable — 0 entities are currently renderable",self.js)
         self.assertIn("worldExplorerRows",self.js)
 
     def test_country_view_has_benchmarks_and_descriptive_milestones(self):
@@ -47,7 +47,29 @@ class FrontendContractTests(unittest.TestCase):
         self.assertIn("data-export-svg",self.js)
         self.assertIn("data-export-chart-csv",self.js)
         self.assertIn("countryColor",self.js)
-        self.assertIn("flagcdn.com",self.js)
+        self.assertNotIn("flagcdn.com",self.js)
+        self.assertNotIn("iso3==='TWN'",self.js)
+        self.assertIn("flag_asset",self.js)
+
+    def test_profile_share_uses_one_explicit_comparison_year(self):
+        self.assertIn("SHARE OF ${gdpRanking.ranking_year} ATLAS COHORT GDP",self.js)
+        self.assertIn("gdpRank?.observation_year===gdpRanking.ranking_year",self.js)
+        self.assertIn("REAL GROWTH · ${growth?.year",self.js)
+        self.assertIn("POPULATION · ${pop?.year",self.js)
+        self.assertNotIn("auditedCountry",self.js)
+
+    def test_historical_rankings_use_worldwide_shards_in_the_browser(self):
+        self.assertIn("worldwide_ranking_shards",self.js)
+        self.assertIn("loadWorldwideRanking",self.js)
+        self.assertIn("state.worldwideRankings",self.js)
+        self.assertIn("not today’s Top-50 projected backward",self.js)
+
+    def test_preview_does_not_claim_a_production_canonical(self):
+        self.assertNotIn("global-economic-intelligence.vercel.app",self.html)
+
+    def test_vacuous_rank_movement_and_null_region_are_suppressed(self):
+        self.assertIn("nowRank!==oldRank",self.js)
+        self.assertIn("c.region!=='Not classified'",self.js)
 
     def test_scatter_is_exact_year_and_noncausal(self):
         self.assertIn("Association does not imply causation",self.js)

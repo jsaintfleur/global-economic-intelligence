@@ -152,6 +152,7 @@ entities:
     imf_label: "Taiwan Province of China"
     eligibility: eligible
     display_label: "Taiwan"
+    iso2: "TW"
     eligibility_reason: >
       Reported as a distinct economy in the IMF WEO under COUNTRY code TWN with complete NGDPD 
       coverage. Eligibility follows the reporting practice of the ranking source and asserts nothing 

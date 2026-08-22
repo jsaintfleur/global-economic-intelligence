@@ -16,8 +16,6 @@ class ProductionUniverseTests(unittest.TestCase):
         year,universe,_=select_universe(NormalizedGDPProvider(rows),entities,top_n=3,minimum_observations=3)
         self.assertEqual(year,2024);self.assertEqual(len(universe),3)
 
-    @pytest.mark.decision("D-008")
-    @pytest.mark.test_id("TEST-R-002")
     def test_ties_use_iso3_and_nonincluded_entities_are_excluded(self):
         entities={"BBB":entity("BBB"),"AAA":entity("AAA"),"CCC":entity("CCC","pending_review")}
         rows=[{"country_id":f"country:{iso}","iso3":iso,"year":2025,"value":10,"source_id":"source","source_indicator_id":"gdp"} for iso in entities]

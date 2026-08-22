@@ -206,6 +206,17 @@ def read_metric_fixture_observations(
         )
     observations: list[dict] = []
     snapshots: list[dict] = []
+    fallback_boundaries: dict[str, tuple[str, int]] = {}
+    ngdpd_entry = entries.get("NGDPD")
+    if ngdpd_entry:
+        with gzip.open(directory / ngdpd_entry["path"], "rt", encoding="utf-8", newline="") as handle:
+            for row in csv.DictReader(handle):
+                code = (row.get("COUNTRY") or "").strip()
+                raw_boundary = (row.get("LATEST_ACTUAL_ANNUAL_DATA") or "").strip()
+                try:
+                    fallback_boundaries[code] = (raw_boundary, normalize_actual_boundary(raw_boundary))
+                except ValueError:
+                    continue
     for indicator, metric in sorted(by_indicator.items()):
         entry = entries[indicator]
         path = directory / entry["path"]
@@ -217,7 +228,7 @@ def read_metric_fixture_observations(
                 "source_dataset_id": "world_economic_outlook",
                 "source_indicator_id": indicator,
                 "retrieved_at": retrieved_at,
-                "storage_path": str(path),
+                "storage_path": str(Path("governance/fixtures") / directory.name / entry["path"]),
                 "record_count": entry["rows"],
                 "checksum_sha256": entry["sha256"],
             }
@@ -237,13 +248,20 @@ def read_metric_fixture_observations(
                     continue
                 year = int(period)
                 raw_boundary = (row.get("LATEST_ACTUAL_ANNUAL_DATA") or "").strip()
-                boundary = normalize_actual_boundary(raw_boundary)
+                try:
+                    boundary = normalize_actual_boundary(raw_boundary)
+                    boundary_source = indicator
+                except ValueError:
+                    if code not in fallback_boundaries:
+                        raise
+                    raw_boundary, boundary = fallback_boundaries[code]
+                    boundary_source = "NGDPD"
                 observation_class = (
                     "actual"
                     if year <= boundary
                     else "estimate"
                     if year <= universe_reference_year
-                    else "forecast"
+                    else "projection"
                 )
                 value = float(raw_value)
                 observations.append(
@@ -269,8 +287,10 @@ def read_metric_fixture_observations(
                         "transformation_id": metric["transformation"],
                         "pipeline_run_id": run_id,
                         "observation_class": observation_class,
+                        "source_vintage": manifest["vintage"]["publication_date"],
                         "latest_actual_raw": raw_boundary,
                         "latest_actual_year": boundary,
+                        "actual_boundary_source_indicator_id": boundary_source,
                         "publication_date": manifest["vintage"]["publication_date"],
                         "update_date": manifest["vintage"]["update_date"],
                     }
@@ -310,7 +330,8 @@ def select_weo_universe(
                 "country_id": f"country:{row.iso3}",
                 "iso3": row.iso3,
                 "name": decision["imf_label"],
-                "display_name": "Taiwan" if row.iso3 == "TWN" else decision["imf_label"],
+                "display_name": decision.get("display_label", decision["imf_label"]),
+                "iso2": decision.get("iso2"),
                 "gdp_rank": rank,
                 "reference_year": row.year,
                 "nominal_gdp": row.value,

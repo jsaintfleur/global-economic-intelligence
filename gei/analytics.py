@@ -47,7 +47,18 @@ def rank_metric_year(observations: Iterable[dict], countries: Iterable[dict], me
             "latest_historical_value": latest["value"] if latest else None, "metric_max_year": metric_max_year,
             "lag_years": recency(latest["year"] if latest else None, metric_max_year)["lag_years"],
             "recency_status": recency(latest["year"] if latest else None, metric_max_year)["recency_status"],
-            "missing_reason": None if observed else "no_observation_in_ranking_year",
+            "observation_class": observed.get("observation_class") if observed else None,
+            "source_id": observed.get("source_id") if observed else None,
+            "source_dataset_id": observed.get("source_dataset_id") if observed else None,
+            "source_indicator_id": observed.get("source_indicator_id") if observed else None,
+            "source_vintage": observed.get("source_vintage") if observed else None,
+            "raw_snapshot_id": observed.get("raw_snapshot_id") if observed else None,
+            "coverage_state": "observed" if observed else "missing",
+            "missing_reason": None if observed else (
+                "not_reported_by_source"
+                if not history.get(iso)
+                else "no_observation_in_ranking_year"
+            ),
             "ranked_entity_count": ranked_count, "cohort_size": cohort_size,
             "coverage_ratio": ranked_count / cohort_size if cohort_size else 0,
         })

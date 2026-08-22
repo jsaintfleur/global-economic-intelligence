@@ -114,6 +114,7 @@ def test_comparability_and_scope_govern_capabilities():
 
 @pytest.mark.decision("D-008")
 @pytest.mark.test_id("TEST-F-002")
+@pytest.mark.test_id("TEST-R-002")
 def test_approved_source_substitutions_are_exact():
     mappings = {
         metric["metric_id"]: (metric["source_id"], metric["source_indicator_id"])

@@ -1,5 +1,6 @@
 import unittest
 from pathlib import Path
+import pytest
 
 from gei.weo import (
     load_reference_classes,
@@ -28,6 +29,8 @@ class WEOUniverseAdapterTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             normalize_actual_boundary("")
 
+    @pytest.mark.decision("D-003")
+    @pytest.mark.test_id("TEST-U-001")
     def test_reference_list_explicitly_excludes_alpha_aggregates(self):
         classes = load_reference_classes(
             ENTITIES / "imf_weo_reference_list.yaml"

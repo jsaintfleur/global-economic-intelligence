@@ -20,7 +20,7 @@ from .logging import log_event
 from .registries import ANALYTICAL_ENTITY_REGISTRY_PATH, COUNTRY_REGISTRY_PATH, SOURCE_REGISTRY_PATH, TRANSFORMATION_REGISTRY_PATH, load_versioned_registry, registry_version, validate_analytical_entity_registry, validate_country_registry, validate_registries, write_country_registry
 from .regression import evaluate_regressions
 from .release import build_release, write_release
-from .weo import read_metric_fixture_observations, read_ngdpd_snapshot, select_weo_universe
+from .weo import load_eligibility, read_metric_fixture_observations, read_ngdpd_snapshot, select_weo_universe
 from .validation import validate_metric_registry, validate_observations
 
 
@@ -67,14 +67,31 @@ def build(start: int = START_YEAR, end: int = END_YEAR, adapter: SourceAdapter |
             universe_data, entity_evidence / "eligibility_adjudication.yaml", TOP_N
         )
         reference_year = universe[0]["reference_year"]
+        eligibility = load_eligibility(entity_evidence / "eligibility_adjudication.yaml")
+        ingestion_entities = []
+        for observation in sorted(universe_data.observations, key=lambda row: row.iso3):
+            decision = eligibility.get(observation.iso3, {})
+            wb = countries.get(observation.iso3, {})
+            iso2 = decision.get("iso2") or wb.get("iso2")
+            name = decision.get("display_label") or wb.get("name") or decision.get("imf_label") or observation.iso3
+            ingestion_entities.append({
+                "analytical_entity_id": observation.analytical_entity_id,
+                "country_id": f"country:{observation.iso3}", "iso3": observation.iso3,
+                "iso2": iso2, "name": name, "display_name": name,
+                "region": wb.get("region"), "income_group": wb.get("income_group"),
+                "analytical_eligibility": "included" if decision.get("eligibility") == "eligible" else "ingested_source_entity",
+                "eligibility_basis": decision.get("eligibility_reason", "IMF WEO economy codelist; ingested but not materialized into the Phase 1.1 Top-50 view."),
+                "flag_asset": f"assets/flags/{iso2.lower()}.svg" if iso2 else None,
+            })
         for country in universe:
             wb = countries.get(country["iso3"], {})
             country.update(
                 {
-                    "iso2": wb.get("iso2"),
-                    "region": wb.get("region", "Not classified"),
-                    "income_group": wb.get("income_group", "Not classified"),
+                    "iso2": country.get("iso2") or wb.get("iso2"),
+                    "region": wb.get("region"),
+                    "income_group": wb.get("income_group"),
                     "name": country["display_name"],
+                    "flag_asset": f"assets/flags/{(country.get('iso2') or wb.get('iso2') or '').lower()}.svg" if (country.get("iso2") or wb.get("iso2")) else None,
                     "eligibility_policy_version": entity_registry["eligibility_policy_version"],
                 }
             )
@@ -85,14 +102,14 @@ def build(start: int = START_YEAR, end: int = END_YEAR, adapter: SourceAdapter |
             run_id,
             started_at,
             reference_year,
-            {country["iso3"] for country in universe},
+            {country["iso3"] for country in ingestion_entities},
         )
         observations.extend(weo_observations)
         manifest.raw_snapshots.extend(weo_snapshots)
         manifest.raw_observations_received += len(weo_observations)
-        universe_iso3 = [row["iso3"] for row in universe]
-        panel = sorted((row for row in observations if row["iso3"] in universe_iso3), key=lambda row: (row["metric_id"], row["iso3"], row["year"]))
-        validation = validate_observations(panel, universe, metrics)
+        ingestion_iso3 = {row["iso3"] for row in ingestion_entities}
+        panel = sorted((row for row in observations if row["iso3"] in ingestion_iso3), key=lambda row: (row["metric_id"], row["iso3"], row["year"]))
+        validation = validate_observations(panel, ingestion_entities, metrics)
         validation.require_valid()
 
         completed_at = now or datetime.now(timezone.utc).isoformat()
@@ -101,17 +118,23 @@ def build(start: int = START_YEAR, end: int = END_YEAR, adapter: SourceAdapter |
         metric_payload = [{**metric, "ranking_year":reference_year, "capabilities":metric_capabilities(metric), "name": metric["display_name"], "code": metric["source_indicator_id"], "family": metric["category"], "format": metric["formatting"], "caveats": metric["caveat"]} for metric in metrics]
         metric_ranking_years = {metric["metric_id"]: reference_year for metric in metrics}
         payload = {"meta": {"schema_version": "2.2", "pipeline_run_id": run_id, "generated_at": completed_at, "reference_year": reference_year, "universe_size": len(universe), "start_year": start, "end_year": end, "freshness_rules": {"annual":{"current_year":0,"prior_year":1,"historical_min_lag":2,"unavailable":"no_observation"}}, "eligibility_policy_version": entity_registry["eligibility_policy_version"], "universe_provider_id": "imf_weo", "candidate_universe_complete": True, "universe_exclusions": universe_exclusions, "universe_lineage": {"provider_id":"imf_weo","ranking_indicator":"NGDPD","reference_year":reference_year,"cohort_actual_coverage":"50/50","pool_actual_coverage":f"{universe_data.pool_actual_count}/{universe_data.pool_count}","selected_count":len(universe),"boundary_included":universe[-1],"boundary_excluded":universe_exclusions[0],"publication_date":universe_data.publication_date,"update_date":universe_data.update_date},"metric_ranking_years":metric_ranking_years}, "countries": universe, "metrics": metric_payload, "sources": source_registry, "observations": panel}
+        payload["meta"].update({"schema_version": "2.3", "ingestion_universe_size": len(ingestion_entities)})
+        payload["ingestion_entities"] = ingestion_entities
         previous = json.loads((PROCESSED / "dashboard.json").read_text()) if (PROCESSED / "dashboard.json").exists() else None
         registry_versions={"metric_registry":registry_version(ROOT/"config/metrics.json"),"country_registry":registry_version(COUNTRY_REGISTRY_PATH),"analytical_entity_registry":registry_version(ANALYTICAL_ENTITY_REGISTRY_PATH),"source_registry":registry_version(SOURCE_REGISTRY_PATH),"transformation_registry":registry_version(TRANSFORMATION_REGISTRY_PATH)}
         code_commit=_code_commit()
         release=build_release(payload,[row["raw_snapshot_id"] for row in manifest.raw_snapshots],code_commit,registry_versions,{adapter.source_id:"1.0","imf_weo":"9.0.0"},manifest.warnings)
         payload["meta"].update({"release_id":release["release_id"],"asset_version":release["asset_version"],"data_release_schema_version":"1.0"})
+        vintage_path = _write_vintage_store(payload)
         diff=snapshot_diff(previous,payload) if previous else None
         rules=json.loads(REGRESSION_RULES_PATH.read_text())["rules"]
         regression=evaluate_regressions(previous,payload,diff,rules,{m["metric_id"] for m in metrics})
         if regression["status"]=="failed": raise ValueError("Blocking regression gate failed")
         outputs = _write_outputs(payload, panel, universe, rejected)
-        coverage=coverage_matrix(panel,universe,metric_payload,start,end);coverage_bytes=json.dumps(coverage,separators=(",", ":"),sort_keys=True);(PROCESSED/"coverage.json").write_text(coverage_bytes,encoding="utf-8");(APP_DATA/"coverage.json").write_text(coverage_bytes,encoding="utf-8")
+        outputs.append(_display_path(vintage_path))
+        display_iso3 = {row["iso3"] for row in universe}
+        display_panel = [row for row in panel if row["iso3"] in display_iso3]
+        coverage=coverage_matrix(display_panel,universe,metric_payload,start,end);coverage_bytes=json.dumps(coverage,separators=(",", ":"),sort_keys=True);(PROCESSED/"coverage.json").write_text(coverage_bytes,encoding="utf-8");(APP_DATA/"coverage.json").write_text(coverage_bytes,encoding="utf-8")
         release_path,snapshot_path=write_release(release,payload,RELEASES);outputs.extend([_display_path(release_path),_display_path(snapshot_path),"data/processed/coverage.json"])
         if diff and previous.get("meta",{}).get("release_id") and previous["meta"]["release_id"]!=release["release_id"]:
             paths=write_diff(diff,DIFFS,previous["meta"]["release_id"],release["release_id"]);outputs.extend(_display_path(path) for path in paths)
@@ -150,7 +173,7 @@ def _normalize_observations(rows: list[dict], metric: dict, countries: dict[str,
             rejected.append({"source_indicator_id": metric["source_indicator_id"], "raw_record_index": index, "reason": reason, "raw_country_code": iso3, "raw_reference_period": period}); continue
         seen.add((iso3, year))
         observation_id = stable_id("obs", metric["source_id"], metric["source_indicator_id"], iso3, year)
-        accepted.append({"observation_id": observation_id, "country_id": countries[iso3]["country_id"], "iso3": iso3, "reference_period": str(year), "year": year, "metric_id": metric["metric_id"], "value": float(value), "raw_value": value, "modeled_value": None, "unit": metric["unit"], "frequency": metric["frequency"], "source_id": metric["source_id"], "source_dataset_id": metric["source_dataset_id"], "source_indicator_id": metric["source_indicator_id"], "source_indicator": metric["source_indicator_id"], "retrieved_at": retrieved_at, "raw_snapshot_id": snapshot_id, "raw_record_index": index, "transformation_id": metric["transformation"], "pipeline_run_id": run_id})
+        accepted.append({"observation_id": observation_id, "country_id": countries[iso3]["country_id"], "iso3": iso3, "reference_period": str(year), "year": year, "metric_id": metric["metric_id"], "value": float(value), "raw_value": value, "modeled_value": None, "unit": metric["unit"], "frequency": metric["frequency"], "source_id": metric["source_id"], "source_dataset_id": metric["source_dataset_id"], "source_indicator_id": metric["source_indicator_id"], "source_indicator": metric["source_indicator_id"], "retrieved_at": retrieved_at, "raw_snapshot_id": snapshot_id, "raw_record_index": index, "transformation_id": metric["transformation"], "pipeline_run_id": run_id, "observation_class": "estimate", "source_vintage": retrieved_at[:10]})
     return accepted, rejected
 
 
@@ -159,31 +182,71 @@ def _write_outputs(payload: dict, panel: list[dict], universe: list[dict], rejec
     _write_csv(PROCESSED / "observations.csv", panel); _write_csv(PROCESSED / "countries.csv", universe); _write_csv(PROCESSED / "rejected_observations.csv", rejected)
     metric_dir = APP_DATA / "metrics"; metric_dir.mkdir(parents=True, exist_ok=True)
     ranking_dir = APP_DATA / "rankings"; ranking_dir.mkdir(parents=True, exist_ok=True)
+    worldwide_ranking_dir = APP_DATA / "rankings_worldwide"; worldwide_ranking_dir.mkdir(parents=True, exist_ok=True)
     profile_dir = APP_DATA / "profiles"; profile_dir.mkdir(parents=True, exist_ok=True)
-    for directory in (metric_dir, ranking_dir, profile_dir):
+    for directory in (metric_dir, ranking_dir, worldwide_ranking_dir, profile_dir):
         for stale in directory.glob("*.json"):
             stale.unlink()
     by_metric: dict[str, list[dict]] = defaultdict(list)
-    for row in panel: by_metric[row["metric_id"]].append(row)
+    display_iso3 = {row["iso3"] for row in universe}
+    display_panel = [row for row in panel if row["iso3"] in display_iso3]
+    for row in display_panel: by_metric[row["metric_id"]].append(row)
     for metric_id, rows in by_metric.items():
         (metric_dir / f"{metric_id}.json").write_text(json.dumps(rows, separators=(",", ":"), sort_keys=True), encoding="utf-8")
     ranking_assets = {}
     for metric in payload["metrics"]:
-        asset = ranking_asset(panel, universe, metric); ranking_assets[metric["metric_id"]] = asset
+        asset = ranking_asset(display_panel, universe, metric); ranking_assets[metric["metric_id"]] = asset
         (ranking_dir / f"{metric['metric_id']}.json").write_text(json.dumps(asset,separators=(",", ":"),sort_keys=True),encoding="utf-8")
+        worldwide_asset = ranking_asset(panel, payload["ingestion_entities"], metric)
+        worldwide_asset["ranking_scope"] = "contemporaneous_ingestion_universe"
+        for result in worldwide_asset["rankings"].values():
+            result["ranking_scope"] = "contemporaneous_ingestion_universe"
+        (worldwide_ranking_dir / f"{metric['metric_id']}.json").write_text(json.dumps(worldwide_asset,separators=(",", ":"),sort_keys=True),encoding="utf-8")
     for country in universe:
-        profile = country_profile(panel, universe, payload["metrics"], country["iso3"])
+        profile = country_profile(display_panel, universe, payload["metrics"], country["iso3"])
         (profile_dir / f"{country['iso3']}.json").write_text(json.dumps(profile,separators=(",", ":"),sort_keys=True),encoding="utf-8")
     version=payload["meta"].get("asset_version","dev")
     catalog = {"meta": payload["meta"], "countries": payload["countries"], "metrics": payload["metrics"], "sources": payload["sources"], "overview_metric_ids":["gdp_current_usd","gdp_growth_pct","inflation_cpi_pct","unemployment_pct","general_government_gross_debt_pct_gdp"], "observation_shards": {metric_id: f"data/metrics/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}, "ranking_shards": {metric_id:f"data/rankings/{metric_id}.json?v={version}" for metric_id in sorted(by_metric)}, "profile_shards": {country["iso3"]:f"data/profiles/{country['iso3']}.json?v={version}" for country in universe}}
+    catalog["display_cohorts"] = {"top50": [row["iso3"] for row in universe]}
+    catalog["worldwide_entities"] = [
+        {
+            **row,
+            "flag_asset": row.get("flag_asset") if row["iso3"] in display_iso3 else None,
+        }
+        for row in payload["ingestion_entities"]
+    ]
+    catalog["worldwide_ranking_shards"] = {metric["metric_id"]: f"data/rankings_worldwide/{metric['metric_id']}.json?v={version}" for metric in payload["metrics"]}
     (APP_DATA / "catalog.json").write_text(json.dumps(catalog, separators=(",", ":"), sort_keys=True), encoding="utf-8")
     _write_dashboard_json(payload)
-    return ["data/processed/dashboard.json", "data/processed/observations.csv", "data/processed/countries.csv", "data/processed/rejected_observations.csv", "app/data/dashboard.json", "app/data/catalog.json", "app/data/metrics/*.json", "app/data/rankings/*.json", "app/data/profiles/*.json"]
+    return ["data/processed/dashboard.json", "data/processed/observations.csv", "data/processed/countries.csv", "data/processed/rejected_observations.csv", "app/data/dashboard.json", "app/data/catalog.json", "app/data/metrics/*.json", "app/data/rankings/*.json", "app/data/rankings_worldwide/*.json", "app/data/profiles/*.json"]
 
 
 def _write_dashboard_json(payload: dict) -> None:
     serialized = json.dumps(payload, separators=(",", ":"), sort_keys=True)
-    (PROCESSED / "dashboard.json").write_text(serialized, encoding="utf-8"); (APP_DATA / "dashboard.json").write_text(serialized, encoding="utf-8")
+    (PROCESSED / "dashboard.json").write_text(serialized, encoding="utf-8")
+    display_iso3 = {row["iso3"] for row in payload["countries"]}
+    browser_payload = {
+        **payload,
+        "observations": [row for row in payload["observations"] if row["iso3"] in display_iso3],
+        "ingestion_entities": [],
+    }
+    (APP_DATA / "dashboard.json").write_text(json.dumps(browser_payload, separators=(",", ":"), sort_keys=True), encoding="utf-8")
+
+
+def _write_vintage_store(payload: dict) -> Path:
+    directory = PROCESSED / "vintages"
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"{payload['meta']['release_id']}.observations.json"
+    stable_rows = [{key: value for key, value in row.items() if key not in {"pipeline_run_id", "retrieved_at"}} for row in payload["observations"]]
+    serialized = json.dumps(stable_rows, separators=(",", ":"), sort_keys=True)
+    if path.exists():
+        existing_rows = json.loads(path.read_text(encoding="utf-8"))
+        existing_stable = [{key: value for key, value in row.items() if key not in {"pipeline_run_id", "retrieved_at"}} for row in existing_rows]
+        if existing_stable != stable_rows:
+            raise ValueError(f"append-only vintage collision: {path.name}")
+    if not path.exists():
+        path.write_text(serialized, encoding="utf-8")
+    return path
 
 
 def _write_csv(path: Path, rows: list[dict]) -> None:
