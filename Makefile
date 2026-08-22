@@ -1,7 +1,9 @@
+PYTHON ?= python3
+
 .PHONY: test check validate-config data data-fixture build app scale inventory audit clean-pyc
 
 test:
-	python3 -m unittest discover -s tests -v
+	$(PYTHON) -m pytest -q
 
 check:
 	python3 -m compileall -q gei tests scripts

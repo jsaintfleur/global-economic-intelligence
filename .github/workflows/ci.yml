@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Install test dependencies
+        run: python -m pip install --quiet pytest pyyaml
       - name: Static validation
         run: make check
       - name: Deterministic tests
@@ -25,8 +27,6 @@ jobs:
       - name: Production payload validation
         run: python -m unittest tests.data_quality.test_production_payload -v
       - name: Governance suite
-        run: |
-          python -m pip install --quiet pytest pyyaml
-          python -m pytest -q
+        run: python -m pytest -q
       - name: Static production build
         run: make build
