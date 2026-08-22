@@ -6,7 +6,6 @@ import yaml
 
 from gei.capabilities import metric_capabilities
 from gei.config import load_metric_registry
-from gei.weo import load_reference_classes
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -63,23 +62,13 @@ def test_fiscal_year_boundaries_are_actual_at_reference_year():
 def test_world_bank_cross_check_difference_has_structural_composition():
     data = payload()
     weo = {country["iso3"] for country in data["countries"]}
-    rows = json.loads(
-        (ROOT / "data" / "raw" / "2026-08-17" / "NY.GDP.MKTP.CD_1990_2025.json").read_text()
+    cross_check = json.loads(
+        (ROOT / "governance" / "fixtures" / "world_bank_top50_2024.json").read_text()
     )
-    classes = load_reference_classes(
-        ROOT / "governance" / "entities" / "imf_weo_reference_list.yaml"
-    )
-    candidates = [
-        row
-        for row in rows
-        if row.get("date") == "2024"
-        and row.get("value") is not None
-        and classes.get(row.get("countryiso3code")) == "economy"
-    ]
-    wb = {
-        row["countryiso3code"]
-        for row in sorted(candidates, key=lambda row: -row["value"])[:50]
-    }
+    assert cross_check["source_id"] == "world_bank_wdi"
+    assert cross_check["indicator"] == "NY.GDP.MKTP.CD"
+    assert cross_check["year"] == data["meta"]["reference_year"]
+    wb = set(cross_check["iso3"])
     assert weo - wb == {"TWN"}, f"WEO-only={sorted(weo-wb)}, WB-only={sorted(wb-weo)}"
     assert len(wb - weo) == 1, f"WEO-only={sorted(weo-wb)}, WB-only={sorted(wb-weo)}"
 
